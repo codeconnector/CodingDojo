@@ -1,7 +1,7 @@
 # CodeConnector CodingDojo Participants
 ---
 
-This file will act as a short exercise in [contributing](https://guides.github.com/activities/forking/) to the CodingDojo exercises.  You'll fork this repo and add your name to this file. Names should be added in alphabetical order by last name.
+This file will act as a short exercise in [contributing](https://guides.github.com/activities/forking/) to the CodingDojo exercises.  You'll fork this repo and add your name to this file. Names should be added in alphabetical order by first name.
 
 Eg: `Your Name: [githubname](githuburl)`
 
