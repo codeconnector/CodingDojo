@@ -1,1 +1,3 @@
 # Coding Dojo
+
+Coding challenges are an important part of growth as a developer. We would like to use them as a way to foster growth in both coding ability and software engineering methodologies. Challenges will be added as directories in the root of this project and we will have mobbing sessions as a group for anyone able to join. There will be an effort to work in as many different languages as there is interest in learning. 
