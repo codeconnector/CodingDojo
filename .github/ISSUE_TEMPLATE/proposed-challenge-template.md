@@ -11,7 +11,7 @@ assignees: ''
 
 Description of the coding challenge. Any backstory or setup should go here. The title should be somewhat informative and unique, so that individual challenges can be easily identified.
 
-# Business Rules/Errata
+## Business Rules/Errata
 
 - ***Language Required: VisualBasic*** Indicate the language to be used for the mobbing solution as the first bullet, emphasized
 - ***Data Structure Required: Directed Acyclic Graphs*** Indicate any required data structures on the second bullet, emphasized. This bullet can be omitted if there is no such requirement.
@@ -20,7 +20,7 @@ Description of the coding challenge. Any backstory or setup should go here. The 
 - This section should identify known constraints/edge cases (i.e., the input list will always be ordered, if the argument is empty then throw an exception, etc.)
 - **If additional notes/requirements are determined (as a result of clarifying questions in comments), add those additional notes here in bold.**
 
-# Examples
+## Examples
 
 This section should provide examples of expected inputs/outputs like so:
 
