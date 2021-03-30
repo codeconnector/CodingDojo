@@ -13,7 +13,7 @@ Description of the coding challenge. Any backstory or setup should go here. The 
 
 ## Business Rules/Errata
 
-- ***Language Required: VisualBasic*** Indicate the language to be used for the mobbing solution as the first bullet, emphasized
+- ***Language Required: VisualBasic*** Indicate the language to be used for the mobbing solution as the first bullet, emphasized. Only include if the challenge requires a specific language to complete.
 - ***Data Structure Required: Directed Acyclic Graphs*** Indicate any required data structures on the second bullet, emphasized. This bullet can be omitted if there is no such requirement.
 - This section should be a bulleted list.
 - This section should contain relevant business rules.
