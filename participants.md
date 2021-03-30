@@ -11,4 +11,5 @@ Eg: `Your Name: [githubname](githuburl)`
 ### Intrepid Users
 
 + Corey McCarty: [xanderyzwich](https://github.com/xanderyzwich)
++ Eric Burden: [ericwburden](https://github.com/ericwburden)
 + Lee Parham: [parhaml](https://github.com/parhaml)
