@@ -24,3 +24,8 @@ count_words_between("an", "outhouse", list_of_words)    // 6
 ## Tackling This Challenge
 
 To complete this challenge, add your code to the 'mob.java' file. Confirm your solution by running tests by executing the `run_tests.sh` script (use `./run_tests.sh` from the challenge root directory.
+
+## Requirements
+
+- JDK 11+
+- Maven
