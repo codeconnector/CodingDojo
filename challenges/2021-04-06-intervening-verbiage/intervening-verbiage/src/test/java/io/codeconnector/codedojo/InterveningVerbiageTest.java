@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit test for Intervening Verbiage coding challenge.
  */
-public class AppTest {
+public class InterveningVerbiageTest {
 
     private InterveningVerbiage testClass;
     private String testSentence;
