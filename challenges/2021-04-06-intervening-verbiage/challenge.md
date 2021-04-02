@@ -23,7 +23,7 @@ count_words_between("an", "outhouse", list_of_words)    // 6
 
 ## Tackling This Challenge
 
-1. Clone (or pull if you've cloned already) the codeconnector/CodeingDojo repository using `git clone https://github.com/codeconnector/CodingDojo.git` or `git pull`, as appropriate. 
+1.If you haven't already, fork the CodingDojo repository ([INSTRUCTIONS](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)).
 1. Checkout a new branch using `git checkout -b yourgithubusername-wip`.
 1. Add your code to the 'mob.java' file to make the `countWordsBetween` function work as expected.
 1. Confirm your solution by running tests. Execute the `run_tests.sh` script (use `./run_tests.sh` from the challenge root directory. 
