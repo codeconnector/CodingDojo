@@ -1,6 +1,7 @@
 package io.codeconnector.codedojo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -40,5 +41,15 @@ public class AppTest {
         int result = testClass.countWordsBetween("an", "outhouse", testSentence);
         String msg = "Four words between 'an' and 'outhouse'.";
         assertEquals(6, result, msg);
+    }
+
+    /**
+    * Test illegal arguments
+    */
+    @Test
+    @DisplayName("The words must be in the list")
+    public void testCaseWordNotInList() {
+        assertThrows(IllegalArgumentException.class,
+                     () -> testClass.countWordsBetween("frankly", "absurd", testSentence));
     }
 }

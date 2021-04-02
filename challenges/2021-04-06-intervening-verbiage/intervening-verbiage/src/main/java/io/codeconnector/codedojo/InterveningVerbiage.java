@@ -31,7 +31,13 @@ package io.codeconnector.codedojo;
  * first instance of 'an' and 'outhouse'.
  */
 public class InterveningVerbiage {
-    public int countWordsBetween(String start, String stop, String words) {
-        return 0; // You should put the challenge solution here
+    public int countWordsBetween(
+        String start,
+        String stop,
+        String words
+    ) throws IllegalArgumentException
+    {
+        // You should put the challenge solution here
+        throw new IllegalArgumentException("Must search between words in the list");
     }
 }
