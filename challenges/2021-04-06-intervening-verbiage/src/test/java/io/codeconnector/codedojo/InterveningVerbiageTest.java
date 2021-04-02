@@ -2,6 +2,7 @@ package io.codeconnector.codedojo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -29,7 +30,11 @@ public class InterveningVerbiageTest {
     public void testCaseOne() {
         int result = testClass.countWordsBetween("lady", "outhouse", testSentence);
         String msg = "Four words between 'lady' and 'outhouse'.";
-        assertEquals(4, result, msg);
+        try {
+            assertEquals(4, result, msg);
+        } catch (Exception e) {
+            fail("Should not throw an exception for valid arguments.");
+        }
     }
 
     /**
@@ -40,7 +45,11 @@ public class InterveningVerbiageTest {
     public void testCaseTwo() {
         int result = testClass.countWordsBetween("an", "outhouse", testSentence);
         String msg = "Six words between 'an' and 'outhouse'.";
-        assertEquals(6, result, msg);
+        try {
+            assertEquals(6, result, msg);
+        } catch (Exception e) {
+            fail("Should not throw an exception for valid arguments.");
+        }
     }
 
     /**

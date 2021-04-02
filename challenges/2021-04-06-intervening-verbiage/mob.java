@@ -1,1 +1,1 @@
-intervening-verbiage/src/main/java/io/codeconnector/codedojo/InterveningVerbiage.java
+src/main/java/io/codeconnector/codedojo/InterveningVerbiage.java
