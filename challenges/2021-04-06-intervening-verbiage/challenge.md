@@ -23,6 +23,7 @@ count_words_between("an", "outhouse", list_of_words)    // 6
 
 ## Tackling This Challenge
 
+1. Make sure you've got the required software on your machine: A JDK 11+ and [Maven](https://maven.apache.org/download.cgi). We're using Maven to manage our dependencies (just JUnit) and run the tests.
 1.If you haven't already, fork the CodingDojo repository ([INSTRUCTIONS](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)).
 1. Checkout a new branch using `git checkout -b yourgithubusername-wip`.
 1. Add your code to the 'mob.java' file to make the `countWordsBetween` function work as expected.
