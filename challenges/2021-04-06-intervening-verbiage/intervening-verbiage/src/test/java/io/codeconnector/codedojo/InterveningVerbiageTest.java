@@ -39,7 +39,7 @@ public class InterveningVerbiageTest {
     @DisplayName("Words between 'an' and 'outhouse'")
     public void testCaseTwo() {
         int result = testClass.countWordsBetween("an", "outhouse", testSentence);
-        String msg = "Four words between 'an' and 'outhouse'.";
+        String msg = "Six words between 'an' and 'outhouse'.";
         assertEquals(6, result, msg);
     }
 
