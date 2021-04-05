@@ -28,7 +28,7 @@ count_words_between("an", "outhouse", list_of_words)    // 6
 1. Checkout a new branch using `git checkout -b yourgithubusername-wip`.
 1. Add your code to the 'mob.java' file to make the `countWordsBetween` function work as expected.
 1. Confirm your solution by running tests. Execute the `test-it.sh` script (use `./test-it.sh` from the challenge root directory.
-1. Once you're happy with your solution, execute the `commit-solution.sh` script to auto-rename and commit your solution.
+1. If you've passed all the tests, the `test-it.sh` script with help you commit it. Otherwise, try again to pass all tests.
 1. Navigate to [GitHub](https://github.com/codeconnector/CodingDojo), and submit your pull request.
 1. One of the CodingDojo maintainers will help you get your PR merged.
 
