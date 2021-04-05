@@ -18,16 +18,15 @@ run_test() {
 commit_solution() {
     # Collect the GitHub username
     read -p 'Please enter your GitHub username: ' guser
-    solution_file = "solutions/${guser}.java"
 
     # Copy the modified source file to the 'solutions/' directory, renaming to your
     # GitHub username
-    cp -L mob.java "${solution_file}"
+    cp -L mob.java "solutions/${guser}.java"
 
     # Add the solution file to the current commit, commit with a default commit 
     # message, then push the commit. You may be prompted for your username and
     # password if using HTTP with GitHub.
-    git add "${solution_file}"
+    git add "solutions/${guser}.java"
     git commit -am "Submitting solution to '${PWD##*/}' for ${guser}"
     git push
 }
