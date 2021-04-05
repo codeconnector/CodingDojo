@@ -21,6 +21,12 @@ commit_solution() {
     # Collect the GitHub username
     read -p 'Please enter your GitHub username: ' guser
 
+    # Check the current branch name, should be githubusername-wip
+    current_branch=$(git branch --show-current)
+
+    # If the user isn't on the 'githubusername-wip', move to that one
+    [[ current_branch != "${guser}-wip" ]] && git checkout -b "${guser}-wip"
+
     # Copy the modified source file to the 'solutions/' directory, renaming to your
     # GitHub username
     cp -L mob.java "solutions/${guser}.java"
