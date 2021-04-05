@@ -42,6 +42,9 @@ commit_solution() {
 tmpfile=$(mktemp /tmp/intervening-verbiage-test.XXXXXX)
 run_test > "$tmpfile"
 
+# If the ✘ symbol (Unicode 2718) is found in the test output, print the test output
+# back to the console and exit. If all tests passed, then offer to run the commit
+# script to commit the solution to GitHub.
 if grep -q $'\u2718' "$tmpfile"; then 
     echo "You failed the tests! Here's what happened:"
     cat "$tmpfile"
@@ -51,5 +54,6 @@ else
     [[ $do_commit == [yY] ]] && commit_solution || echo "Ok, maybe later."
 fi
 
+# Cleanup the temp file (probably not necessary)
 rm "$tmpfile"
 
