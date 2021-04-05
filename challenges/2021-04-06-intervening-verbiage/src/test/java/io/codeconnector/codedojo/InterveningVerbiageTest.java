@@ -30,9 +30,8 @@ public class InterveningVerbiageTest {
     public void testCaseOne() {
         String msg = "Four words between 'lady' and 'outhouse'.";
         try {
-            assertEquals(4, 4);
-            // int result = testClass.countWordsBetween("lady", "outhouse", testSentence);
-            // assertEquals(4, result, msg);
+            int result = testClass.countWordsBetween("lady", "outhouse", testSentence);
+            assertEquals(4, result, msg);
         } catch (Exception e) {
             fail("Should not throw an exception for valid arguments.");
         }
@@ -46,9 +45,8 @@ public class InterveningVerbiageTest {
     public void testCaseTwo() {
         String msg = "Six words between 'an' and 'outhouse'.";
         try {
-            assertEquals(6, 6);
-            // int result = testClass.countWordsBetween("an", "outhouse", testSentence);
-            // assertEquals(6, result, msg);
+            int result = testClass.countWordsBetween("an", "outhouse", testSentence);
+            assertEquals(6, result, msg);
         } catch (Exception e) {
             fail("Should not throw an exception for valid arguments.");
         }
