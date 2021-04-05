@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Runs the JUnit5 tests
 run_test() {
     # Compile the source and test files for this challenge, put the *.class files
     # in the 'out/' folder. Include the JUnit standalone .jar in the classpath.
@@ -15,6 +16,7 @@ run_test() {
         --details=tree
 }
 
+# Copies the solution file and attempts to commit to GitHub
 commit_solution() {
     # Collect the GitHub username
     read -p 'Please enter your GitHub username: ' guser
@@ -31,15 +33,22 @@ commit_solution() {
     git push
 }
 
-run_test > test.result
 
-if grep $'\u2718' test.result; then 
+# ------------------------------------------------------------------------------
+# Main Script ------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+
+# Run the tests and pipe the results to a temp file
+tmpfile=$(mktemp /tmp/intervening-verbiage-test.XXXXXX)
+run_test > "$tmpfile"
+
+if grep $'\u2718' "$tmpfile"; then 
     echo "You failed the tests! Here's what happened:"
-    cat test.result
+    cat "$tmpfile"
 else 
     read -p "You passed the tests! Do you wish to commit your solution (y/N)? " do_commit
     [[ $do_commit == [yY] ]] && commit_solution
 fi
 
-# rm test.result
+rm "$tmpfile"
 
