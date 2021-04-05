@@ -42,12 +42,13 @@ commit_solution() {
 tmpfile=$(mktemp /tmp/intervening-verbiage-test.XXXXXX)
 run_test > "$tmpfile"
 
-if grep $'\u2718' "$tmpfile"; then 
+if grep -q $'\u2718' "$tmpfile"; then 
     echo "You failed the tests! Here's what happened:"
     cat "$tmpfile"
 else 
-    read -p "You passed the tests! Do you wish to commit your solution (y/N)? " do_commit
-    [[ $do_commit == [yY] ]] && commit_solution
+    echo -e "\n\u2b50\u2b50 \e[1;32mYou passed the tests!\e[0m \u2b50\u2b50\n"
+    read -p "Do you wish to commit your solution (y/N)? " do_commit
+    [[ $do_commit == [yY] ]] && commit_solution || echo "Ok, maybe later."
 fi
 
 rm "$tmpfile"
