@@ -29,6 +29,7 @@ commit_solution() {
 
     # Copy the modified source file to the 'solutions/' directory, renaming to your
     # GitHub username
+    mkdir -p solutions  # In case the directory doesn't exist
     cp -L mob.java "solutions/${guser}.java"
 
     # Add the solution file to the current commit, commit with a default commit 
@@ -44,22 +45,18 @@ commit_solution() {
 # Main Script ------------------------------------------------------------------
 # ------------------------------------------------------------------------------
 
-# Run the tests and pipe the results to a temp file
-tmpfile=$(mktemp /tmp/intervening-verbiage-test.XXXXXX)
-run_test > "$tmpfile"
+# Run the tests and assign the results to a variable
+test_result=$(run_test)
 
 # If the ✘ symbol (Unicode 2718) is found in the test output, print the test output
 # back to the console and exit. If all tests passed, then offer to run the commit
 # script to commit the solution to GitHub.
-if grep -q $'\u2718' "$tmpfile"; then 
+if grep -q $'\u2718' <<< "$test_result"; then 
     echo "You failed the tests! Here's what happened:"
-    cat "$tmpfile"
+    echo "$test_result"
 else 
     echo -e "\n\u2b50\u2b50 \e[1;32mYou passed the tests!\e[0m \u2b50\u2b50\n"
     read -p "Do you wish to commit your solution (y/N)? " do_commit
     [[ $do_commit == [yY] ]] && commit_solution || echo "Ok, maybe later."
 fi
-
-# Cleanup the temp file (probably not necessary)
-rm "$tmpfile"
 
