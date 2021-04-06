@@ -48,11 +48,15 @@ commit_solution() {
 # Run the tests and assign the results to a variable
 test_result=$(run_test)
 
-# If the ✘ symbol (Unicode 2718) is found in the test output, print the test output
-# back to the console and exit. If all tests passed, then offer to run the commit
-# script to commit the solution to GitHub.
-if grep -q $'\u2718' <<< "$test_result"; then 
-    echo "You failed the tests! Here's what happened:"
+# Get number of failed tests
+tests_failed=$(echo $test_result | grep -o -e '[[:digit:]] tests failed' | awk '{print $1}')
+
+
+# If any tests failed, print the test output back to the console and exit. If 
+# all tests passed, then offer to run the commit script to commit the solution 
+# to GitHub.
+if (("$tests_failed" > 0)); then 
+    echo "You failed ${tests_failed} tests! Here's what happened:"
     echo "$test_result"
 else 
     echo -e "\n\u2b50\u2b50 \e[1;32mYou passed the tests!\e[0m \u2b50\u2b50\n"
