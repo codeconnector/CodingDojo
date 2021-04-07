@@ -2,12 +2,12 @@ package main.java.io.codeconnector.codedojo;
 
 /**
  * # Intervening Verbiage
- * <p>
+ *
  * Given two words in a string of words, count the number of other words between
  * the two words you are given.
- * <p>
+ *
  * ## Business Rules/Errata
- * <p>
+ *
  * - Your solution will take in three pieces of input: a string containing a
  * space-separated list of words, and two other strings representing the first
  * and second words, respectively.
@@ -17,25 +17,26 @@ package main.java.io.codeconnector.codedojo;
  * not the words themselves.
  * - If your words appear multiple times in the list of words, count words that
  * fall between the first  instance of each.
- * <p>
+ *
  * ## Examples
- * <p>
+ *
  * ```
  * list_of_words = "There was an old lady who lived in an outhouse";
  * count_words_between("lady", "outhouse", list_of_words)  // 4
  * count_words_between("an", "outhouse", list_of_words)    // 6
  * ```
- * <p>
+ *
  * - The words 'who', 'lived', 'in', 'an' appear between 'lady' and 'outhouse'.
  * - The words 'old', 'lady', 'who', 'lived', 'in', 'an' appear between the
  * first instance of 'an' and 'outhouse'.
  */
 public class InterveningVerbiage {
     public int countWordsBetween(
-            String start,
-            String stop,
-            String words
-    ) throws IllegalArgumentException {
+        String start,
+        String stop,
+        String words
+    ) throws IllegalArgumentException
+    {
         // You should put the challenge solution here
         int length = words.length();
         int keywordIndex = 0;
