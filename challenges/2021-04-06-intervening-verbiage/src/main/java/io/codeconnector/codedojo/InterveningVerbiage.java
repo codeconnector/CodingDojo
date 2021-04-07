@@ -38,29 +38,6 @@ public class InterveningVerbiage {
     ) throws IllegalArgumentException
     {
         // You should put the challenge solution here
-<<<<<<< HEAD
-        String[] wordsArray = words.split(" ");
-        System.out.println(wordsArray);
-        int count = 0;
-        boolean counting = false;
-
-        for (String word : wordsArray) {
-            System.out.println(word);
-            if (word.equalsIgnoreCase(stop)){
-                return count;
-            }
-            if (counting) {
-                count++;
-            }
-            if (word.equalsIgnoreCase(start)) {
-                //start counting
-                counting = true;
-            }
-            System.out.println(count);
-        }
-        
-=======
->>>>>>> 263d053197edf3a9ac8f09f090272792bbdce10b
         throw new IllegalArgumentException("Must search between words in the list");
     }
 }
