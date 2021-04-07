@@ -48,7 +48,7 @@ public class InterveningVerbiage {
             if (word.equalsIgnoreCase(stop)){
                 return count;
             }
-            if (counting==true) {
+            if (counting) {
                 count++;
             }
             if (word.equalsIgnoreCase(start)) {
