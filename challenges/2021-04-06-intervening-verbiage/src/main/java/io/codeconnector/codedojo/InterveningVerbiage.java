@@ -31,6 +31,9 @@ package main.java.io.codeconnector.codedojo;
  * first instance of 'an' and 'outhouse'.
  */
 public class InterveningVerbiage {
+    private String words;
+    private int i;
+
     public int countWordsBetween(
         String start,
         String stop,
@@ -38,41 +41,45 @@ public class InterveningVerbiage {
     ) throws IllegalArgumentException
     {
         // You should put the challenge solution here
-        int length = words.length();
-        int keywordIndex = 0;
-        int wordIndex = 0;
+        this.words = words;
+        this.i = 0;
         int count = 0;
         boolean isCounting = false;
-        for (int i = 0; i < length; i++) {
-            if (words.charAt(i) == ' ') {
-                if (start.length() == keywordIndex && wordIndex == start.length() && !isCounting) {
-                    isCounting = true;
-                    continue;
-                }
-                if (isCounting) count++;
-                wordIndex = 0;
-                keywordIndex = 0;
+
+        while(this.i<words.length()){
+            if(this.words.charAt(this.i) == ' '){
+                this.i++;
                 continue;
+            }
+
+            if(!isCounting){
+                isCounting = matchNextWord(start);
             } else {
-                wordIndex++;
+                boolean isMatch = matchNextWord(stop);
+                if(isMatch) return count;
+                count++;
             }
-
-            if (!isCounting && charEqualsIgnoreCase(words.charAt(i),start.charAt(keywordIndex))) keywordIndex++;
-            if (isCounting && charEqualsIgnoreCase(words.charAt(i), stop.charAt(keywordIndex))) keywordIndex++;
-
-            if (isCounting
-                    && stop.length() == keywordIndex
-                    && wordIndex == keywordIndex
-                    && (i == length - 1 || words.charAt(i + 1) == ' '))
-            {
-                return count;
-            }
-
+            this.i++;
         }
         throw new IllegalArgumentException("Must search between words in the list");
+    }
+
+    private boolean matchNextWord(String word){
+        int wordIndex = 0;
+        int startIndex = this.i;
+        while (this.i < this.words.length() && this.words.charAt(this.i) != ' '){
+            if(wordIndex<word.length() && charEqualsIgnoreCase(word.charAt(wordIndex), this.words.charAt(this.i))){
+                wordIndex++;
+            }
+            this.i++;
+        }
+        return this.i == startIndex + wordIndex;
     }
 
     private static boolean charEqualsIgnoreCase(char char1, char char2){
         return Character.toLowerCase(char1) == Character.toLowerCase(char2);
     }
+
 }
+
+
