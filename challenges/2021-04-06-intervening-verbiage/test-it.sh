@@ -48,8 +48,7 @@ WHT='\033[1;37m'
 CLR='\033[0m'
 
 # If any tests failed, print the test output back to the console and exit. If
-# all tests passed, then offer to run the commit script to commit the solution
-# to GitHub.
+# all tests passed, then provide instructions for submitting a PR
 if (("$tests_failed" > 0)); then
     echo -e "\n${WHT}You failed ${tests_failed}/${total_tests} tests! Here's what happened:${CLR}"
     echo "$test_result"
