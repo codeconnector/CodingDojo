@@ -24,6 +24,7 @@ void main() {
     var words = 'I can see clearly now the rain is clearly gone';
     expect(countWordsBetween('I', 'clearly', words), 2);
     expect(countWordsBetween('I', 'gone', words), 8);
+    expect(countWordsBetween('clearly', 'now', words), 0);
     expect(countWordsBetween('clearly', 'gone', words), 5);
     expect(countWordsBetween('clearly', 'clearly', words), 4);
   });
