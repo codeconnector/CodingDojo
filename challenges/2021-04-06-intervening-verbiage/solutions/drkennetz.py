@@ -44,27 +44,35 @@ import unittest
 
 def count_words_between(start, stop, words):
     """ Count the number of words between the start and stop word """
-    try:
-        return words.lower().split(start.lower(), 1)[1].split(stop.lower(), 1)[0].count(" ") - 1
-    except IndexError:
-        return "The words must be in the sentence."
-
+    word_list = words.lower().split(' ')
+    count = 0
+    counting = False
+    for word in word_list:
+        if word == stop.lower():
+            return count
+        if counting:
+            count += 1
+        if word == start.lower():
+            counting = True
+    return "One of the start or stop words was not in the sentence."
+    
 class TestCountWordsBetween(unittest.TestCase):
     def setUp(self):
-        self.start_words = ["lady", "an", "frankly"]
-        self.stop_words = ["outhouse", "outhouse", "absurd"]
-        self.res = [4, 6, "The words must be in the sentence."]
-        self.words = "There was an old lady who lived in an outhouse"
+        self.start_words = ["lady", "an", "frankly", "I"]
+        self.stop_words = ["outhouse", "outhouse", "absurd", "very"]
+        self.res = [4, 6, "One of the start or stop words was not in the sentence.", 1]
+        self.words = ["There was an old lady who lived in an outhouse", "There was an old lady who lived in an outhouse",
+                      "There was an old lady who lived in an outhouse", 'There was an igloo that I liked very much']
 
     def test_count_words_between(self):
         count = 1
-        for start, stop, res in zip(self.start_words, self.stop_words, self.res):
-            actual_result = count_words_between(start, stop, self.words)
+        for start, stop, sentence, res in zip(self.start_words, self.stop_words, self.words, self.res):
+            actual_result = count_words_between(start, stop, sentence)
             if actual_result == res:
                 status = "SUCCESS"
             else:
                 status = "FAIL"
-            print("Test %i: "%count, "Start Word: %s" %start, "Stop Word: %s" %stop, "\n", "Input Sentence: %s" %self.words, "\n",
+            print("Test %i: "%count, "Start Word: %s" %start, "Stop Word: %s" %stop, "\n", "Input Sentence: %s" %sentence, "\n",
                   "Expected Result: ", res, "Actual Result: ", actual_result, "Status: %s" %status)
             count += 1
 
