@@ -22,7 +22,7 @@ find_singles(input)  // [3, 8]
 
 ## Tackling This Challenge
 
-1. Make sure you've got the required software on your machine: npm 6+ and a text editor.
+1. Make sure you've got the required software on your machine: npm 7.9.0+ and a text editor.
 1. If you haven't already, fork the CodingDojo repository ([INSTRUCTIONS](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)).
 1. Checkout a new branch using `git checkout -b yourgithubusername-wip`.
 1. Add your code to the 'solution.js' file to make the `findSingles` function work as expected.
@@ -33,4 +33,4 @@ find_singles(input)  // [3, 8]
 
 ## Requirements
 
-- npm 6+
+- npm 7.9.0+
