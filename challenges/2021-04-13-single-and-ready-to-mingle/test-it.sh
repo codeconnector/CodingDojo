@@ -14,15 +14,19 @@ tests_total=$(echo $test_result | grep -o -e "[[:digit:]] total" | awk '{print $
 
 tests_failed=${tests_failed:-0}
 
-# Abort if something unexpected happens
-[[ -z $test_result ]] && echo "\nSomething went wrong:\n" && npm test && exit 1
-
 # Define colors
 BLU='\033[1;34m'
 GRN='\033[1;32m'
 YLW='\033[1;33m'
 WHT='\033[1;37m'
 CLR='\033[0m'
+
+# Abort if something unexpected happens
+if [[ -z $test_result ]]; then
+    echo "\nSomething went wrong (maybe try ${YLW}npm install${CLR}):\n" 
+    npm test 
+    exit 1
+fi
 
 # If any tests failed, print the test output back to the console and exit. If
 # all tests passed, then provide instructions for submitting a PR
