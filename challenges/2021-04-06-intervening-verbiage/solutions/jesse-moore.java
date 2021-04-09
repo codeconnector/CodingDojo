@@ -1,4 +1,4 @@
-package io.codeconnector.codedojo;
+package main.java.io.codeconnector.codedojo;
 
 /**
  * # Intervening Verbiage
@@ -31,6 +31,9 @@ package io.codeconnector.codedojo;
  * first instance of 'an' and 'outhouse'.
  */
 public class InterveningVerbiage {
+    private String words;
+    private int i;
+
     public int countWordsBetween(
         String start,
         String stop,
@@ -38,7 +41,43 @@ public class InterveningVerbiage {
     ) throws IllegalArgumentException
     {
         // You should put the challenge solution here
+        this.words = words;
+        this.i = 0;
+        int count = 0;
+        boolean isCounting = false;
+
+        while(this.i<words.length()){
+            if(this.words.charAt(this.i) == ' '){
+                this.i++;
+                continue;
+            }
+
+            if(!isCounting){
+                isCounting = matchNextWord(start);
+            } else {
+                boolean isMatch = matchNextWord(stop);
+                if(isMatch) return count;
+                count++;
+            }
+            this.i++;
+        }
         throw new IllegalArgumentException("Must search between words in the list");
+    }
+
+    private boolean matchNextWord(String word){
+        int wordIndex = 0;
+        int startIndex = this.i;
+        while (this.i < this.words.length() && this.words.charAt(this.i) != ' '){
+            if(wordIndex<word.length() && charEqualsIgnoreCase(word.charAt(wordIndex), this.words.charAt(this.i))){
+                wordIndex++;
+            }
+            this.i++;
+        }
+        return this.i == startIndex + wordIndex;
+    }
+
+    private static boolean charEqualsIgnoreCase(char char1, char char2){
+        return Character.toLowerCase(char1) == Character.toLowerCase(char2);
     }
 
 }
