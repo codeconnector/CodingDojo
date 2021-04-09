@@ -24,6 +24,7 @@ find_singles(input)  // [3, 8]
 
 1. Make sure you've got the required software on your machine: npm 7.9.0+ and a text editor.
 1. If you haven't already, fork the CodingDojo repository ([INSTRUCTIONS](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)).
+1. Navigate to the '2021-04-13-single-and-ready-to-mingle' directory and run `npm install` to initialize the project.
 1. Checkout a new branch using `git checkout -b yourgithubusername-wip`.
 1. Add your code to the 'solution.js' file to make the `findSingles` function work as expected.
 1. Confirm your solution by running tests. Execute the `test-it.sh` script (use `./test-it.sh` from the challenge root directory.
