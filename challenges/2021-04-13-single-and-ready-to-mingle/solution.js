@@ -28,7 +28,18 @@
 
 function findSingles(input) {
   // Put your code here to make this fuction work
-  return input;
+  const res = new Set()
+  for (i = 0; i < input.length; i++) {
+    let v = input[i]
+    if (res.has(v)) {
+      res.delete(v)
+    } else {
+      res.add(v)
+    }
+  }
+
+
+  return Array.from(res);
 }
 
 module.exports = findSingles;
