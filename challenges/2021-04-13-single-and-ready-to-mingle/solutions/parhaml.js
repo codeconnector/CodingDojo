@@ -27,7 +27,6 @@
 // ```
 
 function findSingles(input) {
-  // Put your code here to make this fuction work
   const res = new Set()
   for (i = 0; i < input.length; i++) {
     let v = input[i]
