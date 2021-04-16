@@ -44,18 +44,8 @@ public class PotentialPalindromeTest {
      * Third test case
      */
     @Test
-    @DisplayName("Correctly rules out non-palindrome")
-    public void testCaseThree() {
-        boolean result = testClass.canMakePalindrome("notapalindrome");
-        assertEquals(false, result, "'notapalindrome' can not make a palindrome");
-    }
-
-    /**
-     * Fourth test case
-     */
-    @Test
     @DisplayName("Empty strings are not palindromes")
-    public void testCaseFour() {
+    public void testCaseThree() {
         boolean result = testClass.canMakePalindrome("");
         assertEquals(false, result, "An empty string cannot make a palindrome");
     }
