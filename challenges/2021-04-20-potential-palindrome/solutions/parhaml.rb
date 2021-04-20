@@ -36,7 +36,9 @@ def can_make_palindrome(str)
     odd_count += 1 if v.odd?
   end
 
-  odd_count <= 1 ? "'#{str}' can make a palindrome" : "'#{str}' can not make a palindrome"
+  odd_values = result_hsh.reject { |_, v| v.even? }.count
+
+  odd_values <= 1 ? "'#{str}' can make a palindrome" : "'#{str}' can not make a palindrome"
 end
 
 def word_count(str)
