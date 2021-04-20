@@ -30,12 +30,6 @@ def can_make_palindrome(str)
   return 'An empty string cannot make a palindrome' if str.empty?
 
   result_hsh = word_count(str)
-  odd_count = 0
-
-  result_hsh.each do |_, v|
-    odd_count += 1 if v.odd?
-  end
-
   odd_values = result_hsh.reject { |_, v| v.even? }.count
 
   odd_values <= 1 ? "'#{str}' can make a palindrome" : "'#{str}' can not make a palindrome"
