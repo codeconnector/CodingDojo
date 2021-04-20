@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 
-def is_palindrome(s: str) -> bool:
+def can_make_palindrome(s: str) -> bool:
     #count char frequency in string, if more than one is odd, not a palindrome
     if not s:
         return False
