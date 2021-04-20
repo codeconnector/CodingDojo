@@ -14,4 +14,5 @@ Eg: `Your Name: [githubname](githuburl)`
 + Corey McCarty: [xanderyzwich](https://github.com/xanderyzwich)
 + Dennis Kennetz: [drkennetz](https://github.com/drkennetz)
 + Eric Burden: [ericwburden](https://github.com/ericwburden)
++ Laura Pilkington: [laurelin](https://github.com/Laurelin)
 + Lee Parham: [parhaml](https://github.com/parhaml)
