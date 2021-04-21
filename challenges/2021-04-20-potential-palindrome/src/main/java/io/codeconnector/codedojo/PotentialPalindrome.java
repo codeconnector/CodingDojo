@@ -1,5 +1,8 @@
 package io.codeconnector.codedojo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /*
  * # Potential Palindrome
  * 
@@ -26,8 +29,38 @@ package io.codeconnector.codedojo;
 public class PotentialPalindrome {
     public boolean canMakePalindrome(Object input)
     {
-        // You should put the challenge solution here
-        return false;
+    	String value = input.toString();
+    	if(value.isEmpty()) {
+    		return false;
+    	}
+    	if(value.length() == 1) {
+    		return true;
+    	}
+    	
+    	value = value.toLowerCase();
+    	Map<Character, Integer> map = new HashMap<>();
+    	
+    	for(int i = 0; i < value.length(); i++) {
+    		char c = value.charAt(i);
+			Integer count = map.get(c);
+			if(count == null) {
+				count = 0; //initialize it
+			}
+			count++;
+			map.put(c, count);
+    	}
+    	boolean evenValueSize = value.length() % 2 == 0;
+    	boolean oneOddFound = false;
+    	for(int next: map.values()) {
+    		if( next % 2 != 0) {
+    			//odd
+    			if(oneOddFound || evenValueSize) {
+    				return false;
+    			}
+    			oneOddFound = true;
+    		}
+    	}
+        return true;
     }
 
 }
