@@ -1,5 +1,8 @@
 package io.codeconnector.codedojo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /*
  * # Potential Palindrome
  * 
