@@ -8,11 +8,22 @@ Given an array of values, return the sum of the values.
 - The array may be nested more than one level.
 - All values must be integers.
 - Solutions shall not use built in methods to flatten the array to one-dimension.
-- You will need 'rspec' if you want to run the tests. From the project, in your terminal, run `gem install rspec` to get going. Then to run the tests from the `src/` folder, simply type:
+- You will need 'rspec' if you want to run the tests. From the project `src/` folder run either:
+```
+gem install rspec
+```
+
+or if you have bundler installed
 
 ```
-rspec spec --format doc
+bundle install
 ```
+
+- Then to run the tests from the `src/` folder, to see the output simply type 
+```
+rspec spec --format doc
+``` 
+
 - As always, Ruby may be new for folks. Don't hesitate to reach out to Lee or the #code channel to ask for help with your environment!
 
 ## Examples
