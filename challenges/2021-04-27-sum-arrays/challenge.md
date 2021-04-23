@@ -56,4 +56,4 @@ rspec spec --format doc
 ```
 
 - After your tests pass, copy your code into a new file `githubname.ext` in the `solutions/` folder
-- Eg: My ruby soltion would become a new file `solutions/parhaml.rb`
+- Eg: My ruby solution would become a new file `solutions/parhaml.rb`
