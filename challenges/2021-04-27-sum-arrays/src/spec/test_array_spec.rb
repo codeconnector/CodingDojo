@@ -21,7 +21,7 @@ RSpec.describe 'sum_arrays' do
     end
   end
 
-  context 'givent an n dimension array' do
+  context 'given an n dimension array' do
     let(:array) { [1, [1, 2, [3, 4], 5], [6, 7]] }
 
     it 'returns 29' do

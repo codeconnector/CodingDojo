@@ -33,7 +33,7 @@ sum_of_array([1,[1,2,[3,4],5],[6,7]]) => 29
 
 If you're on a mac, ruby is installed. On windows it's possible through a couple of ways. 
 [Ruby Installer](https://www.ruby-lang.org/en/documentation/installation/#rubyinstaller)
-or [other options] (https://www.ruby-lang.org/en/documentation/installation/)
+or [other options](https://www.ruby-lang.org/en/documentation/installation/)
 
 
 If you want to use `bundler` to install the test runner dependencies, [more info can be found here](https://bundler.io/)
