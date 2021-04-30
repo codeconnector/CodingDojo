@@ -7,20 +7,20 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 ### May 04, 2021
 
 - Language of the Week: JavaScript
-- Driver: Hasan
-- Navigator:
-- Host: 
+- Driver: [hasancbngl](https://github.com/hasancbngl/hasancbngl)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [xanderyzwich](https://github.com/xanderyzwich)
 
 ### May 11, 2021
 
 - Language of the Week: Java
 - Driver: [milaguileras](https://github.com/milaguileras)
-- Navigator:
-- Host: 
+- Navigator: Pending
+- Host: Pending
 
 ### May 18, 2021
 
-- Language of the Week:
+- Language of the Week: Pending
 - Driver: Ian
-- Navigator:
-- Host: 
+- Navigator: Pending
+- Host: Pending
