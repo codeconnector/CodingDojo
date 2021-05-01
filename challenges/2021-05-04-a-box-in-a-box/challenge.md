@@ -6,6 +6,7 @@ Given a pair of rectangles, determine whether one of the rectangles is completel
 
 - ***Data Structure Required: Rectangle*** You should produce and compare `Rectangle` objects in your solution, not the raw rectangle measurements.
 - The rectangle dimensions will be given in an array, in the format [(top left x coordinate), (top left y coordinate), (width), (height)].
+- Your function should take two Rectangle objects as arguments.
 - The units of width and height are irrelevant and can be ignored.
 - **The coordinate system for this challenge is 2-dimensional, with x increasing from left to right, and y increasing from top to bottom.**
 - Your final result should include a function that, given two sets of rectangle dimensions, returns a boolean value,
