@@ -24,3 +24,18 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: Ian
 - Navigator: Pending
 - Host: Pending
+
+### May 25, 2021
+
+- Language of the Week: Java
+- Driver: [williycole](https://github.com/williycole)
+- Navigator: Pending
+- Host: Pending
+
+### June 01, 2021
+
+- Language of the Week: JavaScript
+- Driver: [corianoharris](https://github.com/corianoharris)
+- Navigator: Pending
+- Host: Pending
+
