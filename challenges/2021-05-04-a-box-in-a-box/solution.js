@@ -22,24 +22,14 @@
 
 
 class Rectangle {
-  constructor(topLeftX, topLeftY, width, height) {
-    this.leftEdge = topLeftX;
-    this.rightEdge = width + topLeftX;
-    this.topEdge = topLeftY;
-    this.bottomEdge = height + topLeftY;
-  }
-
-  overlaps(rectangle) {
-    return this.leftEdge <= rectangle.leftEdge &&
-      this.rightEdge >= rectangle.rightEdge &&
-      this.bottomEdge >= rectangle.bottomEdge &&
-      this.topEdge <= rectangle.bottomEdge;
+  constructor() {
+    null;
   }
 }
 
 function rectanglesOverlap(rectangle1, rectangle2) {
   // Put your code here to make this fuction work
-  return rectangle1.overlaps(rectangle2) || rectangle2.overlaps(rectangle1);
+  return null;
 }
 
 exports.rectanglesOverlap = rectanglesOverlap;
