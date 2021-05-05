@@ -15,15 +15,15 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 - Language of the Week: Java
 - Driver: [milaguileras](https://github.com/milaguileras)
-- Navigator: Pending
-- Host: Pending
+- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
+- Host: [birenderjit](https://github.com/birenderjit)
 
 ### May 18, 2021
 
-- Language of the Week: Pending
-- Driver: Ian
-- Navigator: Pending
-- Host: Pending
+- Language of the Week: Go
+- Driver: [caninodev](https://github.com/caninodev)
+- Navigator: [drkennetz](https://github.com/drkennetz)
+- Host: [birenderjit](https://github.com/birenderjit)
 
 ### May 25, 2021
 
