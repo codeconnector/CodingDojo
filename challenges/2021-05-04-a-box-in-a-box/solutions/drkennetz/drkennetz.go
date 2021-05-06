@@ -1,4 +1,4 @@
-package main
+package solutions
 
 type coords [4]int
 type Rectangle struct {
