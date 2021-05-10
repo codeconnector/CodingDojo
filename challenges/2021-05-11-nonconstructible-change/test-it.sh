@@ -63,7 +63,7 @@ else
     echo -e "  - If you have not already created a yourgithubusername-wip branch,"
     echo -e "    use ${YLW}git switch -c yourgitubusername-wip${CLR} to move your changes to"
     echo -e "    that branch"
-    echo -e "  - From your WIP branch, use ${YLW}git add solutions/yourgithubusername.java${CLR}"
+    echo -e "  - From your WIP branch, use ${YLW}git add solutions/java/yourgithubusername/yourgithubusername.java${CLR}"
     echo -e "    to add your changes to the current commit"
     echo -e "  - Commit and push your changes: ${YLW}git commit${CLR}, then ${YLW}git push${CLR}."
     echo -e "  - Navigate to ${WHT}https://github.com/codeconnector/CodingDojo${CLR} and submit your"
