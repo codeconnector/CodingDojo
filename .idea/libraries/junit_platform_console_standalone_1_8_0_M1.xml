@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="junit-platform-console-standalone-1.8.0-M1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/challenges/2021-04-20-potential-palindrome/lib/junit-platform-console-standalone-1.8.0-M1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
