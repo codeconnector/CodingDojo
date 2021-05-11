@@ -1,4 +1,4 @@
-// # Non-Constructible Change
+package solutions.java.milaguileras;// # Non-Constructible Change
 // 
 // Given an array of sorted positive integers representing the values of coins in 
 // your possession, write a function that returns the minimum amount of change (the 
@@ -14,11 +14,12 @@
 // - Extra challenge: Complete this challenge in linear time and constant space.
 
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class NonConstructibleChange {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class milaguileras {
 
     static int minImpossibleChange(int[] array) {
         if (array.length == 0){
