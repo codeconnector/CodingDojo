@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="junit5-1.8.0-M1">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/challenges/2021-05-11-nonconstructible-change/lib/junit5-1.8.0-M1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
