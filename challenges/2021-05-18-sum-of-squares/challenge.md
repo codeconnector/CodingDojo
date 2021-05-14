@@ -1,6 +1,6 @@
 # Sum of Squares
 
-Given a positive integer `n`, find the smallest number of squared integers which sum to `n` (i.e. `n = x<sup>2</sup> + y<sup>2</sup>` should yield `2`).
+Given a positive integer `n`, find the smallest number of squared integers which sum to `n` (i.e. n = x<sup>2</sup> + y<sup>2</sup> should yield `2`).
 
 ## Business Rules/Errata
 
