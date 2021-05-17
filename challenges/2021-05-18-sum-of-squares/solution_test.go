@@ -12,6 +12,9 @@ func TestSumOfSquares(t *testing.T) {
 	}{
 		{13, 2},
 		{27, 3},
+		{144, 1},
+		{84, 4},
+		{85, 2},
 	}
 	for _, x := range tables {
 		soln := SumOfSquares(x.input)
