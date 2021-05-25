@@ -61,6 +61,8 @@ if (("$tests_failed" > 0)); then
 else
     echo -e "\n\u2b50\u2b50 ${GRN}You passed the tests!${CLR} \u2b50\u2b50\n"
     echo -e "To commit your solution, remember to:"
+    echo -e "  - If there's not one already, create a"
+    echo -e "    ${BLU}solutions/java/<githubusername>${CLR} folder."
     echo -e "  - Copy the *source* ('.java') file containing your solution to"
     echo -e "    ${BLU}solutions/java/<githubusername>/<githubusername>.java${CLR}."
     echo -e "  - If you have not already created a ${BLU}<githubusername>${CLR}-wip branch,"
