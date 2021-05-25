@@ -34,8 +34,22 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ### June 01, 2021
 
-- Language of the Week: JavaScript
-- Driver: [corianoharris](https://github.com/corianoharris)
+- Language of the Week: JavaScript/Java TBA
+- Driver: [CaninoDev](https://github.com/CaninoDev)
 - Navigator: Pending
+- Host: Pending
+
+### June 08, 2021
+
+- Language of the Week: Ruby
+- Driver: [MikeRogers0](https://github.com/MikeRogers0)
+- Navigator: [parhaml](https://github.com/parhaml)
+- Host: Pending
+
+### June 15, 2021
+
+- Language of the Week: JavaScript
+- Driver: [beccani](http://github.com/beccani)
+- Navigator: TBA
 - Host: Pending
 
