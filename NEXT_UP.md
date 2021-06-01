@@ -15,14 +15,21 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 - Language of the Week: JavaScript
 - Driver: [beccani](http://github.com/beccani)
-- Navigator: TBA
+- Navigator: Pending
 - Host: Pending
 
 ### June 22, 2021
 
 - Language of the Week: Kotlin
-- Driver: [hasancbngl](https://github.com/hasancbngl/hasancbngl)
-- Navigator: TBA
+- Driver: [hasancbngl](https://github.com/hasancbngl)
+- Navigator: Pending
+- Host: Pending
+
+### June 29, 2021
+
+- Language of the Week: Java
+- Driver: [onesirian](https://github.com/onesirian)
+- Navigator: Pending
 - Host: Pending
 
 ## Past Highlights
@@ -30,7 +37,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 ### May 04, 2021
 
 - Language of the Week: JavaScript
-- Driver: [hasancbngl](https://github.com/hasancbngl/hasancbngl)
+- Driver: [hasancbngl](https://github.com/hasancbngl)
 - Navigator: [ericwburden](https://github.com/ericwburden)
 - Host: [xanderyzwich](https://github.com/xanderyzwich)
 
