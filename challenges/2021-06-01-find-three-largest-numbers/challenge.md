@@ -21,7 +21,8 @@ findThreeLargestNumbers([1]) -> Null
 ## Tackling this Challenge
 
 1. The challenge will be live-coded in our weekly Tusday meetup in the Solution.java file.
-2. Run the tests to check your solution by navigating to this directory and running `./run-tests.sh`.3. The results of the live coding demo will be added to the GitHub repository as a mob solution. Please feel free to tackle this challenge in your own way/language and submit your solution to the repo using [this solutions guide in our wiki](https://github.com/codeconnector/CodingDojo/wiki#solutions).
+2. Run the tests to check your solution by navigating to this directory and running `./run-tests.sh`.
+3. The results of the live coding demo will be added to the GitHub repository as a mob solution. Please feel free to tackle this challenge in your own way/language and submit your solution to the repo using [this solutions guide in our wiki](https://github.com/codeconnector/CodingDojo/wiki#solutions).
 
 ## Requirements
 
