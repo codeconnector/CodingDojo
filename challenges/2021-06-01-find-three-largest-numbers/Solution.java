@@ -20,10 +20,44 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 public class Solution {
     static int[] findThreeLargestNumbers(int[] array) {
         // Insert your solution here
-        return new int[]{0, 0, 0};
+        // the quickest answer is
+        // Arrays.sort(array);
+        // int[] threeAmigos = int[]{array[arrayLength - 1], array[arrayLength -2], ..}
+        int lengthArray = array.length;
+        if (lengthArray < 3) {
+            return null;
+        }
+
+        int min,mid,max;
+        min = array[0];
+        mid = array[1];
+        max = array[2];
+        for (int i = 0; i < lengthArray; i++) {
+            if (array[i] > mid) {
+                if (array[i] >= max) {
+                    min = mid;
+                    mid = max;
+                    max = array[i];
+                } else {
+                    min = mid;
+                    mid = array[i];
+                }
+            } else {
+                if (array[i] <= mid) {
+                    if (array[i] > min) {
+                        mid = array[i];
+                    }
+                }
+            }
+        }
+        int[] threeAmigos = new int[]{min, mid, max};
+
+        return threeAmigos;
     }
 
     // Test case one
