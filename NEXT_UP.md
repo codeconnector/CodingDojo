@@ -5,18 +5,18 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 ## Upcoming Challenges
 
 ### June 08, 2021
+- Language of the Week: JavaScript
+- Driver: [beccani](http://github.com/beccani)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [parhaml](https://github.com/parhaml)
 
+
+### June 15, 2021
 - Language of the Week: Ruby
 - Driver: [MikeRogers0](https://github.com/MikeRogers0)
 - Navigator: [parhaml](https://github.com/parhaml)
 - Host: Pending
 
-### June 15, 2021
-
-- Language of the Week: JavaScript
-- Driver: [beccani](http://github.com/beccani)
-- Navigator: Pending
-- Host: Pending
 
 ### June 22, 2021
 
