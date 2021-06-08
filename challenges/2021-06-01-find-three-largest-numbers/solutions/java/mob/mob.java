@@ -1,11 +1,11 @@
 // # Find Three Largest Numbers
-// 
-// Write a function that takes in an array of at least three integers and, without 
+//
+// Write a function that takes in an array of at least three integers and, without
 // sorting the input array, returns a sorted array of the three largest integers in
-// the input array. The function should return duplicate integers if necessary. 
-// 
+// the input array. The function should return duplicate integers if necessary.
+//
 // ## Business Rules/Errata
-// 
+//
 // - The input array should have at least three integers. If it does not, you should
 //   return a null value.
 // - You may not sort the input array
@@ -20,10 +20,39 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 public class Solution {
     static int[] findThreeLargestNumbers(int[] array) {
         // Insert your solution here
-        return new int[]{0, 0, 0};
+        // the quickest answer is
+        // Arrays.sort(array);
+        // int[] threeAmigos = int[]{array[arrayLength - 1], array[arrayLength -2], ..}
+				// Solution by Ian G Canino ( github.com/CaninoDev )
+        int lengthArray = array.length;
+        if (lengthArray < 3) {
+            return null;
+        }
+
+        int min,mid,max;
+        min = array[0];
+        mid = array[1];
+        max = array[2];
+        for (int i = 0; i < lengthArray; i++) {
+            if (array[i] >= max) {
+                min = mid;
+                mid = max;
+                max = array[i];
+            } else if (array[i] > mid) {
+                min = mid;
+                mid = array[i];
+            } else if (array[i] > min) {
+                mid = array[i];
+            }
+        }
+        int[] threeAmigos = new int[]{min, mid, max};
+
+        return threeAmigos;
     }
 
     // Test case one
