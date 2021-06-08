@@ -23,33 +23,8 @@ SumOfSquares(27); // 3
     - 5^2 + 1^2 + 1^2 = 25 + 1 + 1 = 27
  */
 
-import (
-	"math"
-)
 
-func SumOfSquares(i int, j int) int {
-	
-	// TODO Handle cases where i < 0
-	if i < 4 {
-		return i
-	}
-
-	upperLimit := i - int(math.Floor(math.Sqrt(float64(i))))
-	var iter = j 
-	var result int
-	
-	for iter <= upperLimit {
-		newVal := int(math.Sqrt(float64(i))) - iter
-
-		if (iter >= int(math.Sqrt(float64(i)))) {
-			break
-		}
-		if newVal < 0 {
-			break
-		}
-
-		result += SumOfSquares(newVal, iter)
-	}
-	return result
-	
+func SumOfSquares(i int) int {
+	// Your code goes here
+	return 1
 }

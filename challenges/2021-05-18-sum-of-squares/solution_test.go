@@ -17,7 +17,7 @@ func TestSumOfSquares(t *testing.T) {
 		{85, 2},
 	}
 	for _, x := range tables {
-		soln := SumOfSquares(x.input, 1)
+		soln := SumOfSquares(x.input)
 		if soln != x.result {
 			t.Error("FAIL: SumOfSquares of: ", x.input, "was incorrect, got: ", soln, "expected: ", x.result)
 		} else {
