@@ -19,37 +19,17 @@
 //   return `null` (or some other indicator that the iterator has been exhausted).
 
 class NestedIterator {
-    constructor(nestedArray) {
+    constructor(array) {
         // `array` should be a two-dimensional array
-        this.nestedArray = nestedArray;
-        this.row = 0;
-        this.column = 0;
+        this.array = array;
     }
 
-
     next() {
-        // console.log(this.row);
-        // console.log(this.column);
-        if (this.nestedArray[this.row][this.column] === undefined) {
-            this.row++;
-            this.column=0; 
-        }
-        var result = this.nestedArray[this.row][this.column++];
-        if (result === undefined){
-            return null
-        }
-        return result;
+        // Insert solution code here
     }
 
     has_next() {
-        var cacheRow = this.row;
-        var cacheColumn = this.column;
-        if (this.next()){
-            this.row = cacheRow;
-            this.column = cacheColumn;
-            return true;
-        }
-        return false;
+        // Insert solution code here
     }
 }
 
