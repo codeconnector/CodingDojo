@@ -4,19 +4,17 @@
 # In order to be appended, the neighbor must (a) exists and (b) hold `0`
 def append_neighbors(position)
   # Append neighbor below if available
-  if can_move_down?(position)
-    new_pos = [position.first + 1, position.last]
-    if @array[new_pos.first][new_pos.last] == 0
-      @positions_to_check << [position.first + 1, position.last]
-    end
+  neighbor_below = [position.first + 1, position.last]
+  neighbor_available = @array[neighbor_below.first][neighbor_below.last] == 0
+  if can_move_down?(position) && neighbor_available
+    @positions_to_check << neighbor_below
   end
 
   # Append neighbor to the right if available 
-  if can_move_right?(position)
-    new_pos = [position.first, position.last + 1]
-    if @array[new_pos.first][new_pos.last] == 0
-      @positions_to_check << [position.first, position.last + 1]
-    end
+  neighbor_right = [position.first, position.last + 1]
+  neighbor_available = @array[neighbor_right.first][neighbor_right.last] == 0
+  if can_move_right?(position) && neighbor_available 
+    @positions_to_check << [position.first, position.last + 1]
   end
 end
 
