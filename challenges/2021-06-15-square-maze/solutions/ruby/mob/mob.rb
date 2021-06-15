@@ -14,7 +14,7 @@ def append_neighbors(position)
   neighbor_right = [position.first, position.last + 1]
   neighbor_available = @array[neighbor_right.first][neighbor_right.last] == 0
   if can_move_right?(position) && neighbor_available 
-    @positions_to_check << [position.first, position.last + 1]
+    @positions_to_check << neighbor_right
   end
 end
 
