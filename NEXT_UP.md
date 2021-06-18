@@ -4,31 +4,45 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### June 08, 2021
-- Language of the Week: JavaScript
-- Driver: [beccani](http://github.com/beccani)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [parhaml](https://github.com/parhaml)
-
-
-### June 15, 2021
-- Language of the Week: Ruby
-- Driver: [MikeRogers0](https://github.com/MikeRogers0)
-- Navigator: [parhaml](https://github.com/parhaml)
-- Host: Pending
-
-
 ### June 22, 2021
 
 - Language of the Week: Kotlin
 - Driver: [hasancbngl](https://github.com/hasancbngl)
-- Navigator: Pending
-- Host: Pending
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [birenderjit](https://github.com/birenderjit)
 
 ### June 29, 2021
 
 - Language of the Week: Java
 - Driver: [onesirian](https://github.com/onesirian)
+- Navigator: Pending
+- Host: Pending
+
+### July 06, 2021
+
+- Language of the Week: Pending
+- Driver: Pending
+- Navigator: Pending
+- Host: Pending
+
+### July 13, 2021
+
+- Language of the Week: Pending
+- Driver: Pending
+- Navigator: Pending
+- Host: Pending
+
+### July 20, 2021
+
+- Language of the Week: Pending
+- Driver: Pending
+- Navigator: Pending
+- Host: Pending
+
+### July 27, 2021
+
+- Language of the Week: Pending
+- Driver: Pending
 - Navigator: Pending
 - Host: Pending
 
@@ -67,4 +81,17 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: [CaninoDev](https://github.com/CaninoDev)
 - Navigator: [birenderjit](https://githup.com/birenderjit)
 - Host: [ericwburden](https://github.com/ericwburden)
+
+### June 08, 2021
+- Language of the Week: JavaScript
+- Driver: [beccani](http://github.com/beccani)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [parhaml](https://github.com/parhaml)
+
+
+### June 15, 2021
+- Language of the Week: Ruby
+- Driver: [ericwburden](https://github.com/ericwburden)
+- Navigator: [parhaml](https://github.com/parhaml)
+
 
