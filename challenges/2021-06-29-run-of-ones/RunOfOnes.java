@@ -39,7 +39,7 @@ public class RunOfOnes {
     @DisplayName("For the number: 1979")
     public void testCaseTwo() {
         int result = longestBinaryRun(1979);
-        assertEquals(3, result);
+        assertEquals(4, result);
     }
 
     // Test case three
@@ -47,6 +47,13 @@ public class RunOfOnes {
     @DisplayName("For the number: 2731")
     public void testCaseThree() {
         int result = longestBinaryRun(2731);
-        assertEquals(3, result);
+        assertEquals(2, result);
+    }
+    // Test case four
+    @Test
+    @DisplayName("For the number: 2185")
+    public void testCaseFour() {
+        int result = longestBinaryRun(2185);
+        assertEquals(1, result);
     }
 }
