@@ -23,9 +23,9 @@ longest_binary_run(2185);  // 1
 1. Make sure you've got the required software on your machine: A JDK 11+
 1. If you haven't already, fork the CodingDojo repository ([INSTRUCTIONS](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)).
 1. Checkout a new branch using `git checkout -b yourgithubusername-wip`.
-1. Add your code to the 'mob.java' file to make the `countWordsBetween` function work as expected.
-1. Confirm your solution by running tests. Execute the `test-it.sh` script (use `./test-it.sh` from the challenge root directory.
-1. If you've passed all the tests, the `test-it.sh` script with help you commit it. Otherwise, try again to pass all tests.
+1. Add your code to the 'RunOfOnes.java' file to make the `longestBinaryRun` function work as expected.
+1. Confirm your solution by running tests. Execute the `run-tests.sh` script (use `./run-tests.sh` from the challenge root directory.
+1. If you've passed all the tests, the `run-tests.sh` script with help you commit it. Otherwise, try again to pass all tests.
 1. Navigate to [GitHub](https://github.com/codeconnector/CodingDojo), and submit your pull request.
 1. One of the CodingDojo maintainers will help you get your PR merged.
 
