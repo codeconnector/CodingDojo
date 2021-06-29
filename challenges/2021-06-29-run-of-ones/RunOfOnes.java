@@ -1,20 +1,25 @@
-// # Find Three Largest Numbers
+// # Runs of Ones
 // 
-// Write a function that takes in an array of at least three integers and, without 
-// sorting the input array, returns a sorted array of the three largest integers in
-// the input array. The function should return duplicate integers if necessary. 
+// Given a positive integer `n`, determine the length of the longest run of `1`'s 
+// in the binary representation of that integer.
 // 
 // ## Business Rules/Errata
 // 
-// - The input array should have at least three integers. If it does not, you should
-//   return a null value.
-// - You may not sort the input array
-// - The function should handle duplicate integers; for example `[10, 5, 9, 10, 12]`
-//   should return `[10, 10, 12]`
-// - Constant space -> you will return a new array of 3 integers, and this will be the
-//   only new data structure you create.
-// - Linear time -> you should solve this problem by only passing through the array a
-//   single time.
+// - A run of `1`'s is any series of one or more `1`'s in a row, with no `0`'s in 
+//   between. The first four characters in `11110101` are a run of `1`'s.
+// - There's no requirement related to what data type(s) should be used to store 
+//   the binary representation of `n`.
+// - Target time complexity: O(n) (linear)
+// - Target space complexity: O(1) (constant)
+// 
+// ## Examples
+// 
+// ```
+// longest_binary_run(156);   // 3
+// longest_binary_run(1979);  // 4
+// longest_binary_run(2731);  // 2
+// longest_binary_run(2185);  // 1
+// ```
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
