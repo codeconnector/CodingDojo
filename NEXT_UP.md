@@ -4,45 +4,24 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### June 22, 2021
+### July 13, 2021
 
 - Language of the Week: Kotlin
 - Driver: [hasancbngl](https://github.com/hasancbngl)
 - Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [birenderjit](https://github.com/birenderjit)
-
-### June 29, 2021
-
-- Language of the Week: Java
-- Driver: [onesirian](https://github.com/onesirian)
-- Navigator: Pending
-- Host: Pending
-
-### July 06, 2021
-
-- Language of the Week: Pending
-- Driver: Pending
-- Navigator: Pending
-- Host: Pending
-
-### July 13, 2021
-
-- Language of the Week: Pending
-- Driver: Pending
-- Navigator: Pending
 - Host: Pending
 
 ### July 20, 2021
 
-- Language of the Week: Pending
-- Driver: Pending
+- Language of the Week: JavaScript
+- Driver: [ZacWilson87](https://github.com/ZacWilson87)
 - Navigator: Pending
 - Host: Pending
 
 ### July 27, 2021
 
-- Language of the Week: Pending
-- Driver: Pending
+- Language of the Week: JavaScript
+- Driver: [mrumiker](https://github.com/mrumiker)
 - Navigator: Pending
 - Host: Pending
 
@@ -88,10 +67,21 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Navigator: [ericwburden](https://github.com/ericwburden)
 - Host: [parhaml](https://github.com/parhaml)
 
-
 ### June 15, 2021
 - Language of the Week: Ruby
 - Driver: [ericwburden](https://github.com/ericwburden)
 - Navigator: [parhaml](https://github.com/parhaml)
 
+### June 22, 2021
 
+- Language of the Week: Python & Rust
+- Presenter 1: [drkennetz](https://github.com/drkennetz)
+- Presenter 2: [ericwburden](https://github.com/ericwburden)
+- Host: [parhaml](https://github.com/parhaml)
+
+### June 29, 2021
+
+- Language of the Week: Java
+- Driver: [onesirian](https://github.com/onesirian)
+- Navigator: [parhaml](https://github.com/parhaml)
+- Host: [ericwburden](https://github.com/ericwburden)
