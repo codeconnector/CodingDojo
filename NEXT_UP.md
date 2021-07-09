@@ -9,7 +9,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Language of the Week: Kotlin
 - Driver: [hasancbngl](https://github.com/hasancbngl)
 - Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: Pending
+- Host: [birenderjit](https://github.com/birenderjit)
 
 ### July 20, 2021
 
