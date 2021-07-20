@@ -18,7 +18,5 @@ During the meetup we will practice mob/group programming where we encourage a ne
 
 ### Submit Solutions
 
-Solutions can be in whatever language you would like. Just because a challenge has a submitted solution does not mean that you can't contribute. We enjoy seeing how different people implement different solutions.
-
-In order to submit a solution you will need to fork this repository, commit your changes into your fork, and then open a pull request (PR) to the main repository.  At this point we will get a code reviewer to walk through the solution with you and make sure that everything is in order before merging to the main project. 
+Just because the meetup is over doesn't mean you can't still participate in the Coding Dojo. Please try solving any of the puzzles you find here as you are able. You can submit your solutions to the repository through a PR and get some Git practice in to boot! Check out our [wiki](https://github.com/codeconnector/CodingDojo/wiki) for submission guidelines.
 

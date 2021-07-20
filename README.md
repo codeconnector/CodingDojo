@@ -1,4 +1,5 @@
-# Coding Dojo
+
+# ![Coding Dojo](codingdojo-logo.png)
 
 ## About
 
