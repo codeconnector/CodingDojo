@@ -10,9 +10,19 @@ Eg: `Your Name: [githubname](githuburl)`
 
 ### Intrepid Users
 
++ Azhya Knox: [aaknox](https://github.com/aaknox)
++ Becca Johnson: [beccani](http://github.com/beccani)
 + Birenderjit Madan: [birenderjit](https://github.com/birenderjit)
++ Camila Aguileras: [milaguileras](https://github.com/milaguileras)
++ Charles Umiker: [mrumiker](https://github.com/mrumiker)
 + Corey McCarty: [xanderyzwich](https://github.com/xanderyzwich)
 + Dennis Kennetz: [drkennetz](https://github.com/drkennetz)
 + Eric Burden: [ericwburden](https://github.com/ericwburden)
++ Hasan Cobanoglu: [hasancbngl](https://github.com/hasancbngl)
++ Ian Canino: [caninodev](https://github.com/caninodev)
++ Jamie Minyard: [jamietheminyard](https://github.com/jamietheminyard)
++ Jennifer Toops: [jennifertoops](https://github.com/jennifertoops)
 + Laura Pilkington: [laurelin](https://github.com/Laurelin)
++ Lawrence Lockhart: [onesirian](https://github.com/onesirian)
 + Lee Parham: [parhaml](https://github.com/parhaml)
++ Zac Wilson: [ZacWilson87](https://github.com/ZacWilson87)
