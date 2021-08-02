@@ -2,10 +2,6 @@
 
 # Note: This script will execute as if in the path from which it is called
 
-found_tests_ptrn='Total:[[:blank:]]+[[:digit:]]'
-passed_tests_ptrn='Passed:[[:blank:]]+[[:digit:]]'
-failed_tests_ptrn='Failed:[[:blank:]]+[[:digit:]]'
-
 # ------------------------------------------------------------------------------
 # Main Script ------------------------------------------------------------------
 # ------------------------------------------------------------------------------
