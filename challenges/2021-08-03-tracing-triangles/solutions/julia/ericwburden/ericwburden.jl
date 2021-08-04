@@ -7,7 +7,7 @@ function longest_path(tree, row=1, col=1)
 
     left = longest_path(tree, row + 1, col)
     right = longest_path(tree, row + 1, col + 1)
-    return (left > right ? left : right) + tree[row][col]
+    return max(left, right) + tree[row][col]
 end
 
 end # module tracingtriangle
