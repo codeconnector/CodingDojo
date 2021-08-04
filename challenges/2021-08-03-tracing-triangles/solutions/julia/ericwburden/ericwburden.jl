@@ -1,4 +1,4 @@
-module tracingtriangle
+module tracingtriangle # --------------------------------------------------------------
 
 export longest_path
 
@@ -12,7 +12,8 @@ end
 
 end # module tracingtriangle
 
-module test
+
+module test # -------------------------------------------------------------------------
 
 using Test
 using ..tracingtriangle
