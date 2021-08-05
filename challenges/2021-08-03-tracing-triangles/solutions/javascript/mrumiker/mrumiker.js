@@ -1,24 +1,18 @@
 const traceTri = arr => {
   if (!arr.length) return 0;
-  if (arr[0].length !== 1) return 'Not a 🔺';
-  for (let i = 0; i < arr.length - 1; i++) {
-    if (arr[i].length + 1 !== arr[i + 1].length) return 'Not a 🔺'
-  } //testing for non-triangles
-
-  let newArr = [];
+  if (arr.some((innerArr, i) => innerArr.length !== i + 1)) return 'Not a 🔺';
 
   for (let i = 0; i < arr.length; i++) {
-    newArr[i] = [];
     for (let j = 0; j < arr[i].length; j++) {
-      newArr[i].push(maxPath(arr[i][j], newArr, i, j));
-    } 
-  } //make a new array of arrays that keeps track of the sum of numbers in the heaviest path to each point in the original triangle, using the maxPath function below
-  
-  return Math.max(...newArr[newArr.length - 1]);//return largest number (aka the heaviest) path in the bottom row of the triangle
+      arr[i][j] = maxPath(arr, i, j);
+    }
+  } //edit the triangle array in place, replacing each value with the heaviest path to that point in the original triangle, using the maxPath function below
+
+  return Math.max(...arr[arr.length - 1]) //return the heaviest path in the bottom row of the triangle
 };
 
-function maxPath(value, outerArr, outerIndex, innerIndex) {
-  return Math.max(outerArr[outerIndex - 1] && outerArr[outerIndex - 1][innerIndex] || 0, outerArr[outerIndex - 1] && outerArr[outerIndex - 1][innerIndex - 1] || 0) + value;
+function maxPath(arr, i, j) {
+  return Math.max(arr[i - 1] && arr[i - 1][j - 1] || 0, arr[i - 1] && arr[i - 1][j] || 0) + arr[i][j];
 } //this function keeps track of the heaviest path to any point in the triangle, starting from the top of the triangle and working its way down
 
 
@@ -31,4 +25,3 @@ console.log(traceTri([[1], [1, 5], [98, 6, 7]])); //100
 console.log(traceTri([])); //0
 console.log(traceTri([1, 2], [3, 4, 5])); //'Not a 🔺'
 console.log(traceTri([1], [3, 4, 5])); //'Not a 🔺'
-
