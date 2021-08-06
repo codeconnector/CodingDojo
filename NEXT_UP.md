@@ -4,13 +4,6 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### August 03, 2021
-
-- Language of the Week: C#
-- Driver: [aaknox](https://github.com/aaknox)
-- Navigator: Pending
-- Host: Pending
-
 ### August 10, 2021
 
 - Language of the Week: JavaScript
@@ -112,5 +105,12 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Language of the Week: JavaScript
 - Driver: [mrumiker](https://github.com/mrumiker)
 - Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [xanderyzwich](https://github.com/xanderyzwich)
+
+### August 03, 2021
+
+- Language of the Week: C#
+- Driver: [aaknox](https://github.com/aaknox)
+- Navigator: [drkennetz](https://github.com/drkennetz)
 - Host: [xanderyzwich](https://github.com/xanderyzwich)
 
