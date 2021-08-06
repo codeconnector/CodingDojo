@@ -1,3 +1,4 @@
+using System;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -12,35 +13,43 @@ public class TracingTriangles
 
     public int LongestPath(int[][] triangle)
     {
-        // Insert your solution code here
-        //1. first we have a way to establish what is a child
-        int []max = new int [triangle.Length];
-        output.WriteLine($"Length of Triangle is {triangle.Length}.");
-        output.WriteLine($"Current Length of max: {max.Length}.");
+        // Let's plan to collect the length of the longest path to each node in an array
+        // shaped like `triangle`, starting with a copy of `triangle`
+        int[][] pathWeights = (int[][]) triangle.Clone();
+        output.WriteLine($"pathWeights currently contains: {pathWeights}.");
 
-        //2. first element has to have length of 1
-        for (var i = 0; i < triangle.Length; i++)
+        // Start by iterating over the rows, starting with the second row. We can
+        // safely skip the longest path to the first element is the value of the first
+        // element.
+        for (var row = 1; row < pathWeights.Length; row++)
         {
-            output.WriteLine($"Current position of triangle[i]: {triangle[i].ToString()}.");
-            //3. index + 1 determines the length of the next row at the index
-            for (int j = 0; j < triangle[i+1].Length - 1; j++)
+            output.WriteLine($"Currently checking row: {row}.");
+            int rowLen = pathWeights[row].Length;
+            
+            // For each column, check the parents above to the right and left. The first
+            // and last elements in each row will only have one parent, so we need to 
+            // account for that to avoid 'Index out of Bounds' errors.
+            for (int col = 0; col < rowLen; col++)
             {
-                output.WriteLine($"Current position of triangle[i][j]: {triangle[i][j]}.");
-                if(triangle[i][j] < triangle[i][j+1]){
-                    max[j] += triangle[i][j+1];
-                }else
-                {
-                    max[j] += triangle[i][j];
-                }
+                output.WriteLine($"Currently checking column: {col}.");
+                int left = col > 0 ? pathWeights[row-1][col-1] : -1;
+                int right = col < rowLen - 1 ? pathWeights[row-1][col] : -1;
+                
+                // Add the larger parent to the current index in `pathWeights`
+                pathWeights[row][col] += left > right ? left : right;
             }
         }
-        //4. returns the weight of the maximum weight path
+
+        output.WriteLine($"pathWeights after processing: {pathWeights}.");
+        
+        // Now, the bottom row of `pathWeights` contains the maximum value, just need
+        // to identify which one. Note, if `triangle` only had one row, we would have
+        // skipped the loops above entirely, and the 'last' row would be the only row.
         int maxWeight = 0;
-        for (int i = 0; i < max.Length; i++)
+        int[] lastRow = pathWeights[pathWeights.Length - 1];
+        for (int i = 0; i < lastRow.Length; i++)
         {
-            if(max[i] > maxWeight){
-                maxWeight = max[i];
-            }
+            if(lastRow[i] > maxWeight){ maxWeight = lastRow[i]; }
         }
         output.WriteLine($"Calculated maxWeight: {maxWeight}.");
         return maxWeight;
