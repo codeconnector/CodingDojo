@@ -19,8 +19,9 @@ public class TracingTriangles
         output.WriteLine($"pathWeights currently contains: {pathWeights}.");
 
         // Start by iterating over the rows, starting with the second row. We can
-        // safely skip the longest path to the first element is the value of the first
-        // element.
+        // safely skip the first row, since it will have no 'parent' elements to 
+        // account for, and the longest path to the one element in the first row
+        // will be its own value
         for (var row = 1; row < pathWeights.Length; row++)
         {
             output.WriteLine($"Currently checking row: {row}.");
