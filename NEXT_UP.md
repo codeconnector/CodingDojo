@@ -4,24 +4,17 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### July 13, 2021
-
-- Language of the Week: Kotlin
-- Driver: [hasancbngl](https://github.com/hasancbngl)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [birenderjit](https://github.com/birenderjit)
-
-### July 20, 2021
-
-- Language of the Week: JavaScript
-- Driver: [ZacWilson87](https://github.com/ZacWilson87)
-- Navigator: Pending
-- Host: Pending
-
 ### July 27, 2021
 
 - Language of the Week: JavaScript
 - Driver: [mrumiker](https://github.com/mrumiker)
+- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
+- Host: Pending
+
+### August 03, 2021
+
+- Language of the Week: JavaScript
+- Driver: Azhya 
 - Navigator: Pending
 - Host: Pending
 
@@ -85,3 +78,17 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: [onesirian](https://github.com/onesirian)
 - Navigator: [parhaml](https://github.com/parhaml)
 - Host: [ericwburden](https://github.com/ericwburden)
+
+### July 13, 2021
+
+- Language of the Week: Kotlin
+- Driver: [hasancbngl](https://github.com/hasancbngl)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [birenderjit](https://github.com/birenderjit)
+
+### July 20, 2021
+
+- Language of the Week: JavaScript
+- Driver: [ZacWilson87](https://github.com/ZacWilson87)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [drkennetz](https://github.com/drkennetz)
