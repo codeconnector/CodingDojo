@@ -4,13 +4,6 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### August 10, 2021
-
-- Language of the Week: JavaScript
-- Driver: [jennifertoops](https://github.com/jennifertoops)
-- Navigator: Pending
-- Host: Pending
-
 ### August 17, 2021
 
 - Language of the Week: Java
@@ -23,6 +16,20 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Language of the Week: Rust
 - Driver: [caninodev](https://github.com/caninodev)
 - Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: Pending
+
+### August 31, 2021
+
+- Language of the Week: JavaScript
+- Driver: [maelingmurphy](https://github.com/maelingmurphy)
+- Navigator: Pending
+- Host: Pending
+
+### September 07, 2021
+
+- Language of the Week: JavaScript
+- Driver: Yolanda Haynes
+- Navigator: Pending
 - Host: Pending
 
 ## Past Highlights
@@ -112,5 +119,12 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Language of the Week: C#
 - Driver: [aaknox](https://github.com/aaknox)
 - Navigator: [drkennetz](https://github.com/drkennetz)
+- Host: [xanderyzwich](https://github.com/xanderyzwich)
+
+### August 10, 2021
+
+- Language of the Week: JavaScript
+- Driver: [jennifertoops](https://github.com/jennifertoops)
+- Navigator: [ericwburden](https://github.com/ericwburden)
 - Host: [xanderyzwich](https://github.com/xanderyzwich)
 
