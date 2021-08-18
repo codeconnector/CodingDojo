@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "resources/java/junit5-1.8.0-M1.jar"
+    ]
+}
