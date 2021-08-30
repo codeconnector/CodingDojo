@@ -26,6 +26,13 @@ test('Remove zero sequence from beginning and end of linked list', () => {
     expect(removeZeroSequences(input)).toStrictEqual(expected);
 })
 
+test('Remove zero from linked list', () => {
+    // 1 -> 0 -> 1 yields 1 -> 1
+    let input = toLinkedList([1, 0, 1]);
+    let expected = toLinkedList([1, 1])
+    expect(removeZeroSequences(input)).toStrictEqual(expected);
+})
+
 test('Remove nested zero sequences from a linked list', () => {
     // 1 -> 2 -> 3 -> 4 -> -4 -> -3 -> 5 yields 1 -> 2 -> 5
     let input = toLinkedList([1, 2, 3, 4, -4, -3, 5]);
