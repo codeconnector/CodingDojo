@@ -10,20 +10,23 @@ class TestZeroPoint(unittest.TestCase):
         self.expected = [[1, 3], [5], [1, 1], [1, 2, 5], [2, 3], [-2, 3], [None], [5]]
 
     def test_zeropoint(self):
-        total_spaces = 30
+        total_spaces = 100
+        s = len("Input:")
         a = len("Actual:")
         e = len("Expected:")
-        pad = total_spaces - a - e
-        print("Actual:", " "*pad, "Expected:")
+        pad = (total_spaces - a - e - s)//2
+        print("Input:", " "*pad, "Actual:", " "*pad, "Expected:")
         for test, result in zip(self.tests, self.expected):
+            x = LinkedList.construct_dll_from_list(test)
             dll, exp = LinkedList.construct_dll_from_list(test), LinkedList.construct_dll_from_list(result)
             zerod = zeropoint.remove_zero_sequences_inplace(dll)
             act = zerod.print_list()
             expected = exp.print_list()
+            d = len(x.print_list())
             a = len(act)
             e = len(expected)
-            pad = total_spaces - a - e
-            print(act, " "*pad, expected)
+            pad = (total_spaces - a - e - d)//2
+            print(x.print_list(), " "*pad, act, " "*pad, expected)
             
                   
 
