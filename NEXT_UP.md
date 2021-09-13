@@ -4,19 +4,12 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### August 31, 2021
+### September 14, 2021
 
 - Language of the Week: JavaScript
-- Driver: [maelingmurphy](https://github.com/maelingmurphy)
+- Driver: [YolandaHaynes](https://github.com/YolandaHaynes)
 - Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: Pending
-
-### September 07, 2021
-
-- Language of the Week: JavaScript
-- Driver: Yolanda Haynes
-- Navigator: Pending
-- Host: Pending
+- Host: [drkennetz](https://github.com/drkennetz)
 
 ## Past Highlights
 
@@ -127,3 +120,12 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: [caninodev](https://github.com/caninodev)
 - Navigator: [birenderjit](https://github.com/birenderjit)
 - Host: [ericwburden](https://github.com/ericwburden)
+
+### August 31, 2021
+
+- Language of the Week: JavaScript
+- Driver: [maelingmurphy](https://github.com/maelingmurphy)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [drkennetz](https://github.com/drkennetz)
+
+
