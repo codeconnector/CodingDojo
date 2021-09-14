@@ -25,4 +25,5 @@ Eg: `Your Name: [githubname](githuburl)`
 + Laura Pilkington: [laurelin](https://github.com/Laurelin)
 + Lawrence Lockhart: [onesirian](https://github.com/onesirian)
 + Lee Parham: [parhaml](https://github.com/parhaml)
++ Yolanda Haynes: [YolandaHaynes](https://github.com/YolandaHaynes)
 + Zac Wilson: [ZacWilson87](https://github.com/ZacWilson87)
