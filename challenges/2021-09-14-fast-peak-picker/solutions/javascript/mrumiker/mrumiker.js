@@ -36,10 +36,6 @@ function pickPeak(arr) {
       leftEdge = mid + 1;
     } else return arr[mid]; //if the current middle number is not smaller than its neighbors, you found the peak!   
   } //if you haven't found the peak yet, try again with your new, smaller window!
-<<<<<<< Updated upstream
-} //Note: this assumes that there are not any "plateaus" i.e. sequences of repeated numbers
-=======
 } //Note: this solution assumes that there are not any "plateaus" i.e. sequences of repeated numbers
->>>>>>> Stashed changes
 
 module.exports = { pickPeak };
