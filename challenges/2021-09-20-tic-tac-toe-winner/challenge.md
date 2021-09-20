@@ -90,3 +90,18 @@ moves[i].length == 2
 There are no repeated elements on moves.
 moves follow the rules of tic tac toe.
 ```
+
+### Prerequisites
+
+Ruby > 2.0
+
+[bundler](https://bundler.io/)
+
+
+Rrom the `solutions/ruby` folder with
+```
+bundle install
+
+# run the tests with
+ruby -I lib:test tic_tac_test.rb --verbose
+```
