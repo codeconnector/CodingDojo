@@ -98,7 +98,7 @@ Ruby > 2.0
 [bundler](https://bundler.io/)
 
 
-Rrom the `solutions/ruby` folder with
+From the `solutions/ruby` folder with
 ```
 bundle install
 
