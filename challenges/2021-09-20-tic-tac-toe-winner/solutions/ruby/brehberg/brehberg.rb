@@ -22,10 +22,11 @@ def who_wins(board)
 
   # check for winning rows
   POSSIBLE_ROWS.each do |row|
-    if (board_state[row[0]] == board_state[row[1]] and
-        board_state[row[0]] == board_state[row[2]])          
-          if board_state[row[0]] != nil
-            return board_state[row[0]]
+    i, j, k = row
+    if (board_state[i] == board_state[j] and
+        board_state[i] == board_state[k])          
+          if board_state[i] != nil
+            return board_state[i]
           end
     end
   end
