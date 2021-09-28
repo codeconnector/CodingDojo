@@ -12,7 +12,18 @@ Link to the specific challenge folder here.
 
 # Language
 
-Name of the language being requested.
+Name of the language being requested. Choose from the list below:
+
+JavaScript/TypeScript
+Python
+Java
+Ruby
+Bash/Shell
+C#
+Go
+Rust
+Dart
+Kotlin
 
 # Approach
 
