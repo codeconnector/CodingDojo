@@ -1,3 +1,4 @@
+/* eslint-disable */
 //# Minimum Impossible Sum
 //
 //Given a sorted array of integers, find the smallest positive integer that is not the sum of a subset of the array.
@@ -22,7 +23,12 @@
 
 function minImpossibleSum(array) {
     // Insert your solution code here
-
+    let res = 1;
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] > res) return res;
+        res += array[i];
+    }
+    return res;
 }
 
 module.exports = { minImpossibleSum };
