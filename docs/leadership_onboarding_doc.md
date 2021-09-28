@@ -41,9 +41,10 @@ The issues is where we store up upcoming challenges, as a leader is its partly y
 
 ---
 
-### V. Dojo Prep
+### V. Dojo Prep -TBD
 
 
 ---
 
-### VI. Additional Help  
+### VI. Additional Help -TBD
+
