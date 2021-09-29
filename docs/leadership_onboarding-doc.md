@@ -12,8 +12,6 @@
 
 ##### V. Dojo Prep
 
-##### VI. Additional Help
-
 ---
 
 ### I. Introduction
@@ -60,7 +58,3 @@ Once a challenge for the week has been selected you will need to do a few things
 To build out this challenge dir the best approach is likely to reference any past/recent challenges done in the language you will use and try to match the set up. Just make sure you take out anything you don't need. Next you will want to actually solve the challenge so you and others in the Dojo leadership will have a reference implementaion. Feel free to post your implementaion in the dojo maintainers channel. 
 
 Finally once this is set up you should create a PR to merge your branch and new challenge dir into the main repo for the Dojo, this way the drive can just pull your code and get up and running as fast a possible. One last thing it is not a bad idea to check with the drive the day before and morning of the Dojo just to make sure they can still drive. 
-  
----
-
-### VI. Additional Help -TBD
