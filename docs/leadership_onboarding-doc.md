@@ -49,8 +49,17 @@ The issues is where we store up upcoming challenges, as a leader is its partly y
 
 ---
 
-### V. Dojo Prep -TBD
-
+### V. Dojo Prep 
+Once a challenge for the week has been selected you will need to do a few things to prep for the Dojo. On your local fork create a new branch for the challenge of the week and build up the challenge dir similar to past challenge dirs. You will essetinally need to create a blank slate for the drive to work with. This blank slate will depend on the language being used but you will likely need the following...
+1. .gitignore
+2. solutions dir
+3. challenge.md
+4. run_tests
+5. tests for the challenge
+To build out this challenge dir the best approach is likely to reference any past/recent challenges done in the language you will use and try to match the set up. Just make sure you take out anything you don't need. Next you will want to actually solve the challenge so you and others in the Dojo leadership will have a reference implementaion. Feel free to post your implementaion in the dojo maintainers channel. 
+Finally once this is set up you should create a PR to merge your branch and new challenge dir into the main repo for the Dojo, this way the drive can just pull your code and get up and running as fast a possible. 
+One last thing it is not a bad idea to check with the drive the day before and morning of the Dojo just to make sure they can still drive. 
+  
 ---
 
 ### VI. Additional Help -TBD
