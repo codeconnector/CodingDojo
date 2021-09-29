@@ -4,6 +4,13 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
+### October 04, 2021
+
+- Language of the Week: JavaScript
+- Driver: [RReiso](https://github.com/RReiso)
+- Navigator: Pending
+- Host: Pending
+
 ## Past Highlights
 
 ### May 04, 2021
