@@ -25,7 +25,8 @@
 #!/bin/bash
 
 #--------------------------------------------------------------------------------------- 
-#-- Runs the script and echos the output
+#-- Runs the script and exits successfully if the input is balanced according to the
+#-- rules, or exits with an error if the input is unbalanced
 #--------------------------------------------------------------------------------------- 
 
 # Start by stripping all the non-bracket characters from the input string
