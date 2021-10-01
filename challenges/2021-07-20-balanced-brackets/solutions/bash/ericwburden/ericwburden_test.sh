@@ -31,7 +31,6 @@
 
 @test "Can identify a balanced string" {
     run bash ericwburden.sh '(())({}[])'
-    echo $output
 	(( status == 0 ))
 }
 
