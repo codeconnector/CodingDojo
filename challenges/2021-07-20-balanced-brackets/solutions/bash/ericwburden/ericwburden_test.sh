@@ -31,49 +31,49 @@
 
 @test "Can identify a balanced string" {
     run bash ericwburden.sh '(())({}[])'
-	(( status == 0 ))
+    (( status == 0 ))
 }
 
 @test "Can identify an unbalanced string" {
     run bash ericwburden.sh '((({}[])'
-	(( status == 1 ))
+    (( status == 1 ))
 }
 
 @test "Can correctly handle empty strings as input" {
     run bash ericwburden.sh ''
-	(( status == 0 ))
+    (( status == 0 ))
 }
 
 @test "Ignores non-brackets" {
     run bash ericwburden.sh '(5 * 3) + [10 / {2}]'
-	(( status == 0 ))
+    (( status == 0 ))
 }
 
 @test "Handles sequences of single bracket types" {
     run bash ericwburden.sh ')]})]}'
-	(( status == 1 ))
+    (( status == 1 ))
 
     run bash ericwburden.sh '([{((('
-	(( status == 1 ))
+    (( status == 1 ))
 }
 
 @test "Handles strings with characters but no brackets" {
     run bash ericwburden.sh 'no brackets at all'
-	(( status == 0 ))
+    (( status == 0 ))
 }
 
 @test "Handles strings containing special characters" {
     run bash ericwburden.sh '>>> (<> are not brackets) >>>'
-	(( status == 0 ))
+    (( status == 0 ))
 
     run bash ericwburden.sh '[///\\|||]'
-	(( status == 0 ))
+    (( status == 0 ))
 
     run bash ericwburden.sh '!@#\$%%^&*(;,.<>?/\|~`'
-	(( status == 1 ))
+    (( status == 1 ))
 }
 
 @test "Can handle brackets balanced the wrong way" {
     run bash ericwburden.sh ')}][{('
-	(( status == 1 ))
+    (( status == 1 ))
 }
