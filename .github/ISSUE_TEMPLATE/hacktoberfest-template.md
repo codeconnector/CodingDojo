@@ -1,7 +1,7 @@
 ---
 name: Hacktoberfest Lang/Challenge Request
 about: Request a solution in a specific language
-title: "[Hacktoberfest] Title"
+title: "[Hacktoberfest] Language | Challenge Name"
 labels: hacktoberfest
 assignees: ''
 ---
