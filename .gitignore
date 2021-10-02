@@ -1,3 +1,6 @@
 *.iml
-/.idea/
-challenges/2021-05-11-nonconstructible-change/solutions/python/__pycache__/non_constructible_change.cpython-39.pyc
+*.class
+out/*
+**/.xml
+**/.idea
+**.pyc
