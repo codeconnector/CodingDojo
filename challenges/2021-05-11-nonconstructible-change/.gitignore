@@ -1,2 +1,5 @@
 *.class
 out/*
+**/.xml
+**/.idea
+**.pyc

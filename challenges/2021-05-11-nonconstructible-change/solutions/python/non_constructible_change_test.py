@@ -27,8 +27,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_five(self):
         coins = [1, 1, 1, 1, 5, 10, 15, 20, 100]
-        expected =  55
+        expected = 55
         assert min_impossible_coins(coins) == expected
+
 
 if __name__ == '__main__':
     unittest.main()
