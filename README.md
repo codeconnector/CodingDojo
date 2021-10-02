@@ -3,7 +3,7 @@
 
 ## About
 
-The **Coding Dojo** is a project and weekly meetup hosted by Code Connector to offer opportunities for learning, mentoring, and practicing coding and problem-solving. Each week, one of our new developers will "drive" a coding challenge with support and guidance from one of our more experienced members.
+The **Coding Dojo** is a project and weekly [Meetup](https://www.meetup.com/memphis-technology-user-groups) hosted by Code Connector to offer opportunities for learning, mentoring, and practicing coding and problem-solving. Each week, one of our new developers will "drive" a coding challenge with support and guidance from one of our more experienced members.
 
 We are committed to upholding the Code Connector [Code of Conduct](https://codeconnector.io/code-of-conduct), so please review before hopping on. This will be a safe and supportive environment focused on growth and learning, and moderated by active community members.
 
