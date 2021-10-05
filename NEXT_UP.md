@@ -4,12 +4,12 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### September 21, 2021
+### October 04, 2021
 
-- Language of the Week: Ruby
+- Language of the Week: JavaScript
 - Driver: [RReiso](https://github.com/RReiso)
-- Host: [ericwburden](https://github.com/ericwburden)
-- Navigator: [parhaml](https://github.com/parhaml)
+- Navigator: Pending
+- Host: Pending
 
 ## Past Highlights
 
@@ -134,4 +134,18 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: [YolandaHaynes](https://github.com/YolandaHaynes)
 - Navigator: [ericwburden](https://github.com/ericwburden)
 - Host: [drkennetz](https://github.com/drkennetz)
+
+### September 21, 2021
+
+- Language of the Week: Ruby
+- Driver: [RReiso](https://github.com/RReiso)
+- Host: [ericwburden](https://github.com/ericwburden)
+- Navigator: [parhaml](https://github.com/parhaml)
+
+### September 28, 2021
+
+- Language of the Week: JavaScript
+- Driver: [williycole](https://github.com/williycole)
+- Host: [ericwburden](https://github.com/ericwburden)
+- Navigator: [drkennetz](https://github.com/drkennetz)
 

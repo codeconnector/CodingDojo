@@ -1,2 +1,6 @@
 *.iml
-/.idea/
+*.class
+out/*
+**/.xml
+**/.idea
+**.pyc
