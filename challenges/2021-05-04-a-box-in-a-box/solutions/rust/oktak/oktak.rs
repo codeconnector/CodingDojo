@@ -13,22 +13,7 @@
 // - Your function should return `false` if the two rectangles only partially overlap.
 
 
-// ## Tackling This Challenge
-
-// - Make sure you've got the required software on your machine: npm 7.9.0+ and a text editor.
-// - If you haven't already, fork the CodingDojo repository ([INSTRUCTIONS](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)).
-// - Navigate to the '2021-05-04-a-box-in-a-box' directory and run `npm install` to initialize the project.
-// - Checkout a new branch using `git checkout -b yourgithubusername-wip`.
-// - Add your code to the 'solution.js' file to make the `rectanglesOverlap` function work as expected.
-// - Confirm your solution by running tests. Execute the `test-it.sh` script (use `./test-it.sh` from the challenge root directory.
-// - If you've passed all the tests, the `test-it.sh` script will instruct you how to commit it. Otherwise, try again to pass all tests.
-// - Navigate to [GitHub](https://github.com/codeconnector/CodingDojo), and submit your pull request.
-// - One of the CodingDojo maintainers will help you get your PR merged.
-
-
-
 // [(top left x coordinate), (top left y coordinate), (width), (height)]
-// [x0, y0, w, h]
 pub struct Rectangle {
     x0: i32,
     y0: i32,
@@ -36,23 +21,22 @@ pub struct Rectangle {
     h: i32,
 }
 
-pub fn make_rectangle(b: &[i32; 4]) -> Rectangle {
-    let box1 = Rectangle {
-        x0: b[0],
-        y0: b[1],
-        w: b[2],
-        h: b[3],
-    };
-
-    if box1.w <= 0 || box1.h <= 0 {
-        panic!("Dimension (w, h) of Rectangle cannot be non-positive.");
+impl Rectangle {
+    fn new(b: &[i32; 4]) -> Rectangle {
+        Rectangle {
+            x0: b[0],
+            y0: b[1],
+            w: b[2],
+            h: b[3],
+        }
     }
-
-    return box1
 }
 
 pub fn determine_within(box1: &Rectangle, box2: &Rectangle) -> bool {
-    if box2.x0 < box1.x0 {
+    if box1.w <= 0 || box1.h <= 0 || box2.w <= 0 || box2.h <= 0 {
+        // Rectangle should be rejected, and return `false`
+        false
+    } else if box2.x0 < box1.x0 {
         false
     } else if box2.y0 < box1.y0 {
         false
@@ -66,8 +50,8 @@ pub fn determine_within(box1: &Rectangle, box2: &Rectangle) -> bool {
 }
 
 pub fn overlaps(b1: &[i32; 4], b2: &[i32; 4]) -> bool {
-    let box1 = make_rectangle(b1);
-    let box2 = make_rectangle(b2);
+    let box1 = Rectangle::new(b1);
+    let box2 = Rectangle::new(b2);
 
     return determine_within(&box1, &box2) || determine_within(&box2, &box1)
 }
@@ -113,10 +97,9 @@ mod tests {
     }
 
     /// //
-    /// Rectangle should be rejected
+    /// Rectangle should be rejected, and return `false`
     /// //
     #[test]
-    #[should_panic]
     fn test_five() {
         // Zero size rectangle
         let box1 = &[10, 15, 50, 40];
@@ -126,7 +109,6 @@ mod tests {
     }
 
     #[test]
-    #[should_panic]
     fn test_six() {
         // Negative dimension
         let box1 = &[10, 15, 50, 40];
