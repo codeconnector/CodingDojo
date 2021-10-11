@@ -1,16 +1,5 @@
 const { isMonotonic } = require('./solution');
 
-// ```
-// is_monotonic([]) // True
-// is_monotonic([1]) // True
-// is_monotonic([1, 2]) // True
-// is_monotonic([2, 2, 2, 2]) // True
-// is_monotonic([-5, -4, -3, -2, -1, 0, 1]) // True
-// is_monotonic([2, 1, 2, 3, 4, 5]) // False
-// is_monotonic([1, 1, 0, 0, -1, -1, -2, -2]) // True
-// is_monotonic([5, 4, 3, 3, 3, 2, 1]) // True
-// ```
-
 test('Should identify an empty array as monotonic', () => {
     let result = isMonotonic([]);
     expect(result).toBe(true);
