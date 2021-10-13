@@ -54,3 +54,8 @@ test('Should identify a stable array with sudden decrease as monotonic', () => {
     let result = isMonotonic([5, 5, 5, 2, 1]);
     expect(result).toBe(true);
 })
+
+test('Should identify a array with same first and last, but a peak as non-monotonic', () => {
+    let result = isMonotonic([1, 2, 5, 2, 1]);
+    expect(result).toBe(true);
+})
