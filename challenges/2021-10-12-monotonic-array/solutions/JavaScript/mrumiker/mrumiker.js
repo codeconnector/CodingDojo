@@ -47,33 +47,37 @@
 // ``
 
 function isMonotonic(arr) {
-    const first = arr[0],
-        last = arr[arr.length - 1];
 
-    return first < last ? isAscending(arr) :
-        first > last ? isDescending(arr) :
-            isFlat(arr);
-}
+  const first = arr[0],
+        last = arr[arr.length - 1];
+  
+  if (first < last) return isAscending(arr); //if first is less than last, check to make sure that there is never a decrease in the array values
+
+  else if (first > last) return isDescending(arr); //if first is greater than last, check to make sure that there is never an increase in the array values
+
+  else return isFlat(arr); //if first equals last, check to make sure that all numbers in the array are equal
+ 
+} 
 
 function isAscending(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i - 1] > arr[i]) return false;
-    }
+  for (let i = 1; i < arr.length; i++) {
+      if (arr[i - 1] > arr[i]) return false;
+    } 
     return true;
-} //if first is less than last, check to make sure that there is never a decrease in the array values
+} 
 
 function isDescending(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i - 1] < arr[i]) return false;
-    }
-    return true;
-} //if first is greater than last, check to make sure that there is never an increase in the array values
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i - 1] < arr[i]) return false;
+  } 
+  return true;
+} 
 
 function isFlat(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] !== arr[0]) return false;
-    }
-    return true;
-} //if first equals last, check to make sure that all numbers in the array are equal
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] !== arr[0]) return false;
+  }
+  return true;
+} 
 
 module.exports = { isMonotonic };
