@@ -50,10 +50,10 @@ function isMonotonic(array) {
     // an array of length 0 or 1 is said to be monotonic
     if (array.length < 2) return true;
 
-    // first and last elements are used to characterize the array as increasing or decreasing
-    const state = (array[0] < array[array.length-1]) ? 'increasing' : 'decreasing';
+    // initial state of first 2 elements from left to right are increasing or decreasing
+    let state = (array[0] < array[1]) ? 'increasing' : 'decreasing';
 
-    for(let i = 1; i < array.length; i++) {
+    for(let i = 2; i < array.length; i++) {
 	
         // not an increasing monotonic array because the numbers are decreasing
         if (array[i-1] > array[i] && state === 'increasing') return false;
@@ -62,7 +62,7 @@ function isMonotonic(array) {
         if (array[i-1] < array[i] && state === 'decreasing') return false;
     }
 
-    // all elements are either entirely non-decreasing or entirely non-increasing
+    // all elements are either entirely non-increasing or entirely non-decreasing
     return true;
 }
 
