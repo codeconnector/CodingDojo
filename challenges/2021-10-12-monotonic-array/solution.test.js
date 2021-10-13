@@ -45,4 +45,12 @@ test('Should identify a decreasing array with negative numbers as monotonic', ()
     expect(result).toBe(true);
 })
 
+test('Should identify a stable array with sudden increase as monotonic', () => {
+    let result = isMonotonic([1, 1, 1, 2]);
+    expect(result).toBe(true);
+})
 
+test('Should identify a stable array with sudden decrease as monotonic', () => {
+    let result = isMonotonic([5, 5, 5, 2, 1]);
+    expect(result).toBe(true);
+})
