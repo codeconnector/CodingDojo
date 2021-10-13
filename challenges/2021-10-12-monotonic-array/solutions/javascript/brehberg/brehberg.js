@@ -50,6 +50,10 @@ function isMonotonic(array) {
     // an array of length 0 or 1 is said to be monotonic
     if (array.length < 2) return true;
 
+    // first and last elements are the same, then all other elements much also match
+    const allEqual = arr => arr.every( v => v === arr[0] );
+    if (array[0] === array[array.length-1]) return allEqual(array) ? true : false;
+
     // first and last elements are used to characterize the array as increasing or decreasing
     const state = (array[0] < array[array.length-1]) ? 'increasing' : 'decreasing';
 
