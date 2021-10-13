@@ -3,7 +3,7 @@
 input=$1
 output="false"
 
-# If no output then return
+# If no input then return
 if [ -z "$input" ]; then
     echo $output && exit 0
 fi
