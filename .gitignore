@@ -4,3 +4,13 @@ out/*
 **/.xml
 **/.idea
 **.pyc
+**/*dll
+**/*.exe
+**/*.json
+**/*.cache
+**/*.txt
+**/*.CopyComplete
+**/*.pdb
+**/*.targets
+**/*.props
+**/*.Assembly*
