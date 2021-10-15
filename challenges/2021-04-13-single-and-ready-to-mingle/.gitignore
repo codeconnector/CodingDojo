@@ -4,3 +4,14 @@ npm-debug.log
 .env
 .DS_Store
 .vscode
+**/*.dll
+**/*.exe
+**/*.pdb
+**/*.txt
+**/*.json
+**/*.cache
+**/*.targets
+**/*.props
+**/*.CopyComplete
+**/*AssemblyAttributes.cs
+**/*AssemblyInfo.cs
