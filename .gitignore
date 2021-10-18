@@ -1,11 +1,15 @@
 out/*
 *.class
 *.iml
+**/.gradle
+**/build
+**/node_modules
 **/.xml
 **/.idea
 **.pyc
 **/*dll
 **/*.exe
+**/*.html
 **/*.json
 **/*.cache
 **/*.txt
@@ -14,3 +18,4 @@ out/*
 **/*.targets
 **/*.props
 **/*.Assembly*
+
