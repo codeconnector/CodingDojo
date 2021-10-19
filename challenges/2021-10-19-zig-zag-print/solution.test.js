@@ -9,7 +9,6 @@ test('Should produce desired result from "bismarcks", 3', () => {
 test('Should produce desired result from "thisisazigzag", 4', () => {
     let result = printZigZag("thisisazigzag", 4)
     let expected = "t     a     g\n h   s z   a \n  i i   i z  \n   s     g   "
-    let expected = "b   a   s\n i m r k \n  s   c  "
     expect(result).toEqual(expected)
 })
 
