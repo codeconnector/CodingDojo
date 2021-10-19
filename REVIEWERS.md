@@ -8,6 +8,8 @@ The list below includes the people that will be doing code reviews for submissio
 + Python
 + Rust
 + JS
++ Bash
++ Julia
 
 ## Dennis Kennetz
 
@@ -30,6 +32,7 @@ The list below includes the people that will be doing code reviews for submissio
 ## Cole Boren
 
 + JS
++ C#
 + Java
 + Python
 
