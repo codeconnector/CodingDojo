@@ -39,7 +39,7 @@ else
     echo -e "  - If there's not one already, create a"
     echo -e "    ${BLU}solutions/javascript/<githubusername>${CLR} folder."
     echo -e "  - Copy the ${BLU}solution.js${CLR} file containing your solution to"
-    echo -e "    ${BLU}solutions/javascript/<githubusername>/<githubusername>.java${CLR}."
+    echo -e "    ${BLU}solutions/javascript/<githubusername>/<githubusername>.js${CLR}."
     echo -e "  - If you have not already created a ${BLU}<githubusername>${CLR}-wip branch,"
     echo -e "    use ${YLW}git switch -c <githubusername>-wip${CLR} to move your changes to"
     echo -e "    that branch"

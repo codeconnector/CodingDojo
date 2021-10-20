@@ -1,4 +1,5 @@
 # CodeConnector CodingDojo Participants
+
 ---
 
 This file will act as a short exercise in [contributing](https://guides.github.com/activities/forking/) to the CodingDojo exercises.  You'll fork this repo and add your name to this file. Names should be added in alphabetical order by first name.
@@ -7,8 +8,7 @@ Eg: `Your Name: [githubname](githuburl)`
 
 ---
 
-
-### Intrepid Users
+## Intrepid Users
 
 + Azhya Knox: [aaknox](https://github.com/aaknox)
 + Becca Johnson: [beccani](http://github.com/beccani)
@@ -27,3 +27,4 @@ Eg: `Your Name: [githubname](githuburl)`
 + Lee Parham: [parhaml](https://github.com/parhaml)
 + Yolanda Haynes: [YolandaHaynes](https://github.com/YolandaHaynes)
 + Zac Wilson: [ZacWilson87](https://github.com/ZacWilson87)
++ Brett Rehberg: [brehberg](https://github.com/brehberg)
