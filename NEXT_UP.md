@@ -4,11 +4,18 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### October 04, 2021
+### October 19, 2021
 
 - Language of the Week: JavaScript
-- Driver: [RReiso](https://github.com/RReiso)
-- Navigator: Pending
+- Driver: [leafydreams](https://github.com/leafydreams)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [xanderyzwich](https://github.com/xanderyzwich)
+
+### October 26, 2021
+
+- Language of the Week: Python
+- Driver: [mrumiker](https://github.com/mrumiker)
+- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
 - Host: Pending
 
 ## Past Highlights
@@ -149,3 +156,16 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Host: [ericwburden](https://github.com/ericwburden)
 - Navigator: [drkennetz](https://github.com/drkennetz)
 
+### October 05, 2021
+
+- Language of the Week: JavaScript
+- Driver: [RReiso](https://github.com/RReiso)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [xanderyzwich](https://github.com/xanderyzwich)
+
+### October 12, 2021
+
+- Language of the Week: JavaScript
+- Driver: [YolandaHaynes](https://github.com/YolandaHaynes)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [williycole](https://github.com/williycole)
