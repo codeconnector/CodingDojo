@@ -25,10 +25,9 @@ play([1, 5, 7, 19]);  // False, no combinations yield 24
 
 ## Tackling This Challenge
 1. Make sure you've got the required software on your machine: python3.6+ and a text editor.
-3. Navigate to this directory and run `npm install` to initialize the project.
-4. The challenge will be live-coded in our weekly Tusday meetup in the `solution.py` file.
-5. Run the tests to check your solution by navigating to this directory and running `./run-tests`.
-6. The results of the live coding demo will be added to the GitHub repository as a mob solution. Please feel free to tackle this challenge in your own way/language and submit your solution to the repo using [this solutions guide in our wiki](https://github.com/codeconnector/CodingDojo/wiki#solutions).
+1. The challenge will be live-coded in our weekly Tusday meetup in the `solution.py` file.
+1. Run the tests to check your solution by navigating to this directory and running `./run-tests`.
+1. The results of the live coding demo will be added to the GitHub repository as a mob solution. Please feel free to tackle this challenge in your own way/language and submit your solution to the repo using [this solutions guide in our wiki](https://github.com/codeconnector/CodingDojo/wiki#solutions).
 
 ## Requirements
 
