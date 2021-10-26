@@ -41,12 +41,12 @@ def play(int_list):
     while stack:
         # Pop an item (sublist) off the stack
         sublist = stack.pop()
-        # If your LIST is length 1: 
+        # If your sublist is length 1: 
         if len(sublist) == 1:
-            # if LIST[0] is 24 return True. 
+            # if the only number in sublist is 24, return True. 
             if sublist[0] == 24:
                 return True
-            # Otherwise, throw it out and go back to the start of the while loop
+            # Otherwise, throw out sublist and go back to the start of the while loop
             continue
         # For each pair of items in sublist
         for i in range(len(sublist) - 1):
