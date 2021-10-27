@@ -1,6 +1,7 @@
 out/*
 *.class
 *.iml
+**/.DS_Store
 **/.gradle
 **/build
 **/node_modules
