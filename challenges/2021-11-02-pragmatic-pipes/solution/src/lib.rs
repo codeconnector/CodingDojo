@@ -154,7 +154,7 @@ mod tests {
         assert!(!result.has_edge(&Node::from('S'), &Node::from('C')));
         assert!(!result.has_edge(&Node::from('A'), &Node::from('C')));
         assert!(result.has_edge(&Node::from('B'), &Node::from('C')));
-        assert_eq!(result.total_cost(), 21);
+        assert_eq!(result.total_cost(), 16);
     }
 
     #[test]
@@ -173,7 +173,7 @@ mod tests {
         assert!(!result.has_edge(&Node::from('S'), &Node::from('C')));
         assert!(!result.has_edge(&Node::from('A'), &Node::from('C')));
         assert!(result.has_edge(&Node::from('B'), &Node::from('C')));
-        assert_eq!(result.total_cost(), 21);
+        assert_eq!(result.total_cost(), 16);
     }
 
     #[test]
@@ -191,7 +191,7 @@ mod tests {
         assert!(!result.has_edge(&Node::from('S'), &Node::from('C')));
         assert!(!result.has_edge(&Node::from('A'), &Node::from('C')));
         assert!(result.has_edge(&Node::from('B'), &Node::from('C')));
-        assert_eq!(result.total_cost(), 21);
+        assert_eq!(result.total_cost(), 16);
     }
 
     #[test]
@@ -232,6 +232,6 @@ mod tests {
         assert!(!result.has_edge(&Node::from('G'), &Node::from('I')));
         assert!(result.0.get(&Node::from('I')).is_none());
 
-        assert_eq!(result.total_cost(), 137);
+        assert_eq!(result.total_cost(), 88);
     }
 }
