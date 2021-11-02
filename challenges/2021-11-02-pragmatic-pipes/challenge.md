@@ -6,7 +6,7 @@ For example, here is a possible configuration, where A, B, and C are houses, S r
 
 A <--> B <--> C <--> S (plant)
 
-Each pipe has an associated cost, which the utility company would like to minimize. Given a directed graph of pipe connections, return the lowest cost configuration of pipes such that each house has access to water.
+Each pipe has an associated cost, which the utility company would like to minimize. Given an UNdirected graph of pipe connections, return the lowest cost configuration of pipes such that each house has access to water.
 
 In the following setup, for example, we can remove all but the pipes from plant to A, plant to B, and B to C, for a total cost of 16.
 
@@ -29,8 +29,8 @@ you are not required to use all the structures provided.
 - The plant, or 'source' of water, will be labeled 'S', all other houses will be labeled with a single uppercase letter.
 - The cost of pipe between houses (or the a house and the plant) will always be greater than or equal to zero.
 - Your input will always consist of an array of four integers. These integers do not all need to be positive.
-- The `PipeGraph` represents a directed graph. That is, in the example above, water flows from 'A' to 'C', and not from 'C' to 'A'.
-- It is possible to have cycles in the `PipeGraph` (for example, A ---> B ---> C ---> A).
+- The input represents an UNdirected graph. That is, in the example above, water may flow from 'A' to 'C' or from 'C' to 'A'. Water may never flow into 'S', which is the source.
+- It is possible to have cycles in the `PipeGraph` (for example, A <---> B <---> C <---> A).
 
 ## Example
 
