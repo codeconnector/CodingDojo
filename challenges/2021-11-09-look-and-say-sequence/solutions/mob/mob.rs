@@ -65,7 +65,7 @@ impl<T: Copy> Group<T> {
         self.0.push(value);
     }
 
-    /// Converts [1, 1, 1] in to (3, 1)
+    /// Group[1, 1, 1].rle() -> (3, 1)
     fn rle(&self) -> Option<(usize, T)> {
         let length = self.0.len();
         self.0.first().map(|v| (length, *v))
@@ -118,6 +118,7 @@ where
     fn grouped(self) -> Groups<T, I>;
 }
 
+/// "hi".chars().grouped() -> Groups("hi") -> [(1, 'h'), (1, 'i')]
 impl<'a> Grouped<char, Chars<'a>> for Chars<'a> {
     fn grouped(self) -> Groups<char, Chars<'a>> {
         Groups(self.peekable())
@@ -139,6 +140,8 @@ impl<'a> Grouped<char, Chars<'a>> for Chars<'a> {
 
 #[derive(Debug)]
 struct RunLengthEncoding<T>(Vec<(usize, T)>);
+
+/// [(3, 1), (2, 2), (2, 1)].collect() -> RunLengthEncoding[(3, 1), (2, 2), (2, 1)]
 impl<T> FromIterator<(usize, T)> for RunLengthEncoding<T> {
     fn from_iter<I: IntoIterator<Item = (usize, T)>>(iter: I) -> Self {
         RunLengthEncoding(iter.into_iter().collect())
@@ -161,6 +164,7 @@ trait RunLengthEncode<T> {
 }
 
 impl RunLengthEncode<char> for &str {
+    /// "111".run_length_encode() -> RunLengthEncoding[(3, '1')]
     fn run_length_encode(&self) -> Option<RunLengthEncoding<char>> {
         // An empty string returns a None, since it contains no characters
         if self.is_empty() { return None; }
