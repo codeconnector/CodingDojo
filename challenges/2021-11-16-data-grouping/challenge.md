@@ -31,7 +31,8 @@ Senior             31
 Sophomore          31
 ```
 Outputs of grouping (dataframe example):
-````
+
+```
 HighSchool Year  Mean     Median
 Freshman         20       20
 Sophomore        26.5     26.5
