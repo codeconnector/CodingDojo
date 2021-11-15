@@ -37,6 +37,7 @@ Freshman         20       20
 Sophomore        26.5     26.5
 Junior           26       26
 Senior           28       28
+```
 
 ###
 # outputs of:
