@@ -19,3 +19,6 @@ out/*
 **/*.targets
 **/*.props
 **/*.Assembly*
+
+# Include the `package.json` files
+!**/package.json
