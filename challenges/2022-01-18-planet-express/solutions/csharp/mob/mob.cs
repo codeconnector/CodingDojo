@@ -1,7 +1,7 @@
 using Xunit;
 using System.Collections.Generic;
 
-public class PlanetExpress
+public class PlanetExpressMob
 {
   public int TotalTime(List<(int, int, string)> input)
   {
@@ -12,21 +12,22 @@ public class PlanetExpress
       {
         StatsDict.Add(Id, (0, new List<int>()));
       }
+      (var PickupTime, var OtherTimes) = StatsDict[Id];
       if (EventType == "pickup")
       {
-        StatsDict[Id] = (Stamp, StatsDict[Id].Item2);
+        StatsDict[Id] = (Stamp, OtherTimes);
       }
       else
       {
-        StatsDict[Id].Item2.Add(Stamp);
+        OtherTimes.Add(Stamp);
       }
     }
     var total = 0;
     foreach ((var PickupTime, var OtherTimes) in StatsDict.Values)
     {
-      foreach (var time in OtherTimes)
+      foreach (var Time in OtherTimes)
       {
-        total += time - PickupTime;
+        total += Time - PickupTime;
       }
     }
     return total;
