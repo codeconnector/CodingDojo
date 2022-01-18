@@ -5,8 +5,31 @@ public class PlanetExpress
 {
   public int TotalTime(List<(int, int, string)> input)
   {
-    // Insert your solution code here
-    return 0;
+    var StatsDict = new Dictionary<int, (int, List<int>)>();
+    foreach ((int Id, int Stamp, string EventType) in input)
+    {
+      if (!StatsDict.ContainsKey(Id))
+      {
+        StatsDict.Add(Id, (0, new List<int>()));
+      }
+      if (EventType == "pickup")
+      {
+        StatsDict[Id] = (Stamp, StatsDict[Id].Item2);
+      }
+      else
+      {
+        StatsDict[Id].Item2.Add(Stamp);
+      }
+    }
+    var total = 0;
+    foreach ((var PickupTime, var OtherTimes) in StatsDict.Values)
+    {
+      foreach (var time in OtherTimes)
+      {
+        total += time - PickupTime;
+      }
+    }
+    return total;
   }
 
   [Fact]
