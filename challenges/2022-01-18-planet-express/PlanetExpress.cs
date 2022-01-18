@@ -12,11 +12,7 @@ public class PlanetExpress
   [Fact]
   public void Test_case_one_()
   {
-    var input = new List<(int, int, string)>
-  {
-		// I didn't know how to pass "no delivery data".
-		(0, 0, "")
-  };
+    var input = new List<(int, int, string)>();
     Assert.Equal(0, TotalTime(input));
   }
 
