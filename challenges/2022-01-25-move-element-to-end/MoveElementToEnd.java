@@ -58,4 +58,24 @@ public class MoveElementToEnd {
             assertEquals(result[i], 2);
         }
     }
+
+    @Test
+    @DisplayName("Should return the array if the number to move is not in the array")
+    public void testCaseOne() {
+        int[] input = {1, 2, 4, 5, 6};
+        int[] result = moveToEnd(input, 3);
+        for (int i = 1; i < 5; i++) {
+            assertEquals(result[i], input[i]);
+        }
+    }
+
+    @Test
+    @DisplayName("All elements are the number to move")
+    public void testCaseOne() {
+        int[] input = {3, 3, 3};
+        int[] result = moveToEnd(input, 3);
+        for (int i = 1; i < 3; i++) {
+            assertEquals(result[i], 3);
+        }
+    }
 }
