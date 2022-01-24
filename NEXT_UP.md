@@ -4,18 +4,29 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### October 19, 2021
+### Jan 25, 2022
 
-- Language of the Week: JavaScript
-- Driver: [leafydreams](https://github.com/leafydreams)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [xanderyzwich](https://github.com/xanderyzwich)
-
-### October 26, 2021
-
-- Language of the Week: Python
-- Driver: [mrumiker](https://github.com/mrumiker)
+- Language of the Week: Java
+- Driver: [hasancbngl](https://github.com/hasancbngl)
 - Navigator: [xanderyzwich](https://github.com/xanderyzwich)
+- Host: [drkennetz](https://github.com/drkennetz)
+
+### Feb 1, 2022
+
+- Language of the Week: Pending
+- Driver: [agrittiwari](https://github.com/agrittiwari)
+- Navigator: Pending
+- Host: Pending
+
+### Feb 8, 2022
+
+## OPEN
+
+### Feb 15, 2022
+
+- Language of the Week: Pending
+- Driver: [AmilMasic](https://github.com/AmilMasic)
+- Navigator: Pending
 - Host: Pending
 
 ## Past Highlights
@@ -169,3 +180,17 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: [YolandaHaynes](https://github.com/YolandaHaynes)
 - Navigator: [ericwburden](https://github.com/ericwburden)
 - Host: [williycole](https://github.com/williycole)
+
+### October 19, 2021
+
+- Language of the Week: JavaScript
+- Driver: [leafydreams](https://github.com/leafydreams)
+- Navigator: [ericwburden](https://github.com/ericwburden)
+- Host: [xanderyzwich](https://github.com/xanderyzwich)
+
+### October 26, 2021
+
+- Language of the Week: Python
+- Driver: [mrumiker](https://github.com/mrumiker)
+- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
+- Host: Pending
