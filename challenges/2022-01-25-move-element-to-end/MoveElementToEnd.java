@@ -59,9 +59,10 @@ public class MoveElementToEnd {
         }
     }
 
+    // Test case five
     @Test
     @DisplayName("Should return the array if the number to move is not in the array")
-    public void testCaseOne() {
+    public void testCaseFive() {
         int[] input = {1, 2, 4, 5, 6};
         int[] result = moveToEnd(input, 3);
         for (int i = 1; i < 5; i++) {
@@ -69,9 +70,10 @@ public class MoveElementToEnd {
         }
     }
 
+    // Test case six
     @Test
     @DisplayName("All elements are the number to move")
-    public void testCaseOne() {
+    public void testCaseSix() {
         int[] input = {3, 3, 3};
         int[] result = moveToEnd(input, 3);
         for (int i = 1; i < 3; i++) {
