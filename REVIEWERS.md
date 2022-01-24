@@ -25,6 +25,12 @@ The list below includes the people that will be doing code reviews for submissio
 + Groovy
 + Bash
 
+## Charles Umiker
+
++ JS
++ Python
++ C#
+
 ## Lee Parham
 
 + Ruby
