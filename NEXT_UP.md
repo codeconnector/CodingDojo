@@ -4,18 +4,11 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### Jan 25, 2022
-
-- Language of the Week: Java
-- Driver: [hasancbngl](https://github.com/hasancbngl)
-- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
-- Host: [drkennetz](https://github.com/drkennetz)
-
 ### Feb 1, 2022
 
-- Language of the Week: Pending
+- Language of the Week: JavaScript
 - Driver: [agrittiwari](https://github.com/agrittiwari)
-- Navigator: Pending
+- Navigator: [mrumiker](https://github.com/mrumiker)
 - Host: Pending
 
 ### Feb 8, 2022
@@ -194,3 +187,10 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: [mrumiker](https://github.com/mrumiker)
 - Navigator: [xanderyzwich](https://github.com/xanderyzwich)
 - Host: Pending
+
+### Jan 25, 2022
+
+- Language of the Week: Java
+- Driver: [hasancbngl](https://github.com/hasancbngl)
+- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
+- Host: [drkennetz](https://github.com/drkennetz)
