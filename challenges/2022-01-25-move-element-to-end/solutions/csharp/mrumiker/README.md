@@ -8,7 +8,13 @@ Requires Dotnet Core 6.0
 
 `Solution.cs` can be found in the src folder
 
-To run tests, navigate to `test/MoveToEndChallenge.Tests`
+# To try it out:
+
+Switch to a new branch.
+
+Make sure you have Dotnet Core 6.0 installed
+
+Navigate to `test/MoveToEndChallenge.Tests` in your console.
 
 Type `dotnet test`
 
