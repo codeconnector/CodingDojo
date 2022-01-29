@@ -7,9 +7,9 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 ### Feb 1, 2022
 
 - Language of the Week: JavaScript
-- Driver: [agrittiwari](https://github.com/agrittiwari)
+- Driver: [xanderyzwich](https://github.com/xanderyzwich)
 - Navigator: [mrumiker](https://github.com/mrumiker)
-- Host: Pending
+- Host: [ericwburden](https://github.com/ericwburden)
 
 ### Feb 8, 2022
 
