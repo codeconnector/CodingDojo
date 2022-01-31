@@ -23,7 +23,7 @@ represented by the below map, where your goblin is "G", coins are "o", and empty
 ---------------------
 ```
 
-you goblin will visit `[0, 4] -> [2, 4] -> [3, 2] -> [2, 0] -> [1, 0]`.
+your goblin will visit `[0, 4] -> [2, 4] -> [3, 2] -> [2, 0] -> [1, 0]`.
 
 ## Business Rules/Errata
 
