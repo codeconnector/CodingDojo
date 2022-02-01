@@ -59,20 +59,28 @@ function greedyGoblin(goblin, coins) {
 
   while(0 < more_coins.length){
 
-    let distances = more_coins.map( (there) => {
-      return manhattanDistance(here, there)
-    } )
+    let min_distance = Number.MAX_VALUE
+    let min_index = Number.MAX_VALUE
+    let min_count = 1
+    for (let i = 0; i < more_coins.length; i++){
 
-    let nearest = Math.min(...distances)
-    let nearest_index = distances.indexOf(nearest);
+      let distance = manhattanDistance(here, more_coins[i])
+      if (min_distance == distance){
+        min_count += 1
+      } else if (min_distance > distance){
+        min_distance = distance
+        min_index = i
+        min_count = 1
+      }
 
-    if (nearest_index !== distances.lastIndexOf(nearest)){
-      return []
-    } else {
-      here = more_coins[nearest_index]
-      foundCoins.push(here)
-      more_coins.splice(nearest_index, 1)
     }
+
+    if (1 < min_count) {  // PANIC
+      return []
+    }
+    here = more_coins[min_index]
+    foundCoins.push(here)
+    more_coins.splice(min_index, 1)
   }
   return foundCoins
 }
