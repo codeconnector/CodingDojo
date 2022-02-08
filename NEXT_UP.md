@@ -13,12 +13,12 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ### Feb 8, 2022
 
-### Special Edition: 7PM Central
+#### Special Edition: 7 PM Central
 
 ### Feb 15, 2022
 
 - Language of the Week: Pending
-- Driver: [AmilMasic](https://github.com/AmilMasic)
+- Driver: Pending
 - Navigator: Pending
 - Host: Pending
 
