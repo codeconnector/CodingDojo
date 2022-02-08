@@ -13,7 +13,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ### Feb 8, 2022
 
-### OPEN
+### Special Edition: 7PM Central
 
 ### Feb 15, 2022
 
