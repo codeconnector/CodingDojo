@@ -4,17 +4,6 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 ## Upcoming Challenges
 
-### Feb 1, 2022
-
-- Language of the Week: JavaScript
-- Driver: [xanderyzwich](https://github.com/xanderyzwich)
-- Navigator: [mrumiker](https://github.com/mrumiker)
-- Host: [ericwburden](https://github.com/ericwburden)
-
-### Feb 8, 2022
-
-#### Special Edition: 7 PM Central
-
 ### Feb 15, 2022
 
 - Language of the Week: Pending
@@ -194,3 +183,14 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: [hasancbngl](https://github.com/hasancbngl)
 - Navigator: [xanderyzwich](https://github.com/xanderyzwich)
 - Host: [drkennetz](https://github.com/drkennetz)
+
+### Feb 1, 2022
+
+- Language of the Week: JavaScript
+- Driver: [xanderyzwich](https://github.com/xanderyzwich)
+- Navigator: [mrumiker](https://github.com/mrumiker)
+- Host: [ericwburden](https://github.com/ericwburden)
+
+### Feb 8, 2022
+
+#### Special Edition: 7 PM Central
