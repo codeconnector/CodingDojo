@@ -11,6 +11,13 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Navigator: Pending
 - Host: Pending
 
+### Feb 22, 2022
+
+- Language of the Week: Pending
+- Driver: Pending
+- Navigator: Pending
+- Host: Pending
+- 
 ## Past Highlights
 
 ### May 04, 2021
