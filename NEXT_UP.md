@@ -17,7 +17,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 - Driver: Pending
 - Navigator: Pending
 - Host: Pending
-- 
+
 ## Past Highlights
 
 ### May 04, 2021
