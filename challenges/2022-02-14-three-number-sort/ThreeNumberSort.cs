@@ -1,76 +1,102 @@
 using Xunit;
-using System.Collections.Generic;
-using System.Linq;
 
 public class ThreeNumberSort
 {
-  // I DON"T KNOW HOW TO INITIALIZE THIS LINE, HELP PLEASE!
-  public int SortArray()
+  public int[] SortArray(int[] input, int[] threes)
   {
-	// Insert your solution code here
-	return 0;
+    // Insert your solution code here
+    return input;
   }
 
   [Fact]
-  public void Test_case_one_()
+  public void SortsArrayWithAllThreeNumbers()
   {
-    var input = new List<int>() { 3, 2, 3, 1, 2, 2, 1, 3, 2 };
-    var threes = new List<int>() { 1, 2, 3};
-    var expected = new List<int>() { 1, 1, 2, 2, 2, 2, 3, 3, 3 };
-    Assert.Enumerable.SequenceEqual(expected, SortArray(input, threes));
+    var input = new int[] { 3, 2, 3, 1, 2, 2, 1, 3, 2 };
+    var threes = new int[] { 1, 2, 3 };
+    var actual = SortArray(input, threes);
+    var expected = new int[] { 1, 1, 2, 2, 2, 2, 3, 3, 3 };
+    Assert.Equal(actual.Length, expected.Length);
+    for (var i = 0; i < actual.Length; i++)
+    {
+      Assert.Equal(actual[i], expected[i]);
+    }
   }
 
   [Fact]
-  public void Test_case_two_()
+  public void SortsArrayWithFirstNumberMissing()
   {
-    var input = new List<int>() { 2, 3, 3, 2, 2, 3 };
-    var threes = new List<int>() { 1, 2, 3 };
-    var expected = new List<int>() { 2, 2, 2, 3, 3, 3 };
-    Assert.Enumerable.SequenceEqual(expected, SortArray(input, threes));
+    var input = new int[] { 2, 3, 3, 2, 2, 3 };
+    var threes = new int[] { 1, 2, 3 };
+    var actual = SortArray(input, threes);
+    var expected = new int[] { 2, 2, 2, 3, 3, 3 };
+    for (var i = 0; i < actual.Length; i++)
+    {
+      Assert.Equal(actual[i], expected[i]);
+    }
   }
 
   [Fact]
-  public void Test_case_three_()
+  public void SortsArrayWithLastNumberMissing()
   {
-    var input = new List<int>() { 1, 2, 1, 1, 2, 1 };
-    var threes = new List<int>() { 1, 2, 3 };
-    var expected = new List<int>() { 1, 1, 1, 1, 2, 2 };
-    Assert.Enumerable.SequenceEqual(expected, SortArray(input, threes));
+    var input = new int[] { 1, 2, 1, 1, 2, 1 };
+    var threes = new int[] { 1, 2, 3 };
+    var actual = SortArray(input, threes);
+    var expected = new int[] { 1, 1, 1, 1, 2, 2 };
+    for (var i = 0; i < actual.Length; i++)
+    {
+      Assert.Equal(actual[i], expected[i]);
+    }
   }
 
   [Fact]
-  public void Test_case_four_()
+  public void SortsArrayWithMiddleNumberMissing()
   {
-    var input = new List<int>() { 3, 1, 1, 3 };
-    var threes = new List<int>() { 1, 2, 3};
-    var expected = new List<int>() { 1, 1, 3, 3 };
-    Assert.Enumerable.SequenceEqual(expected, SortArray(input, threes));
+    var input = new int[] { 3, 1, 1, 3 };
+    var threes = new int[] { 1, 2, 3 };
+    var actual = SortArray(input, threes);
+    var expected = new int[] { 1, 1, 3, 3 };
+    for (var i = 0; i < actual.Length; i++)
+    {
+      Assert.Equal(actual[i], expected[i]);
+    }
   }
 
   [Fact]
-  public void Test_case_five_()
+  public void SortsArrayWithNonSortedTriad()
   {
-    var input = new List<int>() { 3, 1, 1, 3 };
-    var threes = new List<int>() { 3, 2, 1};
-    var expected = new List<int>() { 3, 3, 1, 1 };
-    Assert.Enumerable.SequenceEqual(expected, SortArray(input, threes));
+    var input = new int[] { 3, 1, 1, 3, 2 };
+    var threes = new int[] { 3, 2, 1 };
+    var actual = SortArray(input, threes);
+    var expected = new int[] { 3, 3, 2, 1, 1 };
+    for (var i = 0; i < actual.Length; i++)
+    {
+      Assert.Equal(actual[i], expected[i]);
+    }
   }
 
   [Fact]
-  public void Test_case_six_()
+  public void SortsArrayWithNonSortedTriadAndMissingNumber()
   {
-    var input = new List<int>() { 1, 2, 1, 1, 2, 1 };
-    var threes = new List<int>() { 2, 3, 1 };
-    var expected = new List<int>() { 2, 2, 1, 1, 1, 1 };
-    Assert.Enumerable.SequenceEqual(expected, SortArray(input, threes));
+    var input = new int[] { 1, 2, 1, 1, 2, 1 };
+    var threes = new int[] { 2, 3, 1 };
+    var actual = SortArray(input, threes);
+    var expected = new int[] { 2, 2, 1, 1, 1, 1 };
+    for (var i = 0; i < actual.Length; i++)
+    {
+      Assert.Equal(actual[i], expected[i]);
+    }
   }
 
   [Fact]
-  public void Test_case_six_()
+  public void SortsArrayWithOnlyOneNumberPresent()
   {
-    var input = new List<int>() { 1, 1, 1, 1 };
-    var threes = new List<int>() { 2, 3, 1 };
-    var expected = new List<int>() { 1, 1, 1, 1 };
-    Assert.Enumerable.SequenceEqual(expected, SortArray(input, threes));
+    var input = new int[] { 1, 1, 1, 1 };
+    var threes = new int[] { 2, 3, 1 };
+    var actual = SortArray(input, threes);
+    var expected = new int[] { 1, 1, 1, 1 };
+    for (var i = 0; i < actual.Length; i++)
+    {
+      Assert.Equal(actual[i], expected[i]);
+    }
   }
 }
