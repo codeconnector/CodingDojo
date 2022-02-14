@@ -7,7 +7,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 ### Feb 15, 2022
 
 - Language of the Week: C#
-- Driver: BsideAlgorithms(https://github.com/BsideAlgorithms)
+- Driver: [BsideAlgorithms](https://github.com/BsideAlgorithms)
 - Navigator: [mrumiker](https://github.com/mrumiker)
 - Host: Pending
 
