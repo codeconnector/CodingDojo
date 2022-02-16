@@ -1,10 +1,53 @@
+using System.Collections.Generic;
 using Xunit;
 
 public class ThreeNumberSort
 {
   public int[] SortArray(int[] input, (int, int, int) threes)
   {
-    // Insert your solution code here
+      // Insert your solution code here
+
+      //key is the number, the value is the count
+      var threeMap = new Dictionary<int, int>()
+      {
+         {  threes.Item1, 0 }, //1
+         {  threes.Item2, 0 },
+         {  threes.Item3, 0 },
+      };
+
+      for (int i = 0; i < input.Length; i++)
+      {
+         //input[i] //3
+         var current = input[i];
+         if (current == threes.Item1)
+         {
+            var item1Index = threeMap[threes.Item1];
+            var item2Index = threeMap[threes.Item2];
+            input[item1Index] = current;
+            input[item1Index + item2Index] = threes.Item2;
+            
+            if (item1Index + item2Index != i)
+            {
+               input[i] = threes.Item3;
+            }
+         }
+         else if (current == threes.Item2)
+         {
+            var item1Index = threeMap[threes.Item1];
+            var item2Index = threeMap[threes.Item2];
+            input[item1Index + item2Index] = current;
+            if (item1Index + item2Index != i)
+            {
+               input[i] = threes.Item3;
+            }
+         }
+         else 
+         {
+
+         }
+         threeMap[current] += 1;
+      }
+
     return input;
   }
 
