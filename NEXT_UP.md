@@ -2,202 +2,46 @@
 
 Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://www.meetup.com/memphis-technology-user-groups/events/lnbhhsyccgbkc/). This file will serve as a list/schedule/signup for upcoming meetup roles. If you're interested in serving as a Driver (it's actually a lot of fun), come join us in the [#code](https://join.slack.com/t/code-connector/shared_invite/zt-6e1idsg6-wYI1hdfk_hR_QKahSBwldQ) CodeConnector Slack channel.
 
-## Upcoming Challenges
+## Schedule
 
-### Feb 15, 2022
+| Year | Month | Day | Challenge | Language | Driver | Navigator | Host |
+| :--: | :---: | :-: | :-------: | :----| :---- | :-------: | :--: |
+| 2022 | Feb | 22 | TBD | TBD | TBD | TBD | TBD |
+| 2022 | Feb | 15 | [Three number sort](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-02-14-three-number-sort/challenge.md) | C# | [BsideAlgorithms](https://github.com/BsideAlgorithms) | [mrumiker](https://github.com/mrumiker) | [xanderyzwich](https://github.com/xanderyzwich) |
+ | 2022 | Feb | 8 | [SimpleDB](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-02-09-simple-db/challenge.md#simple-database-challenge) (After Dark) | Python | [ericwburden](https://github.com/ericwburden) | [drkennetz](https://github.com/drkennetz) | - |
+ | 2022 | Feb | 1 | [Greedy Goblin](https://github.com/codeconnector/CodingDojo/tree/main/challenges/2022-02-01-greedy-goblin) | JavaScript | [xanderyzwich](https://github.com/xanderyzwich) | [mrumiker](https://github.com/mrumiker) | [ericwburden](https://github.com/ericwburden) |
+ | 2022 | Jan | 25 | [Move Element to End](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-01-25-move-element-to-end/challenge.md) | Java | [hasancbngl](https://github.com/hasancbngl) | [xanderyzwich](https://github.com/xanderyzwich) | [drkennetz](https://github.com/drkennetz) |
+ | 2022 | Jan | 18 | [Planet Express](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-01-18-planet-express/challenge.md) | C# | [mrumiker](https://github.com/codeconnector/CodingDojo/commits?author=mrumiker) | - | - |
+ | 2021 | Nov | 30 | [Weird Column Naming](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-11-30-weird-column-naming/challenge.md) | JavaScript | [JenniferToops](https://github.com/JenniferToops) | - | - |
+ | 2021 | Nov | 16 | [Data Grouping in a Large Text File](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-11-16-data-grouping/challenge.md) | Python | - | - | - |
+ | 2021 | Nov | 9 | [Look and Say Sequence](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-11-09-look-and-say-sequence/challenge.md) | Rust | [ericwburden](https://github.com/ericwburden) | - | - | 
+ | 2021 | Nov | 2 | [Pragmatic Pipes](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-11-02-pragmatic-pipes/challenge.md) | - | - | - |
+ | 2021 | October | 26 | [The 24 Game](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-10-26-the-24-game/challenge.md) | Python | [mrumiker](https://github.com/mrumiker) | [xanderyzwich](https://github.com/xanderyzwich) | - |
+ | 2021 | October | 19 | [ZigZag Print](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-10-19-zig-zag-print/challenge.md) | JavaScript | [leafydreams](https://github.com/leafydreams) | [ericwburden](https://github.com/ericwburden) | [xanderyzwich](https://github.com/xanderyzwich) |
+ | 2021 | October | 12 | [Monotonic Array](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-10-12-monotonic-array/challenge.md) | JavaScript | [YolandaHaynes](https://github.com/YolandaHaynes) | [ericwburden](https://github.com/ericwburden) | [williycole](https://github.com/williycole) |
+ | 2021 | October | 05 | [Limited Levenshtein Leap](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-10-05-limited-levenshtein-leap/challenge.md) | JavaScript | [RReiso](https://github.com/RReiso) | [ericwburden](https://github.com/ericwburden) | [xanderyzwich](https://github.com/xanderyzwich) |
+ | 2021 | September | 28 | [Minimum Impossible Sum](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-09-28-minimum-impossible-sum/challenge.md) | JavaScript | [williycole](https://github.com/williycole) | [ericwburden](https://github.com/ericwburden) | [drkennetz](https://github.com/drkennetz) |
+ | 2021 | September | 21 | [TicTacToe Winner](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-09-20-tic-tac-toe-winner/challenge.md) | Ruby | [RReiso](https://github.com/RReiso) | [ericwburden](https://github.com/ericwburden) | [parhaml](https://github.com/parhaml) |
+ | 2021 | September | 14 | [Fast Peak Picker](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-09-14-fast-peak-picker/challenge.md) | JavaScript | [YolandaHaynes](https://github.com/YolandaHaynes) | [ericwburden](https://github.com/ericwburden) | [drkennetz](https://github.com/drkennetz) |
+ | 2021 | August | 31 | [Zero Point](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-08-31-zero-point/challenge.md) | JavaScript | [maelingmurphy](https://github.com/maelingmurphy) | - | - |
+ | 2021 | August | 24 | [Dominoes Descending](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-08-24-dominoes-descending/challenge.md) | Go | [caninodev](https://github.com/caninodev) | [birenderjit](https://github.com/birenderjit) | [ericwburden](https://github.com/ericwburden) |
+ | 2021 | August | 17 | [Friend Finder](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-08-17-friend-finder/challenge.md) | Java | [jamietheminyard](https://github.com/jamietheminyard) | [xanderyzwich](https://github.com/xanderyzwich) | [drkennetz](https://github.com/drkennetz) |
+ | 2021 | August | 10 | [Sort Window](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-08-10-sort-window/challenge.md) | JavaScript | [jennifertoops](https://github.com/jennifertoops) | [ericwburden](https://github.com/ericwburden) | [xanderyzwich](https://github.com/xanderyzwich) |
+ | 2021 | August | 03 | [Tracing Triangles](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-08-03-tracing-triangles/challenge.md) | C# | [aaknox](https://github.com/aaknox) | [drkennetz](https://github.com/drkennetz) | [xanderyzwich](https://github.com/xanderyzwich) |
+ | 2021 | July | 27 | [Boustrophedon](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-07-27-boustrophedon/challenge.md) | JavaScript | [mrumiker](https://github.com/mrumiker) | [ericwburden](https://github.com/ericwburden) | [xanderyzwich](https://github.com/xanderyzwich) |
+ | 2021 | July | 20 | [Balanced Brackets](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-07-20-balanced-brackets/challenge.md) | JavaScript | [ZacWilson87](https://github.com/ZacWilson87) | [ericwburden](https://github.com/ericwburden) | [drkennetz](https://github.com/drkennetz) |
+ | 2021 | July | 13 | [Coin Counter](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-07-13-coin-counter/challenge.md) | Kotlin | [hasancbngl](https://github.com/hasancbngl) | [ericwburden](https://github.com/ericwburden) | [birenderjit](https://github.com/birenderjit) |
+ | 2021 | June | 29 | [Runs of Ones](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-06-29-run-of-ones/challenge.md) | Java | [onesirian](https://github.com/onesirian) | [parhaml](https://github.com/parhaml) | [ericwburden](https://github.com/ericwburden) |
+ | 2021 | June | 22 | Demo | Python & Rust | [drkennetz](https://github.com/drkennetz) & [ericwburden](https://github.com/ericwburden) | - | [parhaml](https://github.com/parhaml) |
+ | 2021 | June | 15 | [Square Maze](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-06-15-square-maze/challenge.md) | Ruby | [ericwburden](https://github.com/ericwburden) | [parhaml](https://github.com/parhaml) | - |
+ | 2021 | June | 8 | [Simple 2D Iterator](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-06-08-simple-2d-iterator/challenge.md) | JavaScript | [beccani](http://github.com/beccani) | [ericwburden](https://github.com/ericwburden) | [parhaml](https://github.com/parhaml) |
+ | 2021 | June | 1 | [Find 3 Largest Numbers](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-06-01-find-three-largest-numbers/challenge.md) | Java | [CaninoDev](https://github.com/CaninoDev) | [birenderjit](https://githup.com/birenderjit) | [ericwburden](https://github.com/ericwburden) |
+ | 2021 | May | 25 | [Dictionary Decompression](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-05-25-dictionary-decompression/challenge.md) | Python | [drkennetz](https://github.com/drkennetz) | [xanderyzwich](https://github.com/xanderyzwich) | - |
+ | 2021 | May | 18 | [Sum of Squares](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-05-18-sum-of-squares/challenge.md) | Go | [caninodev](https://github.com/caninodev) | [drkennetz](https://github.com/drkennetz) | [birenderjit](https://github.com/birenderjit) |
+ | 2021 | May | 11 | [Non-Constructible Change](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-05-11-nonconstructible-change/challenge.md) | Java | [milaguileras](https://github.com/milaguileras) | [xanderyzwich](https://github.com/xanderyzwich) | [birenderjit](https://github.com/birenderjit) |
+ | 2021 | May | 4 | [Box in a Box](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-05-04-a-box-in-a-box/challenge.md) | JavaScript | [hasancbngl](https://github.com/hasancbngl) | [ericwburden](https://github.com/ericwburden) | [xanderyzwich](https://github.com/xanderyzwich) |
+ | 2021 | Apr | 27 | [Sum Arrays](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-04-27-sum-arrays/challenge.md) | Ruby | [da-vinci-noob](https://github.com/da-vinci-noob) | [parhaml](https://github.com/parhaml) | - |
+ | 2021 | Apr | 20 | [Potential Palindrome](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-04-20-potential-palindrome/challenge.md) | Java | [ericburden](https://github.com/ericwburden) | - | - | 
+ | 2021 | Apr | 13 | [Single and Ready to Mingle](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-04-13-single-and-ready-to-mingle/challenge.md) | JavaScript | [DoubleBridges](https://github.com/DoubleBridges) | - | - |
+| 2021 | Apr | 6 | [Intervening Verbiage](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2021-04-06-intervening-verbiage/challenge.md) | Java | [beccani](https://github.com/beccani) | - | - | 
 
-- Language of the Week: C#
-- Driver: [BsideAlgorithms](https://github.com/BsideAlgorithms)
-- Navigator: [mrumiker](https://github.com/mrumiker)
-- Host: [xanderyzwich](https://github.com/xanderyzwich)
-
-### Feb 22, 2022
-
-- Language of the Week: Pending
-- Driver: Pending
-- Navigator: Pending
-- Host: Pending
-
-## Past Highlights
-
-### May 04, 2021
-
-- Language of the Week: JavaScript
-- Driver: [hasancbngl](https://github.com/hasancbngl)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [xanderyzwich](https://github.com/xanderyzwich)
-
-### May 11, 2021
-
-- Language of the Week: Java
-- Driver: [milaguileras](https://github.com/milaguileras)
-- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
-- Host: [birenderjit](https://github.com/birenderjit)
-
-### May 18, 2021
-
-- Language of the Week: Go
-- Driver: [caninodev](https://github.com/caninodev)
-- Navigator: [drkennetz](https://github.com/drkennetz)
-- Host: [birenderjit](https://github.com/birenderjit)
-
-### May 25, 2021
-
-- Language of the Week: Python
-- Driver: [drkennetz](https://github.com/drkennetz)
-- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
-
-### June 01, 2021
-
-- Language of the Week: Java
-- Driver: [CaninoDev](https://github.com/CaninoDev)
-- Navigator: [birenderjit](https://githup.com/birenderjit)
-- Host: [ericwburden](https://github.com/ericwburden)
-
-### June 08, 2021
-- Language of the Week: JavaScript
-- Driver: [beccani](http://github.com/beccani)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [parhaml](https://github.com/parhaml)
-
-### June 15, 2021
-- Language of the Week: Ruby
-- Driver: [ericwburden](https://github.com/ericwburden)
-- Navigator: [parhaml](https://github.com/parhaml)
-
-### June 22, 2021
-
-- Language of the Week: Python & Rust
-- Presenter 1: [drkennetz](https://github.com/drkennetz)
-- Presenter 2: [ericwburden](https://github.com/ericwburden)
-- Host: [parhaml](https://github.com/parhaml)
-
-### June 29, 2021
-
-- Language of the Week: Java
-- Driver: [onesirian](https://github.com/onesirian)
-- Navigator: [parhaml](https://github.com/parhaml)
-- Host: [ericwburden](https://github.com/ericwburden)
-
-### July 13, 2021
-
-- Language of the Week: Kotlin
-- Driver: [hasancbngl](https://github.com/hasancbngl)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [birenderjit](https://github.com/birenderjit)
-
-### July 20, 2021
-
-- Language of the Week: JavaScript
-- Driver: [ZacWilson87](https://github.com/ZacWilson87)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [drkennetz](https://github.com/drkennetz)
-
-### July 27, 2021
-
-- Language of the Week: JavaScript
-- Driver: [mrumiker](https://github.com/mrumiker)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [xanderyzwich](https://github.com/xanderyzwich)
-
-### August 03, 2021
-
-- Language of the Week: C#
-- Driver: [aaknox](https://github.com/aaknox)
-- Navigator: [drkennetz](https://github.com/drkennetz)
-- Host: [xanderyzwich](https://github.com/xanderyzwich)
-
-### August 10, 2021
-
-- Language of the Week: JavaScript
-- Driver: [jennifertoops](https://github.com/jennifertoops)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [xanderyzwich](https://github.com/xanderyzwich)
-
-### August 17, 2021
-
-- Language of the Week: Java
-- Driver: [jamietheminyard](https://github.com/jamietheminyard)
-- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
-- Host: [drkennetz](https://github.com/drkennetz)
-
-### August 24, 2021
-
-- Language of the Week: Go
-- Driver: [caninodev](https://github.com/caninodev)
-- Navigator: [birenderjit](https://github.com/birenderjit)
-- Host: [ericwburden](https://github.com/ericwburden)
-
-### August 31, 2021
-
-- Language of the Week: JavaScript
-- Driver: [maelingmurphy](https://github.com/maelingmurphy)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [drkennetz](https://github.com/drkennetz)
-
-### September 14, 2021
-
-- Language of the Week: JavaScript
-- Driver: [YolandaHaynes](https://github.com/YolandaHaynes)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [drkennetz](https://github.com/drkennetz)
-
-### September 21, 2021
-
-- Language of the Week: Ruby
-- Driver: [RReiso](https://github.com/RReiso)
-- Host: [ericwburden](https://github.com/ericwburden)
-- Navigator: [parhaml](https://github.com/parhaml)
-
-### September 28, 2021
-
-- Language of the Week: JavaScript
-- Driver: [williycole](https://github.com/williycole)
-- Host: [ericwburden](https://github.com/ericwburden)
-- Navigator: [drkennetz](https://github.com/drkennetz)
-
-### October 05, 2021
-
-- Language of the Week: JavaScript
-- Driver: [RReiso](https://github.com/RReiso)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [xanderyzwich](https://github.com/xanderyzwich)
-
-### October 12, 2021
-
-- Language of the Week: JavaScript
-- Driver: [YolandaHaynes](https://github.com/YolandaHaynes)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [williycole](https://github.com/williycole)
-
-### October 19, 2021
-
-- Language of the Week: JavaScript
-- Driver: [leafydreams](https://github.com/leafydreams)
-- Navigator: [ericwburden](https://github.com/ericwburden)
-- Host: [xanderyzwich](https://github.com/xanderyzwich)
-
-### October 26, 2021
-
-- Language of the Week: Python
-- Driver: [mrumiker](https://github.com/mrumiker)
-- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
-- Host: Pending
-
-### Jan 25, 2022
-
-- Language of the Week: Java
-- Driver: [hasancbngl](https://github.com/hasancbngl)
-- Navigator: [xanderyzwich](https://github.com/xanderyzwich)
-- Host: [drkennetz](https://github.com/drkennetz)
-
-### Feb 1, 2022
-
-- Language of the Week: JavaScript
-- Driver: [xanderyzwich](https://github.com/xanderyzwich)
-- Navigator: [mrumiker](https://github.com/mrumiker)
-- Host: [ericwburden](https://github.com/ericwburden)
-
-### Feb 8, 2022
-
-#### Special Edition: 7 PM Central
