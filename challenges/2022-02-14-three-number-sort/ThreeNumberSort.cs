@@ -24,11 +24,25 @@ public class ThreeNumberSort
             var item1Index = threeMap[threes.Item1];
             var item2Index = threeMap[threes.Item2];
             input[item1Index] = current;
-            input[item1Index + item2Index] = threes.Item2;
-            
+            if (item2Index > item1Index)
+            {
+               input[item1Index + item2Index] = threes.Item2;
+            }
             if (item1Index + item2Index != i)
             {
                input[i] = threes.Item3;
+            }
+            if (i > 0 && input[i - 1] == threes.Item2)
+            {
+               if (item1Index + item2Index == i)
+               {
+                  input[i - 1] = input[i] = threes.Item2;
+               }
+               else
+               {
+                  input[i - 1] = threes.Item1;
+                  input[i] = threes.Item2;
+               }
             }
          }
          else if (current == threes.Item2)
