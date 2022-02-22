@@ -23,7 +23,8 @@
 
 function jumpAround(input) {
   const target = Number(input);
-  const queue = [{ number: 0, moves: 0 }];
+  let queue = [{ number: 0, moves: 0 }];
+  let nextQueue = [];
 
   while (queue.length) {
     // take last element of queue as current jump position / moves
@@ -37,8 +38,13 @@ function jumpAround(input) {
     const positive = current.number + nextStep;
     if (positive === target) return nextStep;
     // target not hit yet, add the new jump positions to the queue
-    queue.unshift({ number: negative, moves: nextStep });
-    queue.unshift({ number: positive, moves: nextStep });
+    nextQueue.push({ number: negative, moves: nextStep });
+    nextQueue.push({ number: positive, moves: nextStep });
+    // swap to next queue when current queue is finished processing
+    if (!queue.length) {
+      queue = nextQueue;
+      nextQueue = [];
+    }
   }
 }
 
