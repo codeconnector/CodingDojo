@@ -99,4 +99,17 @@ public class ThreeNumberSort
       Assert.Equal(actual[i], expected[i]);
     }
   }
+  
+  [Fact]
+  public void SortsAnotherInterestingArray()
+  {
+    var input = new int[] { 1, 3, 2, 1 };
+    var threes = (1, 2, 3);
+    var actual = SortArray(input, threes);
+    var expected = new int[] { 1, 1, 2, 3 };
+    for (var i = 0; i < actual.Length; i++)
+    {
+      Assert.Equal(actual[i], expected[i]);
+    }
+  }
 }
