@@ -6,7 +6,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 | Year | Month | Day | Challenge | Language | Driver | Navigator | Host |
 | ---: | :---: | --: | :-------- | :------- | :----- | :-------- | :--- |
-| 2022 | Mar | 1 | [agrittiwari][] | JavaScript | TBA | TBA | TBA |
+| 2022 | Mar | 1 | TBA | JavaScript | [agrittiwari][] | TBA | TBA |
 | 2022 | Feb  | 22 | [Jump Around](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-02-22-jump-around) | JavaScript | [brehberg][] | [ericwburden][] | [xanderyzwich][] |
 | 2022 | Feb  | 15 | [Three number sort](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-02-14-three-number-sort/challenge.md) | C# | [bsidealgorithms][] | [mrumiker][] | [xanderyzwich][] |
 | 2022 | Feb  | 8  | [SimpleDB](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-02-09-simple-db/challenge.md#simple-database-challenge) (After Dark) | Python | [ericwburden][] | [drkennetz][] | - |
