@@ -69,8 +69,3 @@ test('multiple peaks, valleys, and plateaus', () => {
   const expected = 9;
   expect(actual).toEqual(expected);
 });
-
-
-
-
-

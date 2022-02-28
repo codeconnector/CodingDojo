@@ -30,7 +30,7 @@
 // ```
 
 function longestPeak(input) {
-  return;
+  // Type your solution here
 }
 
 module.exports = { longestPeak };
