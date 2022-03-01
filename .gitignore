@@ -19,6 +19,8 @@ out/*
 **/*.targets
 **/*.props
 **/*.Assembly*
+**/target
+**/Cargo.lock
 
 # Include the `package.json` files
 !**/package.json
