@@ -6,6 +6,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 | Year | Month | Day | Challenge | Language | Driver | Navigator | Host |
 | ---: | :---: | --: | :-------- | :------- | :----- | :-------- | :--- |
+| 2022 | Mar | 8 | [Hidden Digits](https://github.com/codeconnector/CodingDojo/issues/273) | JavaScript | [Nelsondl][] | TBA | TBA |
 | 2022 | Mar | 1 | [Longest Peak](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-01-longest-peak/challenge.md) | JavaScript | [agrittiwari][] | [mrumiker][] | [xanderyzwich][] |
 | 2022 | Feb  | 22 | [Jump Around](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-02-22-jump-around) | JavaScript | [brehberg][] | [ericwburden][] | [xanderyzwich][] |
 | 2022 | Feb  | 15 | [Three number sort](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-02-14-three-number-sort/challenge.md) | C# | [bsidealgorithms][] | [mrumiker][] | [xanderyzwich][] |
@@ -71,3 +72,4 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 [zacwilson87]: https://github.com/ZacWilson87
 [brehberg]: https://github.com/brehberg
 [agrittiwari]: https://github.com/agrittiwari
+[Nelsondl]: https://github.com/Nelsondl
