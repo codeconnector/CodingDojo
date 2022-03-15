@@ -6,6 +6,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 | Year | Month | Day | Challenge | Language | Driver | Navigator | Host |
 | ---: | :---: | --: | :-------- | :------- | :----- | :-------- | :--- |
+| 2022 | Mar | 15 | [Longest Common Prefix](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-15-longest-common-prefix/challenge.md) | JavaScript | Aurelie | [ericwburden][] | [mrumiker][] |
 | 2022 | Mar | 8 | [Hidden Digits](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-08-hidden-digits/challenge.md) | JavaScript | [Nelsondl][] | [mrumiker][] | [xanderyzwich][] |
 | 2022 | Mar | 1 | [Longest Peak](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-01-longest-peak/challenge.md) | JavaScript | [agrittiwari][] | [mrumiker][] | [xanderyzwich][] |
 | 2022 | Feb  | 22 | [Jump Around](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-02-22-jump-around) | JavaScript | [brehberg][] | [ericwburden][] | [xanderyzwich][] |
