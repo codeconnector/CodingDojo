@@ -24,7 +24,7 @@ test("Should identify multiple-letter prefixes", () => {
   let actual2 = longestCommonPrefix(["garbage", "garden", "gargantuan"])
   expect(actual2).toEqual("gar")
 
-  let actual3 = longestCommonPrefix(["castle", "casting", "castanet", "castor"])
+  let actual3 = longestCommonPrefix(["castle", "casting", "castanet", "cast"])
   expect(actual3).toEqual("cast")
 })
 
@@ -36,5 +36,27 @@ test("Should identify when there is no common prefix", () => {
   expect(actual2).toEqual("")
 
   let actual3 = longestCommonPrefix(["castle", "antimony", "castanet", "antiquity"])
+  expect(actual3).toEqual("")
+})
+
+test("Should identify repeated instances of a single word", () => {
+  let actual1 = longestCommonPrefix(["apple", "apple"])
+  expect(actual1).toEqual("apple")
+
+  let actual2 = longestCommonPrefix(["apple", "apple", "apple"])
+  expect(actual2).toEqual("apple")
+})
+
+test("Should work on large inputs", () => {
+  let input1 = Array(10000).fill("variadic")
+  let actual1 = longestCommonPrefix(input1)
+  expect(actual1).toEqual("variadic")
+
+  let input2 = Array(1000).fill("variable")
+  let input3 = Array(1000).fill("variety")
+  let actual2 = longestCommonPrefix(input1.concat(input2).concat(input3))
+  expect(actual2).toEqual("vari")
+
+  let actual3 = longestCommonPrefix(input1.concat(["a"]))
   expect(actual3).toEqual("")
 })
