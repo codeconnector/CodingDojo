@@ -20,7 +20,7 @@ As the communications liaison for the search party, it is your job to report the
 - Your function should return a coordinate (in the form of `(lat, lon)` or `[lat, lon]`, depending on the language) .
 - Your search party will always head east from your initial position, then make only left turns to continue the spiral. So, your heading will be east, north, west, south, east, and so on...
 - For the purpose of simplicity, you may treat `lat` as a row index (or `y` position) and `lon` as a column index (or `x` position).
-- Square numbering always starts at one, and increases from there. You should return an error if given a number for a square that is less than one.
+- Square numbering always starts at one, and increases from there. You should THROW an error if given a number for a square that is less than one.
 
 ## Examples
 
