@@ -72,12 +72,14 @@ impl Iterator for SpiralIter {
     fn next(&mut self) -> Option<Self::Item> {
         // We'll return the current position after updating to the
         // next state.
-        let result = Some(self.pos);
+        let result  = Some(self.pos);
+
+        // Number of steps to turn on
+        let turn_at = (self.turns / 2) + 1;
 
         // 'Move' the `SpiralIter` to the next position
         self.pos.move_towards(self.heading);
         self.steps_since_turn += 1;
-        let turn_at = (self.turns / 2) + 1;
         if self.steps_since_turn >= turn_at {
             self.turns += 1;
             self.steps_since_turn = 0;
