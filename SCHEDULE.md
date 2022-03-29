@@ -6,6 +6,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 | Year | Month | Day | Challenge | Language | Driver | Navigator | Host |
 | ---: | :---: | --: | :-------- | :------- | :----- | :-------- | :--- |
+| 2022 | Mar | 29 | [Search Party](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-29-search-party/challenge.md) | JavaScript | [EvilTables][] | [drkennetz][] | [mrumiker][] |
 | 2022 | Mar | 15 | [Longest Common Prefix](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-15-longest-common-prefix/challenge.md) | JavaScript | [aureliefomum][] | [ericwburden][] | [mrumiker][] |
 | 2022 | Mar | 8 | [Hidden Digits](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-08-hidden-digits/challenge.md) | JavaScript | [Nelsondl][] | [mrumiker][] | [xanderyzwich][] |
 | 2022 | Mar | 1 | [Longest Peak](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-01-longest-peak/challenge.md) | JavaScript | [agrittiwari][] | [mrumiker][] | [xanderyzwich][] |
@@ -75,3 +76,4 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 [brehberg]: https://github.com/brehberg
 [agrittiwari]: https://github.com/agrittiwari
 [Nelsondl]: https://github.com/Nelsondl
+[EvilTables]: https://github.com/EvilTables
