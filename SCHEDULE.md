@@ -6,7 +6,8 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 | Year | Month | Day | Challenge | Language | Driver | Navigator | Host |
 | ---: | :---: | --: | :-------- | :------- | :----- | :-------- | :--- |
-| 2022 | Apr | 5 | [Pascal's Triangle](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-04-05-pascals-triangle/challenge.md) | JavaScript | [MicahNYoung][] | [mrumiker][] | TBA |
+| 2022 | Apr | 12 | TBA | Java | [aureliefomum][] | TBA | TBA |
+| 2022 | Apr | 5 | [Pascal's Triangle](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-04-05-pascals-triangle/challenge.md) | JavaScript | [MicahNYoung][] | [mrumiker][] | [xanderyzwich][] |
 | 2022 | Mar | 29 | [Search Party](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-29-search-party/challenge.md) | JavaScript | [EvilTables][] | [drkennetz][] | [mrumiker][] |
 | 2022 | Mar | 22 | Demo  | Python | - | - | [xanderyzwich][] |
 | 2022 | Mar | 15 | [Longest Common Prefix](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-15-longest-common-prefix/challenge.md) | JavaScript | [aureliefomum][] | [ericwburden][] | [mrumiker][] |
