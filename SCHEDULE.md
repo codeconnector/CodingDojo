@@ -8,6 +8,7 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 | ---: | :---: | --: | :-------- | :------- | :----- | :-------- | :--- |
 | 2022 | Apr | 5 | [Pascal's Triangle](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-04-05-pascals-triangle/challenge.md) | JavaScript | [MicahNYoung][] | [mrumiker][] | TBA |
 | 2022 | Mar | 29 | [Search Party](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-29-search-party/challenge.md) | JavaScript | [EvilTables][] | [drkennetz][] | [mrumiker][] |
+| 2022 | Mar | 22 | Demo  | Python | - | - | [xanderyzwich][] |
 | 2022 | Mar | 15 | [Longest Common Prefix](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-15-longest-common-prefix/challenge.md) | JavaScript | [aureliefomum][] | [ericwburden][] | [mrumiker][] |
 | 2022 | Mar | 8 | [Hidden Digits](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-08-hidden-digits/challenge.md) | JavaScript | [Nelsondl][] | [mrumiker][] | [xanderyzwich][] |
 | 2022 | Mar | 1 | [Longest Peak](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-01-longest-peak/challenge.md) | JavaScript | [agrittiwari][] | [mrumiker][] | [xanderyzwich][] |
