@@ -111,3 +111,44 @@ Block @ (3, 3) > move up, down, down, left, up, right, right to (5, 3)
   5 . # . . .   >   5 . . . . .   >   5 . . . . .   >   5 . . . . .
 ```
 
+### Level 3
+
+Now that you can steer your block, it's time to start making it go where you want it
+to go. You may continue to assume an infinite flat grid, but now you need to take a 
+coordinate and return the list of directions you moved your block to get it there. You
+should follow the shortest path.
+
+- Keep using your Block object from level 1.
+- The level 3 tests will give you an initial block location and a target location, as
+  coordinates in the same format used throughout this challenge.
+- In keeping with the game that inspired this challenge, targets will alway be a single
+  coordinate, and your block will need to stand upright on that grid space in order
+  to pass the test.
+- There may be more than one shortest path to get to the goal, you only need to
+  identify and return _one_ shortest path.
+- The tests will expect a list of characters representing the directions you moved,
+  'U', 'D', 'L', or 'R'.
+
+#### Examples
+
+```
+Block @ (2, 2) move to (5, 5) > right, right, down, down ['R', 'R', 'D', 'D']
+    1 2 3 4 5         1 2 3 4 5         1 2 3 4 5         1 2 3 4 5  
+  1 . . . . .   >   1 . . . . .   >   1 . . . . .   >   1 . . . . .  >
+  2 . # . . .   >   2 . . # # .   >   2 . . . . #   >   2 . . . . .  >
+  3 . . . . .   >   3 . . . . .   >   3 . . . . .   >   3 . . . . #  >
+  4 . . . . .   >   4 . . . . .   >   4 . . . . .   >   4 . . . . #  >
+  5 . . . . O   >   5 . . . . O   >   5 . . . . O   >   5 . . . . O  >
+
+
+    1 2 3 4 5
+  1 . . . . .
+  2 . . . . .
+  3 . . . . .
+  4 . . . . .
+  5 . . . . #
+
+Note: down, down, right, right ['D', 'D', 'R', 'R'] would also be an acceptable answer.
+      Going right, down, down, down, right would also get there, but not be
+      the shortest path.
+```
