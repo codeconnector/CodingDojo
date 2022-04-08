@@ -152,3 +152,40 @@ Note: down, down, right, right ['D', 'D', 'R', 'R'] would also be an acceptable 
       Going right, down, down, down, right would also get there, but not be
       the shortest path.
 ```
+
+### Level 4
+
+Ok, smart guy/gal, you can navigate over an infinite, flat, unobstructed expanse, but
+how well does your block handle when there are obstacles? For this level, you'll be
+given a representation of a finite grid containing obstacles, and will need to 
+steer your block around those obstacles to the target.
+
+- You will need to parse a string into a grid representation. The tests will give a 
+  string in the format ".....\n..x..\n.x...\x....\n...x.", where '.' represents an
+  empty space, and 'x' represents an obstacle.
+- You will continue to get a coordinate(s) for your block start and target space.
+- The tests will continue to expect a list of characters representing the directions
+  you moved to get to the target.
+
+#### Examples 
+
+```
+Block @ (2, 2) move to (5, 5) > right, down, down, down, right ['R', 'D', 'D', 'D', 'R']
+    1 2 3 4 5         1 2 3 4 5         1 2 3 4 5         1 2 3 4 5  
+  1 . . . . .   >   1 . . . . .   >   1 . . . . .   >   1 . . . . .  >
+  2 . # . . x   >   2 . . # # x   >   2 . . . . x   >   2 . . . . x  >
+  3 . . . . .   >   3 . . . . .   >   3 . . # # .   >   3 . . . . .  >
+  4 . . . . .   >   4 . . . . .   >   4 . . . . .   >   4 . . # # .  >
+  5 . x . . O   >   5 . x . . O   >   5 . x . . O   >   5 . x . . O  >
+
+
+    1 2 3 4 5         1 2 3 4 5
+  1 . . . . .   >   1 . . . . .
+  2 . . . . x   >   2 . . . . x
+  3 . . . . .   >   3 . . . . .
+  4 . . . . .   >   4 . . . . .
+  5 . x # # O   >   5 . x . . #
+
+Note: down, down, right, right ['D', 'D', 'R', 'R'] will no longer work thanks
+      to the obstacles.
+```
