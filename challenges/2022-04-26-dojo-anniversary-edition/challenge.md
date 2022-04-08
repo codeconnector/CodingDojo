@@ -7,7 +7,10 @@ our challenge comes in _5_ different levels of difficulty, each of which builds 
 last. Unlike our normal sessions, we're releasing the challenge early and inviting all
 comers to submit their best PR, which we will review during the meetup. Get stuck on 
 level 3? Submit a PR! Wipe the floor with level 5? Submit a PR! Can't figure out how
-to get the tests to run? Submit a PR! 
+to get the tests to run? Submit a PR!
+
+**Anyone who submits a solution through level 2 will be entered into a drawing for
+a fabulous prize!**
 
 But wait, there's more! We won't be looking at solutions in a single language (that
 would be too easy), we want submissions in _any_ programming language we can get. In
