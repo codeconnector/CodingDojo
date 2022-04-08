@@ -116,11 +116,55 @@ Block @ (3, 3) > move up, down, down, left, up, right, right to (5, 3)
 Now that you can steer your block, it's time to start making it go where you want it
 to go. You may continue to assume an infinite flat grid, but now you need to take a 
 coordinate and return the list of directions you moved your block to get it there. You
-should follow the shortest path.
+should be able to identify a valid path from start to target, not necessarily the
+shortest path.
 
 - Keep using your Block object from level 1.
 - The level 3 tests will give you an initial block location and a target location, as
   coordinates in the same format used throughout this challenge.
+- In keeping with the game that inspired this challenge, targets will alway be a single
+  coordinate, and your block will need to stand upright on that grid space in order
+  to pass the test.
+- There are infinitely many paths that may be taken, considering the grid is an
+  infinite flat expanse, but remember that the tests will need to run in a 
+  reasonable amount of time.
+- The tests will expect a list of characters representing the directions you moved,
+  'U', 'D', 'L', or 'R'.
+
+#### Examples
+
+```
+Block @ (2, 2) move to (5, 5) > right, right, down, down ['R', 'R', 'D', 'D']
+    1 2 3 4 5         1 2 3 4 5         1 2 3 4 5         1 2 3 4 5  
+  1 . . . . .   >   1 . . . . .   >   1 . . . . .   >   1 . . . . .  >
+  2 . # . . .   >   2 . . # # .   >   2 . . . . #   >   2 . . . . .  >
+  3 . . . . .   >   3 . . . . .   >   3 . . . . .   >   3 . . . . #  >
+  4 . . . . .   >   4 . . . . .   >   4 . . . . .   >   4 . . . . #  >
+  5 . . . . O   >   5 . . . . O   >   5 . . . . O   >   5 . . . . O  >
+
+
+    1 2 3 4 5
+  1 . . . . .
+  2 . . . . .
+  3 . . . . .
+  4 . . . . .
+  5 . . . . #
+
+Other valid options include:
+- ['D', 'D', 'R', 'R']
+- ['R', 'D', 'D', 'D', 'R']
+- ['D', 'R', 'R', 'R', 'D']
+- ['D', 'R', 'R', 'R', 'D']
+- plus many, many more
+```
+
+### Level 4
+
+It's time to strive for efficiency! To accomplish this level, you should be able to
+identify the _shortest_ path from the block's start to the target.
+
+- Keep using your Block object from level 1.
+- The inputs and outputs of your function should be the same as for level 3.
 - In keeping with the game that inspired this challenge, targets will alway be a single
   coordinate, and your block will need to stand upright on that grid space in order
   to pass the test.
@@ -153,12 +197,13 @@ Note: down, down, right, right ['D', 'D', 'R', 'R'] would also be an acceptable 
       the shortest path.
 ```
 
-### Level 4
+### Level 5
 
 Ok, smart guy/gal, you can navigate over an infinite, flat, unobstructed expanse, but
-how well does your block handle when there are obstacles? For this level, you'll be
-given a representation of a finite grid containing obstacles, and will need to 
-steer your block around those obstacles to the target.
+how well does your block handle when there are obstacles? For this (final) level,
+you'll be given a representation of a finite grid containing obstacles, and will need
+to steer your block around those obstacles to the target. You'll also need to keep your
+block within the bounds of the grid.
 
 - You will need to parse a string into a grid representation. The tests will give a 
   string in the format ".....\n..x..\n.x...\x....\n...x.", where '.' represents an
@@ -189,3 +234,4 @@ Block @ (2, 2) move to (5, 5) > right, down, down, down, right ['R', 'D', 'D', '
 Note: down, down, right, right ['D', 'D', 'R', 'R'] will no longer work thanks
       to the obstacles.
 ```
+
