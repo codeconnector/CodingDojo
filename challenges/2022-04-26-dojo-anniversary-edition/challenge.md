@@ -20,8 +20,8 @@ puzzle in any language you'd like.
 
 Each testing setup includes all you need to get started on your own solution, including
 specific setup instructions for that language/environment and test cases designed to
-check your work. If you have questions, come ask [HERE](link to discussions). And now,
-without futher delay: the challenge!
+check your work. If you have questions, come join our [Slack](https://join.slack.com/t/code-connector/shared_invite/zt-6e1idsg6-wYI1hdfk_hR_QKahSBwldQ) and ask in the `#code`
+channel. And now, without futher delay: the challenge!
 
 ## Do a Block-Flip!
 
@@ -122,7 +122,6 @@ coordinate and return the list of directions you moved your block to get it ther
 should be able to identify a valid path from start to target, not necessarily the
 shortest path.
 
-- Keep using your Block object from level 1.
 - The level 3 tests will give you an initial block location and a target location, as
   coordinates in the same format used throughout this challenge.
 - In keeping with the game that inspired this challenge, targets will alway be a single
@@ -166,11 +165,7 @@ Other valid options include:
 It's time to strive for efficiency! To accomplish this level, you should be able to
 identify the _shortest_ path from the block's start to the target.
 
-- Keep using your Block object from level 1.
 - The inputs and outputs of your function should be the same as for level 3.
-- In keeping with the game that inspired this challenge, targets will alway be a single
-  coordinate, and your block will need to stand upright on that grid space in order
-  to pass the test.
 - There may be more than one shortest path to get to the goal, you only need to
   identify and return _one_ shortest path.
 - The tests will expect a list of characters representing the directions you moved,
@@ -211,6 +206,8 @@ block within the bounds of the grid.
 - You will need to parse a string into a grid representation. The tests will give a 
   string in the format ".....\n..x..\n.x...\x....\n...x.", where '.' represents an
   empty space, and 'x' represents an obstacle.
+- Since the grid is now finite, you may assume that every coordinate not explicity
+  included in your grid representation as 'empty' is impassable.
 - You will continue to get a coordinate(s) for your block start and target space.
 - The tests will continue to expect a list of characters representing the directions
   you moved to get to the target.
