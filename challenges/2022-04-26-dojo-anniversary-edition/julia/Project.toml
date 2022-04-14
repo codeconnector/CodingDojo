@@ -1,0 +1,7 @@
+name = "julia"
+uuid = "1cd9fe4f-12e7-416c-96b3-4d0d30c148a1"
+authors = ["Eric Burden <eric@ericburden.dev>"]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
