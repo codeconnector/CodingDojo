@@ -283,7 +283,7 @@ mod level_four_tests {
         let target = BlockPosition::Tall((8, 13));
         let path = level_four(&mut Block::new(start), target);
         assert_eq!(level_two(&mut Block::new(start), &path), target);
-        assert_eq!(path.len(), 11);
+        assert_eq!(path.len(), 15);
     }
 }
 
