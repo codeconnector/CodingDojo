@@ -1,4 +1,7 @@
 const skipCounting = (playerCount, tileCount) => {
+  if (tileCount === 0) {
+    return 0
+  }
   // generate the board state
 
   let currentTile = 0
@@ -44,5 +47,9 @@ const skipCounting = (playerCount, tileCount) => {
     playerScores[player] += score
   }
 
-  return playerScores
+  const maxScore = playerScores.reduce((a, b) => {
+    return Math.max(a, b)
+  })
+
+  return maxScore
 }
