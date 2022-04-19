@@ -4,6 +4,8 @@ class Block {
     this.isDownVertically = null
     this.isDownHorizontally = null
     this.isDown = null
+
+    this.updateOrientation()
   }
 
   moveUp() {
