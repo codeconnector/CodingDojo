@@ -123,7 +123,8 @@ class Block {
   }
 
   updateOrientation() {
-    const hasMultipleGridValues = this.gridPosition[0][0] ? true : false
+    const hasMultipleGridValues =
+      this.gridPosition[0].length === 2 ? true : false
 
     this.isDown = hasMultipleGridValues ? true : false
 
@@ -157,11 +158,36 @@ class Block {
     )
   }
 }
+//
+//function to make Block moves
 
-let testBlock = new Block([0, 0])
-testBlock.updateOrientation()
-testBlock.moveDown()
-testBlock.moveRight()
+function makeBlockMoves(startingPosition, moveList) {
+  block = new Block(startingPosition)
 
-testBlock.moveRight()
-testBlock.moveUp()
+  block.updateOrientation()
+
+  function makeMove(direction) {
+    switch (direction) {
+      case "U":
+        block.moveUp()
+        break
+      case "D":
+        block.moveDown()
+        break
+      case "R":
+        block.moveRight()
+        break
+      case "L":
+        block.moveLeft()
+        break
+    }
+  }
+
+  moveList.forEach((move) => {
+    makeMove(move)
+  })
+
+  return block.gridPosition
+}
+
+makeBlockMoves([0, 0], ["U", "U", "D", "D"])
