@@ -1,7 +1,6 @@
 const { Block } = require('./solution')
 
 test("Level 1: Can move once when the block is tall", () => {
-  const tallBlock = new Block([[0, 0]]);
   const expectedAnswers = [
     {
       direction: 'L',
@@ -21,6 +20,7 @@ test("Level 1: Can move once when the block is tall", () => {
     },
   ];
   expectedAnswers.forEach(answerObj => {
+    const tallBlock = new Block([[0, 0]])
     const { direction, result } = answerObj;
     const expectedResult = sortArr(result);
     const actualResult = sortArr(tallBlock.level1(direction));
@@ -31,7 +31,6 @@ test("Level 1: Can move once when the block is tall", () => {
 });
 
 test("Level 1: Can move once when the block is lying horizontally", () => {
-  const horizontalBlock = new Block([[0, -1], [0, 0]]);
   const expectedAnswers = [
     {
       direction: 'L',
@@ -51,6 +50,7 @@ test("Level 1: Can move once when the block is lying horizontally", () => {
     },
   ];
   expectedAnswers.forEach(answerObj => {
+    const horizontalBlock = new Block([[0, -1], [0, 0]]);
     const { direction, result } = answerObj;
     const expectedResult = sortArr(result);
     const actualResult = sortArr(horizontalBlock.level1(direction));
@@ -61,7 +61,6 @@ test("Level 1: Can move once when the block is lying horizontally", () => {
 });
 
 test("Level 1: Can move once when the block is lying vertically", () => {
-  const verticalBlock = new Block([[-1, 0], [0, 0]]);
   const expectedAnswers = [
     {
       direction: 'L',
@@ -81,6 +80,7 @@ test("Level 1: Can move once when the block is lying vertically", () => {
     },
   ];
   expectedAnswers.forEach(answerObj => {
+    const verticalBlock = new Block([[-1, 0], [0, 0]]);
     const { direction, result } = answerObj;
     const expectedResult = sortArr(result);
     const actualResult = sortArr(verticalBlock.level1(direction));
