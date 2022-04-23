@@ -159,4 +159,37 @@ test("Level 3: Can move the block pretty far away", () => {
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
 });
 
+test("Level 4: The block can find the shortest short path", () => {
+  const block = new Block([[0, 0]]);
+  const expected = [[0, -1]];
+  const actualPath = block.level4(expected);
+  const actual = block.level2(actualPath);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every(item => item.length === 2)).toBeTruthy();
+  expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
+  expect(actualPath.length === 3);
+});
+
+test("Level 4: The block can find the shortest path down to the right", () => {
+  const block = new Block([[0, 0]]);
+  const expected = [[9, 9]];
+  const actualPath = block.level4(expected);
+  const actual = block.level2(actualPath);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every(item => item.length === 2)).toBeTruthy();
+  expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
+  expect(actualPath.length === 12);
+});
+
+test("Level 4: The block can find the shortest path up to the left", () => {
+  const block = new Block([[0, 0]]);
+  const expected = [[-8, -13]];
+  const actualPath = block.level4(expected);
+  const actual = block.level2(actualPath);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every(item => item.length === 2)).toBeTruthy();
+  expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
+  expect(actualPath.length === 15);
+});
+
 const sortArr = arr => [...arr].sort((a, b) => (a[0] - a[1]) - (b[0] - b[1]));
