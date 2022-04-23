@@ -192,4 +192,90 @@ test("Level 4: The block can find the shortest path up to the left", () => {
   expect(actualPath.length === 15);
 });
 
+test("Level 5: The block can find the shortest short path with obstacles", () => {
+  const block = new Block([[4, 5]]);
+  const expected = [[4, 4]];
+  const grid = [
+    "..........",
+    "..........",
+    "...xx.....",
+    "..........",
+    "...xx.....",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    ".........."
+  ].join("\n");
+  const actualPath = block.level5(expected, grid);
+  const actual = block.level2(actualPath);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every(item => item.length === 2)).toBeTruthy();
+  expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
+  expect(actualPath.length === 7);
+});
+
+test("Level 5: The block can find the shortest longer path with obstacles", () => {
+  const block = new Block([[3, 2]]);
+  const expected = [[3, 8]];
+  const grid = [
+    "..........",
+    "..x.......",
+    "..x...x...",
+    "..x....x..",
+    "..x.......",
+    "..x.......",
+    "..x.......",
+    "..x.......",
+    "..........",
+    ".........."
+  ].join("\n");
+  const actualPath = block.level5(expected, grid);
+  const actual = block.level2(actualPath);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every(item => item.length === 2)).toBeTruthy();
+  expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
+  expect(actualPath.length === 15);
+});
+
+test("Level 5: The block can find the shortest path with obstacles on a large grid", () => {
+  const block = new Block([[14, 16]]);
+  const expected = [[26, 4]];
+  const grid = [
+    "...............................",
+    "...............................",
+    "...............x...............",
+    "...............x...............",
+    "...xxxxxxxxxxxxx...............",
+    "...............x...............",
+    "...............x...............",
+    "xxxxxxxxxxxxx..x...............",
+    "...............x...............",
+    "...............x...............",
+    "......xxxxxxxxxxxxxxxxxxxx.....",
+    "......x..................x.....",
+    "......x..................x.....",
+    "......x..................x.....",
+    "......x..................x.....",
+    "......x..................x.....",
+    "......x..................x.....",
+    "......x.xxxxxxxxxxxxxxxxxx.....",
+    "......x........................",
+    "......x........................",
+    "....xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "...............................",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxx....",
+    "...............................",
+    "...............................",
+    "...............................",
+    "..............................."
+  ].join("\n");
+  const actualPath = block.level5(expected, grid);
+  const actual = block.level2(actualPath);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every(item => item.length === 2)).toBeTruthy();
+  expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
+  expect(actualPath.length === 118);
+});
+
 const sortArr = arr => [...arr].sort((a, b) => (a[0] - a[1]) - (b[0] - b[1]));
