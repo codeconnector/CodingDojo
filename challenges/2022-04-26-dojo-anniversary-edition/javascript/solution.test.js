@@ -21,8 +21,9 @@ test("Level 1: Can move once when the block is tall", () => {
     },
   ];
   expectedAnswers.forEach(answerObj => {
-    const { direction, result: expectedResult } = answerObj;
-    const actualResult = tallBlock.level1(direction);
+    const { direction, result } = answerObj;
+    const expectedResult = sortArr(result);
+    const actualResult = sortArr(tallBlock.level1(direction));
     expect(actualResult.length).toEqual(2);
     expect(actualResult.every(item => item.length === 2)).toBeTruthy();
     expect(actualResult.every((pair, i) => pair.every((coord, j) => coord === expectedResult[i][j]))).toBeTruthy();
@@ -50,8 +51,9 @@ test("Level 1: Can move once when the block is lying horizontally", () => {
     },
   ];
   expectedAnswers.forEach(answerObj => {
-    const { direction, result: expectedResult } = answerObj;
-    const actualResult = horizontalBlock.level1(direction);
+    const { direction, result } = answerObj;
+    const expectedResult = sortArr(result);
+    const actualResult = sortArr(horizontalBlock.level1(direction));
     expect(actualResult.length).toEqual(expectedResult.length);
     expect(actualResult.every(item => item.length === 2)).toBeTruthy();
     expect(actualResult.every((pair, i) => pair.every((coord, j) => coord === expectedResult[i][j]))).toBeTruthy();
@@ -79,8 +81,9 @@ test("Level 1: Can move once when the block is lying vertically", () => {
     },
   ];
   expectedAnswers.forEach(answerObj => {
-    const { direction, result: expectedResult } = answerObj;
-    const actualResult = verticalBlock.level1(direction);
+    const { direction, result } = answerObj;
+    const expectedResult = sortArr(result);
+    const actualResult = sortArr(verticalBlock.level1(direction));
     expect(actualResult.length).toEqual(expectedResult.length);
     expect(actualResult.every(item => item.length === 2)).toBeTruthy();
     expect(actualResult.every((pair, i) => pair.every((coord, j) => coord === expectedResult[i][j]))).toBeTruthy();
@@ -90,8 +93,8 @@ test("Level 1: Can move once when the block is lying vertically", () => {
 test("Level 2: Can move the block in a small circle", () => {
   const block = new Block([[0, 0]]);
   const directionsArr = ['U', 'R', 'D', 'L'];
-  const expected = [[-1, 0], [0, 0]];
-  const actual = block.level2(directionsArr);
+  const expected = sortArr([[-1, 0], [0, 0]]);
+  const actual = sortArr(block.level2(directionsArr));
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
@@ -120,9 +123,40 @@ test("Level 2: Can move diagonal there and back", () => {
 test("Level 2: Can make the block meander around", () => {
   const block = new Block([[0, 0]]);
   const directionsArr = ['R', 'U', 'R', 'D', 'R', 'U', 'R', 'D'];
-  const expected = [[0, 5], [0, 6]];
-  const actual = block.level2(directionsArr);
+  const expected = sortArr([[0, 5], [0, 6]]);
+  const actual = sortArr(block.level2(directionsArr));
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
 });
+
+test("Level 3: Can move the block two spaces", () => {
+  const block = new Block([[0, 0]]);
+  const endPosition = [[-3, 0]];
+  const expected = ['U', 'U'];
+  const actual = block.level3(endPosition);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every((direction, i) => direction === expected[i])).toBeTruthy();
+});
+
+test("Level 3: Can move the block one space in a slightly tricky way", () => {
+  const block = new Block([[0, 0]]);
+  const expected = [[0, 1]];
+  const actualPath = block.level3(expected);
+  const actual = block.level2(actualPath);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every(item => item.length === 2)).toBeTruthy();
+  expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
+});
+
+test("Level 3: Can move the block pretty far away", () => {
+  const block = new Block([[0, 0]]);
+  const expected = [[100, -123]];
+  const actualPath = block.level3(expected);
+  const actual = block.level2(actualPath);
+  expect(actual.length).toEqual(expected.length);
+  expect(actual.every(item => item.length === 2)).toBeTruthy();
+  expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
+});
+
+const sortArr = arr => [...arr].sort((a, b) => (a[0] - a[1]) - (b[0] - b[1]));
