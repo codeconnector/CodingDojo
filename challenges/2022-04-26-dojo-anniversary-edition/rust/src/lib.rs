@@ -145,7 +145,7 @@ mod level_two_tests {
     fn can_move_in_a_small_circle() {
         let start = BlockPosition::Tall((0, 0));
         let directions = ['U', 'R', 'D', 'L'];
-        let end = BlockPosition::Wide([(-1, 0), (0, 0)]);
+        let end = BlockPosition::Wide([(0, -1), (0, 0)]);
         assert_eq!(level_two(&mut Block::new(start), &directions), end);
     }
 
