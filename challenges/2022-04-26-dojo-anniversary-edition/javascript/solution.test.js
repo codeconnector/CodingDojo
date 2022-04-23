@@ -93,7 +93,7 @@ test("Level 1: Can move once when the block is lying vertically", () => {
 test("Level 2: Can move the block in a small circle", () => {
   const block = new Block([[0, 0]]);
   const directionsArr = ['U', 'R', 'D', 'L'];
-  const expected = sortArr([[-1, 0], [0, 0]]);
+  const expected = sortArr([[0, -1], [0, 0]]);
   const actual = sortArr(block.level2(directionsArr));
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
@@ -113,7 +113,7 @@ test("Level 2: Can move the block in a bigger circle", () => {
 test("Level 2: Can move diagonal there and back", () => {
   const block = new Block([[0, 0]]);
   const directionsArr = ['D', 'R', 'D', 'R', 'U', 'L', 'U', 'L'];
-  const expected = [[0, 0]];
+  const expected = [[0, 0], [1, 0]];
   const actual = block.level2(directionsArr);
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
@@ -279,3 +279,4 @@ test("Level 5: The block can find the shortest path with obstacles on a large gr
 });
 
 const sortArr = arr => [...arr].sort((a, b) => (a[0] - a[1]) - (b[0] - b[1]));
+
