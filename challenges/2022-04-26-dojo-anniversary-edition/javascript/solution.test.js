@@ -167,7 +167,7 @@ test("Level 4: The block can find the shortest short path", () => {
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
-  expect(actualPath.length === 3);
+  expect(actualPath.length).toEqual(3);
 });
 
 test("Level 4: The block can find the shortest path down to the right", () => {
@@ -178,7 +178,8 @@ test("Level 4: The block can find the shortest path down to the right", () => {
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
-  expect(actualPath.length === 12);
+  expect(actualPath.length).toEqual(12);
+
 });
 
 test("Level 4: The block can find the shortest path up to the left", () => {
@@ -189,7 +190,7 @@ test("Level 4: The block can find the shortest path up to the left", () => {
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
-  expect(actualPath.length === 15);
+  expect(actualPath.length).toEqual(15);
 });
 
 test("Level 5: The block can find the shortest short path with obstacles", () => {
@@ -212,7 +213,7 @@ test("Level 5: The block can find the shortest short path with obstacles", () =>
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
-  expect(actualPath.length === 7);
+  expect(actualPath.length).toEqual(7);
 });
 
 test("Level 5: The block can find the shortest longer path with obstacles", () => {
@@ -235,7 +236,7 @@ test("Level 5: The block can find the shortest longer path with obstacles", () =
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
-  expect(actualPath.length === 15);
+  expect(actualPath.length).toEqual(15);
 });
 
 test("Level 5: The block can find the shortest path with obstacles on a large grid", () => {
@@ -275,7 +276,7 @@ test("Level 5: The block can find the shortest path with obstacles on a large gr
   expect(actual.length).toEqual(expected.length);
   expect(actual.every(item => item.length === 2)).toBeTruthy();
   expect(actual.every((pair, i) => pair.every((coord, j) => coord === expected[i][j]))).toBeTruthy();
-  expect(actualPath.length === 118);
+  expect(actualPath.length).toEqual(118);
 });
 
 const sortArr = arr => [...arr].sort((a, b) => (a[0] - a[1]) - (b[0] - b[1]));
