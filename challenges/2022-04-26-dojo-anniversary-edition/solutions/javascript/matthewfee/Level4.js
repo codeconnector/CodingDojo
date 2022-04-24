@@ -10,9 +10,6 @@ class Block {
     this.checkPoints = []
     this.xDistance = null
     this.yDistance = null
-    this.x = startPosition[0][1]
-    this.y = startPosition[0][0]
-
     this.updateOrientation()
   }
 
@@ -152,16 +149,13 @@ class Block {
         this.gridPosition[0][0] === this.gridPosition[1][0] ? true : false
     }
 
+    this.isDownVertically = xValuesMatch
+    this.isDownHorizontally = yValuesMatch
+
     if (this.destination) {
       this.xDistance = this.destination[1] - this.gridPosition[0][1]
       this.yDistance = this.destination[0] - this.gridPosition[0][0]
     }
-
-    this.x = this.gridPosition[0][1]
-    this.y = this.gridPosition[0][0]
-
-    this.isDownVertically = xValuesMatch
-    this.isDownHorizontally = yValuesMatch
   }
 
   makeMove(direction) {
@@ -181,7 +175,7 @@ class Block {
     }
   }
 
-  alignVertically() {
+  standUp() {
     if (!this.isDown) {
       return
     }
@@ -287,9 +281,10 @@ class Block {
   }
 
   level3(endPosition) {
-    // endPosition is an array containing a row number and a column number
-
     this.destination = endPosition[0]
+    this.gridPosition = this.startPosition
+    this.moveHistory = []
+
     this.updateOrientation()
     this.moveToDestination()
 
@@ -297,13 +292,12 @@ class Block {
   }
 
   level4(endPosition) {
-    // endPosition is an array containing a row number and a column number
     this.moveHistory = []
     this.destination = endPosition[0]
+    this.gridPosition = this.startPosition
+
     this.updateOrientation()
-
-    this.alignVertically()
-
+    this.standUp()
     this.moveToDestination()
 
     return this.moveHistory
