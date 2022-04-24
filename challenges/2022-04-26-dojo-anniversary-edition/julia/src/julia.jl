@@ -300,7 +300,7 @@ end
                    "..........",
                    "..........",
                    ".........."], "\n")
-    path   = level_four(Block(start), target)
+    path   = level_five(Block(start), target)
     @test level_two(Block(start), path) == target
     @test length(path) == 7
 end
@@ -318,7 +318,7 @@ end
                    "..x.......",
                    "..........",
                    ".........."], "\n")
-    path   = level_four(Block(start), target)
+    path   = level_five(Block(start), target)
     @test level_two(Block(start), path) == target
     @test length(path) == 15
 end
@@ -353,7 +353,7 @@ end
                  "...............................",
                  "...............................",
                  "..............................."], "\n")
-    path   = level_four(Block(start), target)
+    path   = level_five(Block(start), target)
     @test level_two(Block(start), path) == target
     @test length(path) == 118
 end
