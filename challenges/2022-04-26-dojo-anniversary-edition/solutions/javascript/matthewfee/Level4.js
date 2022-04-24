@@ -244,7 +244,7 @@ class Block {
       this.yDistance > 0 ? this.moveDown() : this.moveUp()
     }
 
-    while (Math.abs(this.xDistance) > 2) {
+    while (Math.abs(this.xDistance) > 1) {
       xMove()
       while (Math.abs(this.yDistance % 3) > 0) {
         yMove()
