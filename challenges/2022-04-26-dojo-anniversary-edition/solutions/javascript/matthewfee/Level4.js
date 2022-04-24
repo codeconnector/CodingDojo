@@ -7,7 +7,6 @@ class Block {
     this.isDown = null
     this.moveHistory = []
     this.destination = null
-    this.checkPoints = []
     this.xDistance = null
     this.yDistance = null
     this.updateOrientation()
