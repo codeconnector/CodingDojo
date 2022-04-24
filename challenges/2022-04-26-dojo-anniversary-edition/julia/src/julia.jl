@@ -140,7 +140,7 @@ end
 @testset "Can move diagonal there and back" begin
     start      = CartesianIndex(0, 0)
     directions = ['D', 'R', 'D', 'R', 'U', 'L', 'U', 'L']
-    stop       = (CartesianIndex(0, 0), CartesianIndex(0, 0))
+    stop       = (CartesianIndex(0, 0), CartesianIndex(1, 0))
     @test level_two(Block(start), directions) == stop
 end
 
@@ -300,7 +300,7 @@ end
                    "..........",
                    "..........",
                    ".........."], "\n")
-    path   = level_four(Block(start), target)
+    path   = level_five(Block(start), target)
     @test level_two(Block(start), path) == target
     @test length(path) == 7
 end
@@ -318,7 +318,7 @@ end
                    "..x.......",
                    "..........",
                    ".........."], "\n")
-    path   = level_four(Block(start), target)
+    path   = level_five(Block(start), target)
     @test level_two(Block(start), path) == target
     @test length(path) == 15
 end
@@ -353,7 +353,7 @@ end
                  "...............................",
                  "...............................",
                  "..............................."], "\n")
-    path   = level_four(Block(start), target)
+    path   = level_five(Block(start), target)
     @test level_two(Block(start), path) == target
     @test length(path) == 118
 end
