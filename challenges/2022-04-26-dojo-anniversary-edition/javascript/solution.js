@@ -63,7 +63,7 @@ class Block {
   // - The tests will expect a list of characters representing the directions you moved,
   //   'U', 'D', 'L', or 'R'.
 
-  level3(endPosition) {// endPosition is an array containing a row number and a column number
+  level3(endPosition) {// endPosition is an array containing an array containing a row number and a column number (e. g. [[0, 0]])
     return;
   }
 
@@ -79,7 +79,7 @@ class Block {
   // - The tests will expect a list of characters representing the directions you moved,
   //   'U', 'D', 'L', or 'R'.
 
-  level4(endPosition) {// endPosition is an array containing a row number and a column number
+  level4(endPosition) {// endPosition is an array containing an array containing a row number and a column number (e. g. [[0, 0]])
     return;
   }
 
@@ -105,14 +105,5 @@ class Block {
   }
 
 }
-
-
-
-
-
-
-
-
-
 
 module.exports = { Block };
