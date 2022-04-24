@@ -1,18 +1,26 @@
 class Block {
-  constructor(gridPosition) {
-    this.gridPosition = gridPosition
+  constructor(startPosition) {
+    this.startPosition = startPosition
+    this.gridPosition = startPosition
     this.isDownVertically = null
     this.isDownHorizontally = null
     this.isDown = null
     this.moveHistory = []
+    this.destination = null
+    this.checkPoints = []
+    this.xDistance = null
+    this.yDistance = null
+    this.x = startPosition[0][1]
+    this.y = startPosition[0][0]
 
     this.updateOrientation()
   }
 
   moveUp() {
+    const y = this.gridPosition[0][0]
+    const x = this.gridPosition[0][1]
+
     if (!this.isDown) {
-      const y = this.gridPosition[0]
-      const x = this.gridPosition[1]
       this.gridPosition = [
         [y - 2, x],
         [y - 1, x],
@@ -20,11 +28,8 @@ class Block {
     }
 
     if (this.isDown) {
-      const y = this.gridPosition[0][0]
-      const x = this.gridPosition[0][1]
-
       if (this.isDownVertically) {
-        this.gridPosition = [y - 1, x]
+        this.gridPosition = [[y - 1, x]]
       }
 
       if (this.isDownHorizontally) {
@@ -40,9 +45,10 @@ class Block {
   }
 
   moveDown() {
+    const y = this.gridPosition[0][0]
+    const x = this.gridPosition[0][1]
+
     if (!this.isDown) {
-      const y = this.gridPosition[0]
-      const x = this.gridPosition[1]
       this.gridPosition = [
         [y + 1, x],
         [y + 2, x],
@@ -54,7 +60,7 @@ class Block {
       const x = this.gridPosition[0][1]
 
       if (this.isDownVertically) {
-        this.gridPosition = [y + 2, x]
+        this.gridPosition = [[y + 2, x]]
       }
 
       if (this.isDownHorizontally) {
@@ -70,9 +76,10 @@ class Block {
   }
 
   moveRight() {
+    const y = this.gridPosition[0][0]
+    const x = this.gridPosition[0][1]
+
     if (!this.isDown) {
-      const y = this.gridPosition[0]
-      const x = this.gridPosition[1]
       this.gridPosition = [
         [y, x + 1],
         [y, x + 2],
@@ -91,7 +98,7 @@ class Block {
       }
 
       if (this.isDownHorizontally) {
-        this.gridPosition = [y, x + 2]
+        this.gridPosition = [[y, x + 2]]
       }
     }
 
@@ -100,9 +107,9 @@ class Block {
   }
 
   moveLeft() {
+    const y = this.gridPosition[0][0]
+    const x = this.gridPosition[0][1]
     if (!this.isDown) {
-      const y = this.gridPosition[0]
-      const x = this.gridPosition[1]
       this.gridPosition = [
         [y, x - 2],
         [y, x - 1],
@@ -121,7 +128,7 @@ class Block {
       }
 
       if (this.isDownHorizontally) {
-        this.gridPosition = [y, x - 1]
+        this.gridPosition = [[y, x - 1]]
       }
     }
 
@@ -130,129 +137,177 @@ class Block {
   }
 
   updateOrientation() {
-    const hasMultipleGridValues =
-      this.gridPosition[0].length === 2 ? true : false
+    const hasMultipleGridValues = this.gridPosition.length === 2 ? true : false
 
     this.isDown = hasMultipleGridValues ? true : false
 
-    const xValuesMatch =
-      this.gridPosition[0][1] === this.gridPosition[1][1] ? true : false
-    const yValuesMatch =
-      this.gridPosition[0][0] === this.gridPosition[1][0] ? true : false
+    let xValuesMatch = false
+    let yValuesMatch = false
 
     if (hasMultipleGridValues) {
-      this.isDownVertically = xValuesMatch
-      this.isDownHorizontally = yValuesMatch
+      xValuesMatch =
+        this.gridPosition[0][1] === this.gridPosition[1][1] ? true : false
+
+      yValuesMatch =
+        this.gridPosition[0][0] === this.gridPosition[1][0] ? true : false
     }
 
-    if (!hasMultipleGridValues) {
-      this.isDownVertically = false
-      this.isDownHorizontally = false
+    if (this.destination) {
+      this.xDistance = this.destination[1] - this.gridPosition[0][1]
+      this.yDistance = this.destination[0] - this.gridPosition[0][0]
+    }
+
+    this.x = this.gridPosition[0][1]
+    this.y = this.gridPosition[0][0]
+
+    this.isDownVertically = xValuesMatch
+    this.isDownHorizontally = yValuesMatch
+  }
+
+  makeMove(direction) {
+    switch (direction) {
+      case "U":
+        this.moveUp()
+        break
+      case "D":
+        this.moveDown()
+        break
+      case "R":
+        this.moveRight()
+        break
+      case "L":
+        this.moveLeft()
+        break
     }
   }
 
-  printStatus() {
-    console.log(
-      this.gridPosition,
-      "down",
-      this.isDown,
-      "vertical",
-      this.isDownVertically,
-      "horizontal",
-      this.isDownHorizontally,
-    )
-  }
-}
-
-const moveBlockToDestination = (currentPosition, destination) => {
-  let block = new Block(currentPosition)
-
-  const alignVertically = () => {
-    if (block.isDown && block.isDownVertically) {
+  alignVertically() {
+    if (!this.isDown) {
+      return
+    }
+    if (this.isDownVertically) {
       //check distance to move first step up or down
-      if (block.gridPosition[1][0] <= destination[0]) {
-        block.moveUp()
+      if (this.gridPosition[1][0] <= this.destination[0]) {
+        this.moveUp()
       } else {
-        block.moveDown()
+        this.moveDown()
       }
     }
 
-    if (block.isDown && block.isDownHorizontally) {
-      if (block.gridPosition[1][1] <= destination[1]) {
-        block.moveRight()
+    if (this.isDownHorizontally) {
+      if (this.gridPosition[1][1] <= this.destination[1]) {
+        this.moveRight()
       } else {
-        block.moveLeft()
+        this.moveLeft()
       }
     }
   }
 
-  const moveRightToDestination = () => {
-    // move right
-    while (!block.isDown && block.gridPosition[1] + 2 < destination[1]) {
-      block.moveRight()
-      block.moveRight()
+  moveRightOne() {
+    this.moveDown()
+    this.moveRight()
+    this.moveUp()
+  }
+
+  moveLeftOne() {
+    this.moveUp()
+    this.moveLeft()
+    this.moveDown()
+  }
+
+  moveUpOne() {
+    this.moveLeft()
+    this.moveUp()
+    this.moveRight()
+  }
+
+  moveDownOne() {
+    this.moveRight()
+    this.moveDown()
+    this.moveLeft()
+  }
+
+  moveOneStepToDestination() {
+    const xMove = () => {
+      this.xDistance > 0 ? this.moveRightOne() : this.moveLeftOne()
+    }
+    const yMove = () => {
+      this.yDistance > 0 ? this.moveDownOne() : this.moveUpOne()
     }
 
-    // move one step
-    while (!block.isDown && block.gridPosition[1] < destination[1]) {
-      block.moveDown()
-      block.moveRight()
-      block.moveUp()
+    while (Math.abs(this.xDistance) > 0) {
+      xMove()
+    }
+    while (Math.abs(this.yDistance) > 0) {
+      yMove()
     }
   }
 
-  const moveLefttoDestination = () => {
-    //move two steps
-    while (!block.isDown && block.gridPosition[1] - 2 > destination[1]) {
-      block.moveLeft()
-      block.moveLeft()
-    }
-
-    //move one step
-    while (!block.isDown && block.gridPosition[1] > destination[1]) {
-      block.moveUp()
-      block.moveLeft()
-      block.moveDown()
-    }
+  level1(direction) {
+    this.makeMove(direction)
+    return this.gridPosition
   }
 
-  const moveDownToDestination = () => {
-    // move two steps
-    while (!block.isDown && block.gridPosition[0] + 2 < destination[0]) {
-      block.moveDown()
-      block.moveDown()
+  moveToDestination() {
+    const xMove = () => {
+      this.xDistance > 0 ? this.moveRight() : this.moveLeft()
+    }
+    const yMove = () => {
+      this.yDistance > 0 ? this.moveDown() : this.moveUp()
     }
 
-    // move one step
-    while (!block.isDown && block.gridPosition[0] < destination[0]) {
-      block.moveRight()
-      block.moveDown()
-      block.moveLeft()
+    while (Math.abs(this.xDistance) > 2) {
+      xMove()
+      while (Math.abs(this.yDistance % 3) > 0) {
+        yMove()
+      }
+      xMove()
     }
+
+    while (Math.abs(this.yDistance) > 1) {
+      yMove()
+      while (Math.abs(this.xDistance % 3) > 0) {
+        xMove()
+      }
+      yMove()
+    }
+
+    this.moveOneStepToDestination()
   }
 
-  const moveUptoDestination = () => {
-    // move two steps
-    while (!block.isDown && block.gridPosition[0] - 2 > destination[0]) {
-      block.moveUp()
-      block.moveUp()
-    }
+  level2(directionsArr) {
+    this.moveHistory = []
+    this.gridPosition = this.startPosition
+    this.updateOrientation()
 
-    // move one step
-    while (!block.isDown && block.gridPosition[0] > destination[0]) {
-      block.moveLeft()
-      block.moveUp()
-      block.moveRight()
-    }
+    directionsArr.forEach((direction) => {
+      this.makeMove(direction)
+    })
+    return this.gridPosition
   }
 
-  alignVertically()
-  moveRightToDestination()
-  moveUptoDestination()
-  moveLefttoDestination()
-  moveDownToDestination()
+  level3(endPosition) {
+    // endPosition is an array containing a row number and a column number
 
-  return block.moveHistory
+    this.destination = endPosition[0]
+    this.updateOrientation()
+    this.moveToDestination()
+
+    return this.moveHistory
+  }
+
+  level4(endPosition) {
+    // endPosition is an array containing a row number and a column number
+    this.moveHistory = []
+    this.destination = endPosition[0]
+    this.updateOrientation()
+
+    this.alignVertically()
+
+    this.moveToDestination()
+
+    return this.moveHistory
+  }
 }
 
-moveBlockToDestination([0, 0], [3, 3])
+module.exports = { Block }
