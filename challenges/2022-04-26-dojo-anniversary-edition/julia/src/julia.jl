@@ -124,13 +124,7 @@ end
 # LEVEL TWO TESTS -------------------------------------------------------------
 
 @testset "Can move the block in a small circle" begin
-    start      = CartesianIndex(0, 0)# Language
-
-What language was used for the solution?
-
-# Challenge
-
-What is the name of the challenge being completed?
+    start      = CartesianIndex(0, 0)
     directions = ['U', 'R', 'D', 'L']
     stop       = (CartesianIndex(-1, 0), CartesianIndex(0, 0))
     @test level_two(Block(start), directions) == stop
