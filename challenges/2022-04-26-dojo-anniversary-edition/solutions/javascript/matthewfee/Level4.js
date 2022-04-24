@@ -237,11 +237,6 @@ class Block {
     }
   }
 
-  level1(direction) {
-    this.makeMove(direction)
-    return this.gridPosition
-  }
-
   moveToDestination() {
     const xMove = () => {
       this.xDistance > 0 ? this.moveRight() : this.moveLeft()
@@ -267,6 +262,11 @@ class Block {
     }
 
     this.moveOneStepToDestination()
+  }
+
+  level1(direction) {
+    this.makeMove(direction)
+    return this.gridPosition
   }
 
   level2(directionsArr) {
