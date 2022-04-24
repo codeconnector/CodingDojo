@@ -52,9 +52,6 @@ class Block {
     }
 
     if (this.isDown) {
-      const y = this.gridPosition[0][0]
-      const x = this.gridPosition[0][1]
-
       if (this.isDownVertically) {
         this.gridPosition = [[y + 2, x]]
       }
