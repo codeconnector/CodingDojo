@@ -237,9 +237,10 @@ class Block {
     const yMove = () => {
       this.yDistance > 0 ? this.moveDown() : this.moveUp()
     }
-
+    // move two steps at a time to destination
     while (Math.abs(this.xDistance) > 1) {
-      xMove()
+      xMove() 
+      // while moving, adjust the other axis orientation to sync up with destination
       while (Math.abs(this.yDistance % 3) > 0) {
         yMove()
       }
@@ -253,6 +254,8 @@ class Block {
       }
       yMove()
     }
+    
+    //moving one step at a time handles close cases
 
     this.moveOneStepToDestination()
   }
