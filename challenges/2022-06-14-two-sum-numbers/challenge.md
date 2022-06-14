@@ -1,4 +1,6 @@
-# Title
+# Two Number Sum
+
+## Description
 
 Given a list of `numbers` and a number `sum`, return whether any two numbers from the list add up to `sum`.
 
