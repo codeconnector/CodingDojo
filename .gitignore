@@ -1,0 +1,26 @@
+out/*
+*.class
+*.iml
+**/.DS_Store
+**/.gradle
+**/build
+**/node_modules
+**/.xml
+**/.idea
+**.pyc
+**/*dll
+**/*.exe
+**/*.html
+**/*.json
+**/*.cache
+**/*.txt
+**/*.CopyComplete
+**/*.pdb
+**/*.targets
+**/*.props
+**/*.Assembly*
+**/target
+**/Cargo.lock
+
+# Include the `package.json` files
+!**/package.json

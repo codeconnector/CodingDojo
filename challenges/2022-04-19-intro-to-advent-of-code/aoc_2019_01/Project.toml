@@ -1,0 +1,7 @@
+name = "aoc_2019_01"
+uuid = "3d7f99c6-57d3-4a8d-9821-cf8788025b83"
+authors = ["Eric Burden <eric@ericburden.dev>"]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

@@ -1,0 +1,17 @@
+{
+  "name": "2021-06-08-simple-2d-iterator",
+  "version": "1.0.0",
+  "description": "JavaScript-based codeconnector/CodingDojo challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "npm": "^7.9.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
