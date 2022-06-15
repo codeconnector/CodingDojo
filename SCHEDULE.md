@@ -6,6 +6,8 @@ Each week, we rotate the Host, Driver, and Navigator for the [meetup](https://ww
 
 | Year | Month | Day | Challenge | Language | Driver | Navigator | Host |
 | ---: | :---: | --: | :-------- | :------- | :----- | :-------- | :--- |
+| 2022 | Jul | 12 | TBA | TBA | TBA | TBA | TBA |
+| 2022 | Jun | 14 | [Two Number Sum](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-06-14-two-sum-numbers/challenge.md) | C# | [bsidealgorithms][] | [drkennetz][] | [mrumiker][] |
 | 2022 | Apr | 12 | TBA | Java | [aureliefomum][] | TBA | TBA |
 | 2022 | Apr | 5 | [Pascal's Triangle](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-04-05-pascals-triangle/challenge.md) | JavaScript | [MicahNYoung][] | [mrumiker][] | [xanderyzwich][] |
 | 2022 | Mar | 29 | [Search Party](https://github.com/codeconnector/CodingDojo/blob/main/challenges/2022-03-29-search-party/challenge.md) | JavaScript | [EvilTables][] | [drkennetz][] | [mrumiker][] |
