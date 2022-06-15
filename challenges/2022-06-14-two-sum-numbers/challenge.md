@@ -1,4 +1,4 @@
-# Two Number Sum
+# Two Sum Numbers
 
 ## Description
 
