@@ -1,0 +1,1 @@
+../../resources/javascript/js-test-runner.sh
