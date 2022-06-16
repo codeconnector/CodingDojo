@@ -99,11 +99,11 @@ public class TwoSumNumbers
   }
   
   [Fact]
-  public void FindsTrueWhenBothAddendsAreEqual()
+  public void FindsFalseWhenHalfOfSumAppearsOnce()
   {
     var sum = 10;
-    var numbers = new int[] { 5, 5 };
-    var expected = true;
+    var numbers = new int[] { 11, 8, 5, 52 };
+    var expected = false;
     var actual = DoesItSum(sum, numbers);
     Assert.Equal(expected, actual);
   }
