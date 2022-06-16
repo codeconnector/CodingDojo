@@ -97,4 +97,14 @@ public class TwoSumNumbers
     var actual = DoesItSum(sum, numbers);
     Assert.Equal(expected, actual);
   }
+  
+  [Fact]
+  public void FindsTrueWhenBothAddendsAreEqual()
+  {
+    var sum = 10;
+    var numbers = new int[] { 5, 5 };
+    var expected = true;
+    var actual = DoesItSum(sum, numbers);
+    Assert.Equal(expected, actual);
+  }
 }
