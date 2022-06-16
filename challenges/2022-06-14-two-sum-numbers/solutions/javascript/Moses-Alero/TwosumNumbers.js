@@ -1,11 +1,11 @@
 const TwoSumNumbers = function (number, numbersArray){
-    const arraySet = [...new Set(numbersArray)]
-    
-    for(let i = 0; i< arraySet.length; i++){
-        const summation = number - arraySet[i];
-        if(arraySet.includes(summation) && summation != arraySet[i]) {
-            return true
+
+    for(let i = 0; i< numbersArray.length; i++){
+        const summation = number - numbersArray[i];
+        numbersArray.shift(numbersArray[i]);
+        if(numbersArray.includes(summation)) {
+            return true;
         }
     }
-    return false
+    return false;
 }
