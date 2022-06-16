@@ -1,0 +1,4 @@
+test-it.sh linguist-detectable=false
+run-tests.sh linguist-detectable=false
+run-tests linguist-detectable=false
+*-test-runner.sh linguist-detectable=false

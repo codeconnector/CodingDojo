@@ -18,5 +18,5 @@ During the meetup we will practice mob/group programming where we encourage a ne
 
 ### Submit Solutions
 
-Just because the meetup is over doesn't mean you can't still participate in the Coding Dojo. Please try solving any of the puzzles you find here as you are able. You can submit your solutions to the repository through a PR and get some Git practice in to boot! Check out our [wiki](https://github.com/codeconnector/CodingDojo/wiki) for submission guidelines.
+Just because the meetup is over doesn't mean you can't still participate in the Coding Dojo. Please try solving any of the puzzles you find here as you are able. You can submit your solutions to the repository through a PR and get some Git practice in to boot! Check out our [wiki](https://github.com/codeconnector/CodingDojo/wiki) for submission guidelines. Links to all past challenges can be found in the SCHEDULE.md file.
 
