@@ -1,12 +1,23 @@
 using Xunit;
+using System.Collections.Generic;
 
 public class TwoSumNumbers
 {
-  public bool DoesItSum(int sum, int[] numbers)
-  {
-    // Insert your solution code here
-    return false;
-  }
+   public bool DoesItSum(int sum, int[] numbers)
+   {
+      // Insert your solution code here
+      var hashet = new HashSet<int>();
+      for (int i = 0; i < numbers.Length; i++)
+      {
+         var x = sum - numbers[i];
+         if (hashet.Contains(x))
+         {
+            return true;
+         }
+         hashet.Add(numbers[i]);
+      }
+      return false;
+   }
 
   [Fact]
   public void FindsNormalTrue()
