@@ -1,9 +1,8 @@
 const TwoSumNumbers = function (number, numbersArray){
 
-   for(let i = 0; i < numbersArray.length;i++){
+   while(numbersArray.length > 0){
         const summation = number - numbersArray[0];
         numbersArray.splice(0,1);
-        console.log(numbersArray);
         if(numbersArray.includes(summation)){
             return true;
         } 
