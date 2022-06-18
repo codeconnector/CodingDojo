@@ -1,9 +1,9 @@
-const TwoSumNumbers = function (addend, numbersArray){
+const TwoSumNumbers = function (number, numbersArray){
 
     while(numbersArray.length > 0){
-        const number = addend - numbersArray[0];
+        const difference = number - numbersArray[0];
         numbersArray.shift();
-        if(numbersArray.includes(number)){
+        if(numbersArray.includes(difference)){
             return true;
         }
     }
