@@ -74,7 +74,52 @@ public class Solution {
 	root.right.right = new BinaryTree(7);
 	int actual = nodeDepths(root);
 	assertEquals(16, actual);
-    }	    
+    }
+
+    @Test
+    public void testCaseTwo() {
+	var root = new BinaryTree(1);
+	int actual = nodeDepths(root);
+	assertEquals(0, actual);
+    }
+
+    @Test
+    public void testCaseThree() {
+	var root = new BinaryTree(1);
+	root.left = new BinaryTree(2);
+	int actual = nodeDepths(root);
+	assertEquals(1, actual);
+    }
+
+    @Test
+    public void testCaseFour() {
+	var root = new BinaryTree(1);
+	root.left = new BinaryTree(2);
+	root.right = new BinaryTree(3);
+	int actual = nodeDepths(root);
+	assertEquals(2, actual);
+    }
+
+    @Test
+    public void testCaseFive() {
+	var root = new BinaryTree(1);
+	root.left = new BinaryTree(2);
+	root.right = new BinaryTree(3);
+	root.left.left = new BinaryTree(4);
+	int actual = nodeDepths(root);
+	assertEquals(4, actual);
+    }
+
+    @Test
+    public void testCaseSix() {
+	var root = new BinaryTree(1);
+	root.left = new BinaryTree(2);
+	root.left.left = new BinaryTree(3);
+	root.left.left.left = new BinaryTree(4);
+	root.left.left.left.left = new BinaryTree(5);
+	root.left.left.left.left.left = new BinaryTree(6);
+	root.left.left.left.left.left.right = new BinaryTree(7);
+	int actual = nodeDepths(root);
+	assertEquals(21, actual);
+    }
 }
-		
-		
