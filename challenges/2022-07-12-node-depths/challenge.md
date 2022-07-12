@@ -6,13 +6,15 @@ Each BinaryTree node has an integer value, a left child node, and a right child 
 
 Example (visual) Input:
 ```
-  tree =      1                     depth = 0 (0*1)
+  tree =      1                     depth = 0 (0*1) = 0
            /      \
-          2        3                depth = 1 (1*2)
+          2        3                depth = 1 (1*2) = 2
         /   \     /  \
-       4     5   6    7             depth = 2 (4*2)
+       4     5   6    7             depth = 2 (2*4) = 8
      /  \
-    8    9                          depth = 3 (2*3)
+    8    9                          depth = 3 (3*2) = 6
+  ------------------------------------------------------  
+                                    0 + 2 + 8 + 6 = 16
 ```
 Example output:
 ```
