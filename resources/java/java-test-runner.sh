@@ -6,7 +6,7 @@
 run_test() {
     # Get a list of all files in the current directory that end in `.java`
     java_files=$(ls | grep java)
-
+    
     # Compile the source and test files for this challenge, put the *.class files
     # in the 'out/' folder. Include the JUnit standalone .jar in the classpath.
     javac -d out -cp ../../resources/java/junit5-1.8.0-M1.jar $java_files
