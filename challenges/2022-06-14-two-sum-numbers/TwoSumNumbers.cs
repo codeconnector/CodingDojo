@@ -97,4 +97,14 @@ public class TwoSumNumbers
     var actual = DoesItSum(sum, numbers);
     Assert.Equal(expected, actual);
   }
+  
+  [Fact]
+  public void FindsFalseWhenHalfOfSumAppearsOnce()
+  {
+    var sum = 10;
+    var numbers = new int[] { 11, 8, 5, 52 };
+    var expected = false;
+    var actual = DoesItSum(sum, numbers);
+    Assert.Equal(expected, actual);
+  }
 }

@@ -27,7 +27,7 @@ two_number_sum(-32, [32, -64])      // true
 ## Tackling This Challenge
 1. Make sure you've got the required software on your machine: [.NET Core 3.0+](https://dotnet.microsoft.com/download) and a text editor.
 2. If you haven't already, fork the CodingDojo repository ([INSTRUCTIONS](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)).
-3. The challenge will be live-coded in our weekly Tusday meetup.
+3. The challenge will be live-coded in our monthly Tuesday meetup.
 4. Run the tests to check your solution by navigating to this directory and running `./run-tests`.
 5. The results of the live coding demo will be added to the GitHub repository as a mob solution. Please feel free to tackle this challenge in your own way/language and submit your solution to the repo using [this solutions guide in our wiki](https://github.com/codeconnector/CodingDojo/wiki#solutions).
 
