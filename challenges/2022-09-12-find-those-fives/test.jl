@@ -31,5 +31,5 @@ end
 @testset "Can count fives in large ranges" begin
     @test find_those_fives(0, 987654321)  == 891625584
     @test find_those_fives(-123456789, 0) == 96029849
-    @test find_those_fives(-123456789, 9876543321) == 987655433
+    @test find_those_fives(-123456789, 987654321) == 987655433
 end
