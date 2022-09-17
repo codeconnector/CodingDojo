@@ -46,31 +46,7 @@ import java.util.*;
 public class Solution {
     static int nodeDepths(BinaryTree root) {
 	// insert your solution here
-		List<BinaryTree> currentLayer = new ArrayList<>();
-		currentLayer.add(root);
-
-		List<BinaryTree> nextLayer = new ArrayList<>();
-
-		int totalDepth = 0;
-		int currentDepth = 0;
-
-		while(!currentLayer.isEmpty()) {
-			for(BinaryTree node : currentLayer) {
-				if(node.left != null) {
-					nextLayer.add(node.left);
-				}
-				if(node.right != null){
-					nextLayer.add(node.right);
-				}
-
-				totalDepth += currentDepth;
-			}
-			currentLayer = nextLayer;
-			nextLayer = new ArrayList<>();
-			currentDepth++;
-		}
-
-		return totalDepth;
+	return -1;
     }
 
     static class BinaryTree {
