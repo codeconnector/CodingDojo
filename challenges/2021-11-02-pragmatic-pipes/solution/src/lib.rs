@@ -211,6 +211,6 @@ mod tests {
         let pipe_graph = PipeGraph::from(&pipes);
         let result = pipe_graph.minimum_spanning_tree(Node::from('S'));
 
-        assert_eq!(result.total_cost(), 59);
+        assert_eq!(result.total_cost(), 88);
     }
 }
