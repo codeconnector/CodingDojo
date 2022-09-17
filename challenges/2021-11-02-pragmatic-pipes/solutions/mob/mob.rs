@@ -131,11 +131,9 @@ impl PipeGraph {
         heap.push((Reverse(0), &node, &node));
 
         while let Some((reverse_edge_cost, start, end)) = heap.pop() {
-            // println!("{:#?}", min_graph);
             if seen.contains(end) { continue };
             seen.insert(end);
             min_graph.insert_edge(start, end, reverse_edge_cost.0);
-            println!("{:?}", (reverse_edge_cost.0, start, end));
             
 
             for neighbor in self.get_neighbors(end) {
@@ -171,7 +169,6 @@ mod tests {
         ];
         let pipe_graph = PipeGraph::from(&pipes);
         let result = pipe_graph.minimum_spanning_tree(Node::from('S'));
-        println!("{:?}", result);
 
         assert!(result.has_edge(&Node::from('S'), &Node::from('A')));
         assert!(result.has_edge(&Node::from('S'), &Node::from('B')));
