@@ -32,12 +32,50 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
 // Feel free to add necessary imports
 
 public class SkipCounting {
+
+
     static int gameWinningScore(int players, int tiles) {
-        return 0;
+        // return 0;
+        if (tiles == 0) { return 0; }
+        ArrayList<int[]> circle = new ArrayList<int[]>();
+
+        for (int i = 0; i < tiles; i++) {
+            if (i > 0) {
+                circle.add(circle.get(0));
+                circle.remove(0);
+            }
+            int[] tileAndPlayer = {i, i % players};
+            circle.add(tileAndPlayer);
+        }
+
+        while (circle.get(0)[0] > 0) {
+            circle.add(circle.get(0));
+            circle.remove(0);
+        }
+
+        int[] scores = new int[players];
+        for (int i = 0; i < tiles; i++) {
+            int tile = circle.get(i)[0];
+            int player = circle.get(i)[1];
+
+            scores[player] += tile * i;
+        }
+
+        int maxScore = 0;
+        for (int i = 0; i < scores.length; i++) {
+            if (scores[i] > maxScore) {
+                maxScore = scores[i];
+            }
+        }
+        return maxScore;
     }
+
 
     // Test case one
     @Test
