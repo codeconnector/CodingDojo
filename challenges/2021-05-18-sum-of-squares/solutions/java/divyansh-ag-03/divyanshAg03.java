@@ -24,8 +24,7 @@ class divyanshAg03
             // max value is i as i can
             // always be represented
             dp[i] = i;
- 
-            // Going through all smaller numbers to recursively find minimum
+            
             for (int x = 1; x <= Math.ceil(
                               Math.sqrt(i)); x++)
             {
