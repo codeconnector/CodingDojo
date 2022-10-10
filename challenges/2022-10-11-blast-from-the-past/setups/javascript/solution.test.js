@@ -19,7 +19,5 @@ test("Test Case Two", () => {
 test("Test Case Three", () => {
   const input = [1];
   const actual = findThreeLargestNumbers(input);
-  const expected = [1];
-  expect(expected.length).toEqual(actual.length);
-  expect(expected.every((num, index) => num === actual[index])).toBeTruthy;
+  expect(actual).toBeNull();
 });
