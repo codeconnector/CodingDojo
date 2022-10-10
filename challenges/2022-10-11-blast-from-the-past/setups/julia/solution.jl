@@ -16,8 +16,10 @@
 # - Linear time -> you should solve this problem by only passing through the array a
 #   single time.
 
-function find_three_largest_numbers(arr::Vector{Int})::Vector{Int}
-    missing
+const MaybeVector{T} = Union{Nothing,Vector{T}}
+
+function find_three_largest_numbers(arr::Vector{Int})::MaybeVector{Int}
+    nothing
 end
 
 # Tests ------------------------------------------------------------------------
@@ -41,6 +43,5 @@ end
 @testset "Test case three" begin
     input    = [1]
     result   = find_three_largest_numbers(input)
-    expected = [1]
-    @test all(result .== expected)
+    @test isnothing(result)
 end
