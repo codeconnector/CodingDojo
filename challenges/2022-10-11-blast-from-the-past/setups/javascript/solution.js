@@ -17,7 +17,26 @@
 //   single time.
 
 function findThreeLargestNumbers(arr) {
-  // type your solution here
+  if (arr.length < 3) return null
+  const output = [Number.MIN_VALUE, Number.MIN_VALUE, Number.MIN_VALUE];
+
+  for(i in arr) {
+    if (i > output[0]) {
+      output[0] = i
+    }
+    if (output[0] > output[1]) {
+      let value = output[0]
+      output[0] = output[1]
+      output[1] = value
+    }
+    if (output[1] > output[2]) {
+      let value = output[1];
+      output[1] = output[2]
+      output[2] = value
+    }
+  }
+
+  return output;
 }
 
 module.exports = { findThreeLargestNumbers };
