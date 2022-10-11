@@ -16,7 +16,8 @@
 // - Linear time -> you should solve this problem by only passing through the array a
 //   single time.
 
-fun findThreeLargestNumbers(arr: IntArray): IntArray {
+fun findThreeLargestNumbers(arr: IntArray): IntArray? {
     // Insert code here to solve the challenge
-    return intArrayOf(0, 0, 0)
+    // return intArrayOf(0, 0, 0)
+    return null
 }
