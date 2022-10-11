@@ -17,10 +17,10 @@
 //   single time.
 
 function findThreeLargestNumbers(arr) {
-  if(arr.length < 2) return null
   // type your solution here
+  if(arr.length < 3) return null
   const tempArray = [-5e-324, -5e-324, -5e-324];
-  console.log(arr.length);
+  
   for(let i = 0; i < tempArray.length; i++){
     for(let j = 0; j < arr.length; j++){
       if(arr[j] > tempArray[2]) tempArray[2] = arr[j]; 
@@ -31,5 +31,4 @@ function findThreeLargestNumbers(arr) {
   return tempArray;
 }
 
-findThreeLargestNumbers([141, 2, 17, -7, -17, -27, 18, 541, 8, 7, 7])
 module.exports = { findThreeLargestNumbers };
