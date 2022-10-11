@@ -5,7 +5,7 @@ test("Test Case One", () => {
   const actual = findThreeLargestNumbers(input);
   const expected = [18, 141, 541];
   expect(expected.length).toEqual(actual.length);
-  expect(expected.every((num, index) => num === actual[index])).toBeTruthy;
+  expect(expected.every((num, index) => num === actual[index])).toBe(true);
 });
 
 test("Test Case Two", () => {
@@ -13,11 +13,23 @@ test("Test Case Two", () => {
   const actual = findThreeLargestNumbers(input);
   const expected = [-7, 5, 11];
   expect(expected.length).toEqual(actual.length);
-  expect(expected.every((num, index) => num === actual[index])).toBeTruthy;
+  expect(expected.every((num, index) => num === actual[index])).toBe(true);
 });
 
 test("Test Case Three", () => {
   const input = [1];
+  const actual = findThreeLargestNumbers(input);
+  expect(actual).toBeNull();
+});
+
+test("Boundary value test for input length", () => {
+  const input = [1, 1];
+  const actual = findThreeLargestNumbers(input);
+  expect(actual).toBeNull();
+});
+
+test("Exception test for no input array given", () => {
+  const input = null;
   const actual = findThreeLargestNumbers(input);
   expect(actual).toBeNull();
 });
