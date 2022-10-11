@@ -18,28 +18,26 @@
 
 function findThreeLargestNumbers(arr) {
   // type your solution here
-	var bigThree = [Number.NEGATIVE_INFINITY,Number.NEGATIVE_INFINITY,Number.NEGATIVE_INFINITY];
+	var bigThree = 
+		[Number.NEGATIVE_INFINITY,Number.NEGATIVE_INFINITY,Number.NEGATIVE_INFINITY];
         if (arr.length < 3) {
                 return null;
-        } else {
-                for (var i = 0; i < arr.length; i++) {
-                        if (arr[i] > bigThree[0]) {
-                                bigThree[0] = arr[i];
-                        }
-                        if (bigThree[0] > bigThree[1]) {
-                        				var temp = bigThree[0];
-                                bigThree[0] = bigThree[1];
-                                bigThree[1] = temp;
-                        }
-                        if (bigThree[1] > bigThree[2]) {
-                        				var temp = bigThree[1];
-                                bigThree[1] = bigThree[2];
-                                bigThree[2] = temp;
-                        }
-
+	};
+        for (var i = 0; i < arr.length; i++) {
+        	if (arr[i] > bigThree[0]) {
+                	bigThree[0] = arr[i];
                 }
-        }
-
+                if (bigThree[0] > bigThree[1]) {
+                	var temp = bigThree[0];
+                        bigThree[0] = bigThree[1];
+                        bigThree[1] = temp;
+                }
+                if (bigThree[1] > bigThree[2]) {
+ 			var temp = bigThree[1];
+                        bigThree[1] = bigThree[2];
+                        bigThree[2] = temp;
+                }
+        };
         return bigThree;
 
 }
