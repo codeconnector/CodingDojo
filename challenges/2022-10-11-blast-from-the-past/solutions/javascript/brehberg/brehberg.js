@@ -19,14 +19,22 @@
 function findThreeLargestNumbers(arr) {
   if (!arr || arr.length < 3) return null;
   
+  // initialize array three elements, each smallest possible number
   const largest = new Array(3).fill(-Infinity);
 
   for (const number of arr) {
-    largest[0] = Math.max(largest[0], number);
-    largest[1] = Math.max(largest[1], largest[0]);
-    largest[2] = Math.max(largest[2], largest[1]);
+    // replace the first largest element if less than number
+    if(largest[0] > number) continue;
+    largest[0] = number;
+    // replace the second largest element if less than first
+    if(largest[1] > largest[0]) continue;
+    largest[0] = largest[1];
+    largest[1] = number;
+    // replace the third largest element if less than second
+    if(largest[2] > largest[1]) continue;
+    largest[1] = largest[2];
+    largest[2] = number;
   }
-
   return largest;
 }
 
