@@ -1,16 +1,4 @@
 const TwoSumNumbers = function (number, numbersArray){
-<<<<<<< HEAD
-    const arraySet = [...new Set(numbersArray)]
-    
-    for(let i = 0; i< arraySet.length; i++){
-        const summation = number - arraySet[i];
-        if(arraySet.includes(summation) && summation != arraySet[i]) {
-            return true
-        }
-    }
-    return false
-}
-=======
 
     while(numbersArray.length > 0){
         const difference = number - numbersArray[0];
@@ -86,4 +74,3 @@ const testArr = [
     });
     console.log("Tests complete")
     
->>>>>>> 09c2bfa670ac2d4d5623f1e4ef858b54bd4c3b09
