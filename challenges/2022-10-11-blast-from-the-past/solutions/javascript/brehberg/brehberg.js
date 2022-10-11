@@ -17,7 +17,7 @@
 //   single time.
 
 function findThreeLargestNumbers(arr) {
-  if (arr.length < 2) return null;
+  if (!arr || arr.length < 3) return null;
   
   const largest = new Array(3).fill(-Infinity);
 

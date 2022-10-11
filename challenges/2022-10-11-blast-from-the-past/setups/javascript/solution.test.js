@@ -21,3 +21,15 @@ test("Test Case Three", () => {
   const actual = findThreeLargestNumbers(input);
   expect(actual).toBeNull();
 });
+
+test("Boundary value test for input length", () => {
+  const input = [1, 1];
+  const actual = findThreeLargestNumbers(input);
+  expect(actual).toBeNull();
+});
+
+test("Exception test for no input array given", () => {
+  const input = null;
+  const actual = findThreeLargestNumbers(input);
+  expect(actual).toBeNull();
+});
