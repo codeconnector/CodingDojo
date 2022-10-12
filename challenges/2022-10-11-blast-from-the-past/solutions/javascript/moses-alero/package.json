@@ -1,0 +1,17 @@
+{
+  "name": "coding-dojo-js-challenge",
+  "version": "1.0.0",
+  "description": "JavaScript-based codeconnector/CodingDojo challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "npm": "^7.9.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
