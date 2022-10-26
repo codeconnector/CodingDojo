@@ -49,4 +49,12 @@ def two_sum_numbers(sum: int, numbers: list[int]) -> bool:
     return False
 
 if __name__ == "__main__":
-    print(two_sum_numbers(17, [10, 15, 3, 7]))
+    assert two_sum_numbers(17, [10, 15, 3, 7]) == True
+    assert two_sum_numbers(17, [10, 15, 3, 8]) == False
+    assert two_sum_numbers(16, [10, 15, 8, 7]) == False
+    assert two_sum_numbers(16, [10, 15, 8, 8]) == True
+    assert two_sum_numbers(32, [])             == False
+    assert two_sum_numbers(32, [32])           == False
+    assert two_sum_numbers(32, [32, 0])        == True
+    assert two_sum_numbers(-32, [32, 0])       == False
+    assert two_sum_numbers(-32, [32, -64])     == True
