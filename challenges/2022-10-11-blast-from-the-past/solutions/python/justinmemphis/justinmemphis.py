@@ -17,15 +17,12 @@ the input array. The function should return duplicate integers if necessary.
 import unittest
 
 def Solution(array:list) -> list:
-    #print('function running')
     bigList = [float('-inf'),float('-inf'),float('-inf')]
-    #print(type(bigList))
 
     if len(array) < 3:
         return None
  
     for x in array:
-        # print(x)
         if x > bigList[0]:
             bigList[0] = x
         if bigList[0] > bigList[1]:
@@ -36,12 +33,8 @@ def Solution(array:list) -> list:
             temp = bigList[1]
             bigList[1] = bigList[2]
             bigList[2] = temp
-       # print(bigList)
     
     return bigList
-
-#Solution([1,2,3,4])
-#Solution([1])
 
 class TestSolution(unittest.TestCase):
     """Test suite for Solution function"""
@@ -56,10 +49,10 @@ class TestSolution(unittest.TestCase):
         self.assertListEqual(Solution(self.test_normal_list), [18, 141, 541])
 
     def test_duplicates_in_soln(self):
-        self.assertListEqual(Solution([11, -7, 5, -7]), [-7, 5, 11])
+        self.assertListEqual(Solution(self.test_duplicates_in_soln), [-7, 5, 11])
 
     def test_none_ret(self):
-        self.assertIsNone(Solution([1]))
+        self.assertIsNone(Solution(self.test_none_ret))
 
     def tearDown(self):
         """ Convention - nothing to destroy"""
