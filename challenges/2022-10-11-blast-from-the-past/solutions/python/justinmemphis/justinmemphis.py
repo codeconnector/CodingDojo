@@ -20,7 +20,7 @@ def Solution(array:list) -> list:
     bigList = [float('-inf'),float('-inf'),float('-inf')]
 
     if len(array) < 3:
-        return None
+        return
  
     for x in array:
         if x > bigList[0]:
