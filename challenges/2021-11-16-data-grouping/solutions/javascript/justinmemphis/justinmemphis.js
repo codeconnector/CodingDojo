@@ -63,12 +63,20 @@ Senior           28       28
 
 */
 
+const fs = require('fs');
+
+function round(value, precision) {
+	var multipler = Math.pow(10, precision || 0);
+	return Math.round(value * multipler) / multipler;
+};
+
 function mean(input) {
 	var sum = 0;
 	for (var i = 0; i < input.length; i++) {
 		sum += +input[i][1];
 	};
 	var result = sum / input.length;
+	result = round(result, 1);
 	return +result.toFixed(2);
 };
 
@@ -114,43 +122,32 @@ function sortData(inputData, schoolYear, schoolYear2 = 'blah') {
 };
 
 function groupData() {
-	// type your solution here
-	fetch('http://justincarter.tech/HS_ACT_Data.txt')
-		.then(response => response.text())
-		.then((responseData) => {
-			const data = responseData.split('\r\n').map((line) => line.split('\t'));
-			//console.log(data);
+	const file = '../../../HS_ACT_Data.txt';
+	const lines = fs.readFileSync(file).toString('UTF8');
+	const data = lines.split('\r\n').map((line) => line.split('\t'));
 
-			let freshmen = sortData(data, 'Freshman');
-			let sophomores = sortData(data, 'Sophomore');
-			let juniors = sortData(data, 'Junior');
-			let seniors = sortData(data, 'Senior');
-			/*
-			console.log('Freshmen: ',freshmen.length,', ',
-				'Sophomores: ',sophomores.length,', ',
-				'Juniors: ',juniors.length,', ',
-				'Seniors: ',seniors.length,', ',
-				'Total: ',data.length);
-			*/
+	let freshmen = sortData(data, 'Freshman');
+	let sophomores = sortData(data, 'Sophomore');
+	let juniors = sortData(data, 'Junior');
+	let seniors = sortData(data, 'Senior');
+	let sophomoresAndJuniors = sortData(data, 'Sophomore', 'Junior');
 
-			let sophomoresAndJuniors = sortData(data, 'Sophomore', 'Junior');
-			//console.log('Sophomores and Juniors: ',sophomoresAndJuniors.length);
+	const bundle = {
+		'Freshman Mean': mean(freshmen),
+		'Freshman Median': median(freshmen),
+		'Sophomore Mean': mean(sophomores),
+		'Sophomore Median': median(sophomores),
+		'Junior Mean': mean(juniors),
+		'Junior Median': median(juniors),
+		'Senior Mean': mean(seniors),
+		'Senior Median': median(seniors),
+		'Scores Over 25': higherThan25(data),
+		'Sophomore Scores Between 25 and 30': twentyFiveToTwentyNine(sophomores),
+		'Sophomore and Junior Mean': mean(sophomoresAndJuniors)
+	};
 
-			console.log(`
-HighSchool Year         Mean        	      Median
-Freshman                ${mean(freshmen)}			${median(freshmen)}
-Sophomores              ${mean(sophomores)}			${median(sophomores)}
-Juniors  		${mean(juniors)}			${median(juniors)}
-Seniors  		${mean(seniors)}			${median(seniors)}
-			`);
-
-			console.log('return the number of scores greater than 25: ',higherThan25(data));
-			console.log('return the number of sophomore scores greater than 25 and less than 30: ',twentyFiveToTwentyNine(sophomores));
-			console.log('return the mean of only the sophomore and junior scores: ',mean(sophomoresAndJuniors));
-		});
+	return bundle;
 };
 
-groupData();
-
-// module.exports = { groupData };
+module.exports = { groupData };
 
