@@ -26,14 +26,10 @@ def Solution(array:list) -> list:
         if x > bigList[0]:
             bigList[0] = x
         if bigList[0] > bigList[1]:
-            temp = bigList[0]
-            bigList[0] = bigList[1]
-            bigList[1] = temp
+            bigList[0], bigList[1] = bigList[1], bigList[0] 
         if bigList[1] > bigList[2]:
-            temp = bigList[1]
-            bigList[1] = bigList[2]
-            bigList[2] = temp
-    
+            bigList[1], bigList[2] = bigList[2], bigList[1]
+
     return bigList
 
 class TestSolution(unittest.TestCase):
