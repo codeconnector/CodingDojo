@@ -5,6 +5,11 @@ import (
 	"testing"
 )
 
+func TestDB_EmptyUnset(t *testing.T) {
+	db := NewDB()
+	require.Error(t, db.Unset("a"))
+}
+
 func TestDB_Unset(t *testing.T) {
 	// Tests the set
 	db := NewDB()
