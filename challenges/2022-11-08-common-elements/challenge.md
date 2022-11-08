@@ -6,6 +6,7 @@ Create a function that takes two "sorted" arrays of numbers and returns an array
 
 - You can expect the arrays to be sorted
 - Arrays do not have to be the same length
+- The output array should be sorted and contain no duplicates
 - This problem should be solved in O(n+m) time where n is the length of the first input array and m is the length of the second input array
 
 ## Examples
