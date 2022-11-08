@@ -32,3 +32,10 @@ test('should handle no overlap returning an empty result', () => {
     expect(actual).toEqual(expected);
 });
 
+test('should handle repeated numbers in both arrays', () => {
+    const arr1 = [3, 3, 4, 6, 7, 9];
+    const arr2 = [1, 2, 2, 2, 3, 3, 4, 10];
+    const expected = [3, 4];
+    const actual = commonElements(arr1, arr2);
+    expect(actual).toEqual(expected);
+});
