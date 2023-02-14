@@ -23,7 +23,7 @@ class TestValidStartingCity(unittest.TestCase):
                                      "fuel": [3, 2, 1, 0, 4],
                                      "mpg": 20,
                                      "output": 4},
-                   "1g": {"distances": [1, 3, 10, 6, 7, 7, 3, 4],
+                   "1g": {"distances": [1, 3, 10, 6, 7, 7, 2, 4],
                           "fuel": [1, 1, 1, 1, 1, 1, 1, 1],
                           "mpg": 5,
                           "output": 6},
