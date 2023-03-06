@@ -128,16 +128,16 @@ test('detect that number is not in the matrix when it would fall between rows', 
   expect(actual).toEqual(expected);
 });
 
-
 const bigMatrix = []
 
-for (let i = 0; i < 1000000; i++) {
+let i = 0
+
+while (i < 1000000) {
   const row = []
   for (let j = 0; j < 1000; j++) {
     row.push(i)
     i++
   }
-  i--
   bigMatrix.push(row)
 }
 
