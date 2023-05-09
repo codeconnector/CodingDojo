@@ -19,7 +19,7 @@
 
 function classPhotos(redHeights, blueHeights) {
   // your solution goes here
-  return "hello world";
+  return
 }
 
 module.exports = { classPhotos };
