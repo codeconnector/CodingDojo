@@ -18,8 +18,23 @@
 // True
 
 function classPhotos(redHeights, blueHeights) {
-  // your solution goes here
-  return
+  redHeights.sort((a,b)=>b - a);
+  blueHeights.sort((a,b)=>b - a);
+  let rowInFront;
+  if(redHeights[0] > blueHeights[0]){
+     rowInFront = "blue";
+  }else{
+    rowInFront = "red";
+  }
+  for(let i = 0;i < redHeights.length;i++){
+     if(redHeights[i] >= blueHeights[i] && rowInFront == "red"){
+       return false;
+     }
+     if(blueHeights[i] >= redHeights[i] && rowInFront == "blue"){
+      return false;
+     }
+  }
+  return true;
 }
 
 module.exports = { classPhotos };
