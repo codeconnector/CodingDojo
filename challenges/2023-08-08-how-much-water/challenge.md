@@ -44,8 +44,8 @@ You are given a list of integers, where each value represents the height of a ve
 
 ```
 maximum_water([1, 8, 2, 6, 5, 4, 8, 3, 7]) -> 49
-maximum_water([1, 2, 5, 5, 2, 1])          -> 5
-maximum_water([1, 2, 2, 5, 5, 2, 2, 1])    -> 8
+maximum_water([1, 2, 8, 8, 2, 1])          -> 8
+maximum_water([1, 2, 2, 8, 8, 2, 2, 1])    -> 10
 ```
 
 ## Tackling This Challenge
