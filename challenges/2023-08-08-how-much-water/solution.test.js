@@ -1,4 +1,4 @@
-const { classPhotos } = require('./solution');
+const { maximumWater } = require('./solution');
 
 test('Max water two equal bars', () => {
   const barHeights = [5, 5];
@@ -23,14 +23,14 @@ test('Max water three bars, low middle', () => {
 
 test('Max water three bars, low left', () => {
   const barHeights = [3, 5, 10];
-  const expected = 5;
+  const expected = 6;
   const actual = maximumWater(barHeights);
   expect(actual).toEqual(expected);
 });
 
 test('Max water three bars, low right', () => {
   const barHeights = [10, 5, 3];
-  const expected = 5;
+  const expected = 6;
   const actual = maximumWater(barHeights);
   expect(actual).toEqual(expected);
 });
