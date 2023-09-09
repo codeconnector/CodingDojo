@@ -1,6 +1,6 @@
 const { countVotes } = require('./solution');
 
-test('Correctly count with onlye one name', () => {
+test('Correctly count with only one name', () => {
   const votes = ["eric"];
   const expected = "eric";
   const actual = countVotes(votes);
@@ -23,11 +23,11 @@ test('Correctly count with two names in another short array', () => {
 
 test('Correctly count with hecklers', () => {
   const votes = [
-    "i like to move it move it",     "eric",  "corey", "corey",
-    "the voting machine was hacked", "eric",  "corey", "corey",
-    "i voted third party",           "corey", "eric",  "corey",
-    "it's nuk-U-lar",                "corey", "corey", "eric",
-    "corey",                         "corey", "corey", "eric",
+    "i like to move it move it", "eric", "corey", "corey",
+    "the voting machine was hacked", "eric", "corey", "corey",
+    "i voted third party", "corey", "eric", "corey",
+    "it's nuk-U-lar", "corey", "corey", "eric",
+    "corey", "corey", "corey", "eric",
   ];
   const expected = "corey";
   const actual = countVotes(votes);
