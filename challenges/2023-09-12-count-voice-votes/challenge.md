@@ -14,7 +14,7 @@ You were just trying to be helpful, really, but when you tried to explain to you
 ```
 count_votes(["mary", "mary", "mary", "michael", "michael"]); -> "mary"
 count_votes(["michael"]) -> "michael"
-count_votes(["mary", "michael", "down with tyranny", "fake news", "mary"]) -> "mary"
+count_votes(["mary", "michael", "down with tyranny", "fake news", "mary", "mary", "mary"]) -> "mary"
 ```
 
 ## Tackling This Challenge
