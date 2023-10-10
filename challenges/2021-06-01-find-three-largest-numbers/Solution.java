@@ -56,4 +56,14 @@ public class Solution {
         assertArrayEquals(expected, result, "[1] does not have three numbers");
     }
 
+    // Test case four
+    @Test
+    @DisplayName("[-10, -100, -1, -1000]")
+    public void testCaseThree() {
+        int[] input = {-10, -100, -1, -1000};
+        int[] result = findThreeLargestNumbers(input);
+        int[] expected = {-100, -10, -1};
+        assertArrayEquals(expected, result, "[-100, -10, -1] are the three largest");
+    }
+
 }
