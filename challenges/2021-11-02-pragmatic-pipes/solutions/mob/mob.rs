@@ -43,7 +43,7 @@ struct Node(char);
 
 impl From<char> for Node {
     fn from(value: char) -> Node {
-        todo!()
+        Node(value)
     }
 }
 
@@ -64,7 +64,15 @@ impl Default for PipeGraph {
 /// Convert from the input format into a PipeGraph
 impl From<&Vec<(char, Vec<(char, usize)>)>> for PipeGraph {
     fn from(value: &Vec<(char, Vec<(char, usize)>)>) -> Self {
-        todo!()
+        let mut graph = PipeGraph::default();
+        for (start, directions) in value {
+            let start = Node::from(*start);
+            for (end, cost) in directions {
+                let end = Node::from(*end);
+                graph.insert_edge(&start, &end, *cost);
+            }
+        }
+        graph
     }
 }
 
@@ -86,8 +94,7 @@ impl PipeGraph {
         let maybe_cost = self
             .0
             .get(start)
-            .map(|destinations| destinations.get(end))
-            .flatten();
+            .and_then(|destinations| destinations.get(end));
         if let Some(cost) = maybe_cost {
             return *cost;
         }
@@ -106,8 +113,7 @@ impl PipeGraph {
     fn has_edge(&self, start: &Node, end: &Node) -> bool {
         self.0
             .get(start)
-            .map(|destinations| destinations.get(end))
-            .flatten()
+            .and_then(|destinations| destinations.get(end))
             .is_some()
     }
 
@@ -119,7 +125,24 @@ impl PipeGraph {
     /// Identify and return a PipeGraph that represents a subset of the current
     /// PipeGraph that covers the entire service area at minimal cost.
     fn minimum_spanning_tree(&self, node: Node) -> PipeGraph {
-        todo!()
+        let mut min_graph = PipeGraph::default();
+        let mut seen = HashSet::new();
+        let mut heap = BinaryHeap::new();
+        heap.push((Reverse(0), &node, &node));
+
+        while let Some((reverse_edge_cost, start, end)) = heap.pop() {
+            if seen.contains(end) { continue };
+            seen.insert(end);
+            min_graph.insert_edge(start, end, reverse_edge_cost.0);
+            
+
+            for neighbor in self.get_neighbors(end) {
+                let edge_cost = self.get_edge_cost(end, neighbor);
+                heap.push((Reverse(edge_cost), end, neighbor));
+            }
+        }
+
+        min_graph
     }
 }
 
@@ -129,9 +152,7 @@ mod tests {
 
     #[test]
     fn should_find_minimum_cost_for_simplest_map() {
-        let pipes = vec![
-            ('S', vec![]),
-        ];
+        let pipes = vec![('S', vec![])];
         let pipe_graph = PipeGraph::from(&pipes);
         let result = pipe_graph.minimum_spanning_tree(Node::from('S'));
 
