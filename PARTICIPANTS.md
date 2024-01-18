@@ -22,6 +22,7 @@ Eg: `Your Name: [githubname](githuburl)`
 + Ian Canino: [caninodev](https://github.com/caninodev)
 + Jamie Minyard: [jamietheminyard](https://github.com/jamietheminyard)
 + Jennifer Toops: [jennifertoops](https://github.com/jennifertoops)
++ Julian A. Avar C.: [julian-a-avar-c](https://github.com/julian-a-avar-c)
 + Laura Pilkington: [laurelin](https://github.com/Laurelin)
 + Lawrence Lockhart: [onesirian](https://github.com/onesirian)
 + Lee Parham: [parhaml](https://github.com/parhaml)
