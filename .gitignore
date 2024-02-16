@@ -21,6 +21,8 @@ out/*
 **/*.Assembly*
 **/target
 **/Cargo.lock
+**/.scala-build
+**/.bsp
 
 # Include the `package.json` files
 !**/package.json
